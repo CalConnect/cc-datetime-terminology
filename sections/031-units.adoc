@@ -1,0 +1,192 @@
+
+[[terms-units]]
+==== Time and Date Units
+
+[[term-second]]
+===== second
+
+base unit of measurement of time in the International System of Units (SI) as defined by the International Committee of Weights and Measures (CIPM, i.e. Comité International des Poids et Mesures)
+
+NOTE: It is the base unit for expressing duration.
+
+NOTE: Also see <<ISO80000-3>>.
+
+[[term-clock-second]]
+===== clock second
+
+_time interval_ <<term-time-interval>> whose duration is one _second_ (<<term-second>>), which in the 24-hour _clock_ (<<term-clock>>) is represented by a two-digit ordinal number from [00] identifying the first second to [59] or [60] identifying the last second of a clock minute ([59] without a leap second, [60] with a leap second)
+
+NOTE: Clock second is in common parlance often referred to as second, however in this document clock second and second have different definitions.
+
+[[term-minute]]
+===== minute
+
+unit of time, equal to 60 _seconds_ (<<term-second>>)
+
+NOTE: The duration of a minute is 60 seconds except if modified by the insertion or deletion of a leap second
+
+NOTE: Also see <<ISO80000-3>>.
+
+[[term-clock-minute]]
+===== clock minute
+
+_time interval_ <<term-time-interval>> whose duration is one _minute_ (<<term-minute>>), which in the 24-hour clock is identified by a two-digit ordinal number from [00] identifying the first minute to [59] identifying the last minute of a clock hour
+
+NOTE: Clock minute is in common parlance often referred to as minute, however in this document clock minute and minute have different definitions.
+
+[[term-hour]]
+===== hour
+
+unit of time, equal to 60 _minutes_ (<<term-minute>>)
+
+NOTE: Also see <<ISO80000-3>>.
+
+[[term-clock-hour]]
+===== clock hour
+
+_time interval_ <<term-time-interval>> of duration one _hour_ (<<term-hour>>), which in the 24-hour clock system is identified by a two-digit ordinal number from [00] identifying the first hour through [23] identifying the last hour of a calendar day
+
+NOTE: Clock hour is in common parlance often referred to as hour, however in this document clock hour and hour have different definitions.
+
+[[term-date]]
+===== date
+
+_calendar date_ (<<term-calendar-date>>), _ordinal date_ (<<term-ordinal-date>>), or _week date_ (<<term-week-date>>)
+
+[[term-calendar-date]]
+===== calendar date
+
+particular _calendar day_ (<<term-calendar-day>>) represented by its _calendar year_ (<<term-calendar-year>>), its _calendar month_ (<<term-calendar-month>>), and its ordinal number within its calendar month
+
+
+[[term-ordinal-date]]
+===== ordinal date
+
+_date_ (<<term-date>>) representing a particular _calendar day_ (<<term-calendar-day>>) represented by its _calendar year_ (<<term-calendar-year>>) and its ordinal number within its calendar year
+
+[[term-week-date]]
+===== week date
+
+particular _calendar day_ (<<term-calendar-day>>) represented by the _calendar year_ (<<term-calendar-year>>) to which its _calendar week_ (<<term-calendar-year>>) belongs, the ordinal number of its calendar week within that calendar year, and its ordinal number within its _calendar week_ (<<term-calendar-week>>)
+
+[[term-day]]
+===== day
+
+_duration_ (<<term-duration>>) of a _calendar day_ (<<term-calendar-day>>)
+
+NOTE: The term "`day`" applies also to the duration of any _time interval_ (<<term-time-interval>>) which starts at a certain time of day on a certain calendar day and ends at the same time of day on the next calendar day.
+
+NOTE: Also see <<ISO80000-3>>.
+
+[[term-calendar-day]]
+===== calendar day
+
+_time interval_ <<term-time-interval>> starting at the beginning of the day and ending with the beginning of the next day (the latter being the starting instant of the next calendar day)
+
+NOTE: Calendar day is in common parlance often referred to as day, however in this document calendar day and day have different definitions.
+
+[NOTE]
+====
+The duration of a calendar day using the 24-hour clock is 24 hours; except if modified by:
+
+* the insertion or deletion of leap seconds, by decision of the International Earth Rotation Service (IERS), or
+* the insertion or deletion of other time intervals, as may be prescribed by local authorities to alter the time scale of local time.
+====
+
+[[term-calendar-day-of-week]]
+===== calendar day of week
+
+_day_ (<<term-day>>) amongst the sequence of _week_ (<<term-week>>) days, namely, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday
+
+NOTE: The calendar day of week is represented by a single digit ordinal number identifying a calendar day within a week, from [1] (identifying Monday) through [7] (identifying Sunday)
+
+[[term-calendar-day-of-month]]
+===== calendar day of month
+
+ordinal number of a _calendar day_ (<<term-calendar-day>>) within a _calendar month_ (<<term-calendar-month>>)
+
+NOTE: The calendar day of month is represented by a two-digit ordinal number identifying the calendar day within a calendar month from [01] identifying the first calendar day of a calendar month) through [28], [29], [30], or [31] (depending on the month) identifying the last day of the month.
+
+[[term-calendar-day-of-year]]
+===== calendar day of year
+
+ordinal number of a _calendar day_ (<<term-calendar-day>>) within a _calendar year_ (<<term-calendar-year>>)
+
+NOTE: The calendar day of year is represented by a three-digit ordinal number identifying the calendar day within a calendar year, from [001] (identifying January 1) through [365] (common year) or [366] (leap year) identifying January 31
+
+[[term-week]]
+===== week
+
+_duration_ (<<term-duration>>) of a _calendar week_ (<<term-calendar-week>>)
+
+NOTE: The term "`week`" applies also to the duration of any time interval which starts at a certain time of day at a certain calendar day and ends at the same time of day at the same calendar day of the next calendar week.
+
+[[term-calendar-week]]
+===== calendar week
+
+any seven _calendar day_ (<<term-calendar-day>>) _time interval_ (<<term-time-interval>>) within a single _calendar year_ (<<term-calendar-year>>) which begins on Monday and ends on Sunday
+
+[[term-calendar-week-of-year]]
+===== calendar week of year
+
+ordinal number of a _calendar week_ (<<term-calendar-week>>) within a _calendar year_ (<<term-calendar-year>>), according to the rule that the first one is the week including the first Thursday of that year, and that the last one is the week immediately preceding the first calendar week of the next calendar year
+
+NOTE: A calendar week of year is identified by a two-digit ordinal number from [01] for the first calendar week through [52] or [53] (depending on the number of calendar weeks in that calendar year)
+
+[[term-month]]
+===== month
+
+_duration_ (<<term-duration>>) of a _calendar month_ (<<term-calendar-month>>)
+
+NOTE: The term "`month`" applies also to the duration of any time interval which starts at a certain time of day at a certain calendar day of the calendar month and ends at the same time of day at the same calendar day of the next calendar month, if it exists.
+
+NOTE: In certain applications a month is considered as a duration of 30 calendar days.
+
+[[term-calendar-month]]
+===== calendar month
+
+_time interval_ <<term-time-interval>> resulting from a defined division of a _calendar year_ (<<term-calendar-year>>), each containing a specific number of _calendar days_ (<<term-calendar-day>>)
+
+NOTE: In the Gregorian calendar, each calendar month within its calendar year is identified by a specific name, and represented by a two-digit ordinal number from [01] for January to [12] for December.
+
+NOTE: See <<ISO8601-1,clause 4.2.1>> for the names of the months of the calendar year in the _Gregorian calendar_ (<<term-gregorian-calendar>>), listed in their order of occurrence, for their number of days, and for the ordinal dates of the days in common and leap years.
+
+NOTE: A calendar month is in common parlance often referred to as month, however in this document calendar month and month have different definitions.
+
+[[term-year]]
+===== year
+
+_duration_ (<<term-duration>>) of a _calendar year_ (<<term-calendar-year>>)
+
+NOTE: In the _Gregorian calendar_ (<<term-gregorian-calendar>>), a year has 365 or 366 _days_ (<<term-day>>). The duration is 366 days if the corresponding time interval begins February 28 or earlier in a leap year or March 2 or later in a year immediately preceding a leap year. If the interval begins February 29 (on a leap year), or March 1 of a year preceding a leap year, the end date has to be agreed on. Otherwise the duration is 365 days.
+
+NOTE: The term "`year`" applies also to the duration of any time interval which starts at a certain time of day at a certain calendar date of the calendar year and ends at the same time of day at the same calendar date of the next calendar year with the exception noted in note 1.
+
+[[term-calendar-year]]
+===== calendar year
+
+_time interval_ <<term-time-interval>> defined by the _calendar_ (<<term-calendar>>) system
+
+NOTE: The _Gregorian calendar_ (<<term-gregorian-calendar>>) defines a calendar year to be either 365 or 366 days, which begins on January 1 and ends on December 31, each Gregorian calendar year can be identified by a 4 digit ordinal number beginning with [0000] for year zero, through [9999].
+
+NOTE: The number of digits may exceed 4 in the case of expanded representation.
+
+NOTE: The year number may be preceded by a minus sign to indicate a year preceding year zero.
+
+[[term-decade]]
+===== decade
+
+_time interval_ <<term-time-interval>> unit of 10 _calendar years_ (<<term-calendar-year>>), beginning with a year whose year number is divisible without remainder by ten , in the _Gregorian calendar_ (<<term-gregorian-calendar>>)
+
+NOTE: Decade is also used to refer to an arbitrary duration of 10 years, however decade is not used as such in this document.
+
+[[term-century]]
+===== century
+
+_time interval_ <<term-time-interval>> of 100 _calendar years_ (<<term-calendar-year>>) duration, beginning with a _centennial year_ (<<term-centennial-year>>), in the _Gregorian calendar_ (<<term-gregorian-calendar>>)
+
+NOTE: Century is also used to refer to an arbitrary _duration_ (<<term-duration>>) of 100 years, however century is not used as such by this document.
+
+[example]
+The "`19th century`" covers the years 1800 through 1899, however in common parlance, it is sometimes considered to cover the years 1801 through 1900.
+

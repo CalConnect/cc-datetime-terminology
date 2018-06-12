@@ -2,4 +2,4 @@
 [bibliography]
 == Normative References
 
-* [[[ISO5127,ISO 5127]]], _Information and documentation — Foundation and vocabulary_
+There are no normative references in this document.

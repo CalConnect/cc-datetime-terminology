@@ -1,10 +1,9 @@
 = CalConnect ISO TC 154 Date and Time Terminology
-:docnumber: XXXXX
-:tc-document-number: 9999
+:docnumber: 86000
+:tc-docnumber: 9999
 :edition: 1
-:ref-docnumber: ISO XXXXX:2018(E)
 :copyright-year: 2018
-:language: en
+:revdate: 2018-06-12T03:55:00Z
 :title-intro-en: Date and time
 :title-main-en: Overview and vocabulary
 :title-intro-fr: Date et l'heure
@@ -20,6 +19,7 @@
 :workgroup: Representation of dates and times
 :secretariat: SAC
 :language: en
+:script: Latn
 :draft:
 :toc:
 :stem:

@@ -1,0 +1,208 @@
+
+[[terms-concepts]]
+==== Basic concepts
+
+[[term-time]]
+===== time
+
+mark attributed to an _instant_ (<<term-instant>>) by means of a specified _time scale_ (<<term-time-scale>>)
+
+[.source]
+IEV 113-01-12, modified -- preferred term "`time`" placed prior to "`date`", replaced "`date`" with this preferred term "`time`" in Note 1, omission of Note 2, renumbering of Note 3 to Note 2, added Note 3 and Note 4 to entry
+
+NOTE: On a time scale consisting of successive steps, two distinct instants may be expressed by the same time (see Note 1 of the term _time scale_ (<<term-time-scale>>)).
+
+NOTE: In common language, the term "`date`" is mainly used when the time scale is a calendar as a sequence of days.
+
+NOTE: In IEV 113-01-12 this definition corresponds with the term "`date`".
+
+NOTE: The term "`time`" is often used in common language. However, it should only be used if the meaning is clearly visible from the context, since the term "`time`" is also used with other meanings.
+
+
+[[term-instant]]
+===== instant
+
+point on the _time axis_ (<<term-time-axis>>)
+
+[.source]
+IEV 113-01-08
+
+NOTE: An instantaneous event occurs at a specific instant.
+
+[[term-time-axis]]
+===== time axis
+
+mathematical representation of the succession in time of instantaneous events along a unique axis
+
+[.source]
+IEV 113-01-07
+
+NOTE: According to the special theory of relativity, the time axis depends on the choice of a spatial reference frame.
+
+[[term-time-scale]]
+===== time scale
+
+system of ordered marks which can be attributed to _instants_ (<<term-instant>>) on the _time axis_ (<<term-time-axis>>), one instant being chosen as the origin
+
+[.source]
+IEV 113-01-11, modified -- references to terms defined in this document in Note 1 to entry replaced with references to their definitions in this document
+
+[NOTE]
+====
+A time scale may amongst others be chosen as:
+
+* continuous, e.g. international atomic time (TAI) (see IEV 713-05-18);
+* continuous with discontinuities, e.g. _Coordinated Universal Time (UTC)_ (<<term-utc>>) due to leap sec-onds, standard time due to summer time and winter time;
+* successive steps, e.g. usual calendars, where the _time axis_ (<<term-time-axis>>) is split up into a succession of consecutive time intervals and the same mark is attributed to all instants of each time interval;
+* discrete, e.g. in digital techniques.
+====
+
+NOTE: For physical and technical applications, a time scale with quantitative marks is preferred, based on a chosen initial instant together with a unit of measurement.
+
+NOTE: Customary time scales use various units of measurement in combination, such as second, minute, hour, or various time intervals of the calendar such as calendar day, calendar month and calendar year.
+
+[[term-time-scale-unit]]
+===== time scale unit
+
+unit of measurement of a _time scale_ (<<term-time-scale>>)
+
+[example]
+calendar year, calendar month, calendar day are time scale units of the Gregorian calendar; clock hour, clock minutes, clock seconds are time scale units of the 24-hour time system clock.
+
+[[term-clock]]
+===== clock
+
+_time scale_ (<<term-time-scale>>) suited for intraday time measurements that includes the _time scale units_ (<<term-time-scale-unit>>) of _clock second_ (<<term-clock-second>>), _clock minute_ (<<term-clock-minute>>) and _clock hour_ (<<term-clock-hour>>)
+
+[example]
+The 24-hour clock is a type of clock.
+
+[[term-time-interval]]
+===== time interval
+
+part of the _time axis_ (<<term-time-axis>>) limited by two _instants_ (<<term-instant>>) and, unless otherwise stated, the limiting instants themselves
+
+[.source]
+IEV 113-01-10, modified -- merged Note 1 to entry into definition, added reference to terms defined in this document, omission of Notes 2 and 3 for clarity of this document
+
+[[term-recurring-time-interval]]
+===== recurring time interval
+
+series of consecutive _time intervals_ (<<term-time-interval>>) of the same _duration_ (<<term-duration>>) or nominal duration
+
+NOTE: If the duration of the time intervals is measured in calendar entities, the duration of each time interval depends on the calendar dates of its start and its end.
+
+NOTE: If the time interval is repeating a set of rules, <<ISO8601-2,section 5>> ("`Repeat Rules for Recurring Time Intervals`") applies.
+
+[[term-duration]]
+===== duration
+
+non-negative quantity equal to the difference between the times of the final _instant_ (<<term-instant>>) and the initial instant of the _time interval_ (<<term-time-interval>>)
+
+[.source]
+IEV 113-01-13, modified -- reference to quantitative marks deleted; definition sourced from Note 1 of entry; updated references to the definitions within this document, deleted Note 1 to entry, adopted a modified Note 2 to entry and Note 3 to entry
+
+NOTE: The duration is one of the base quantities in the International System of Quantities (ISQ) on which the International System of Units (SI) is based. The term "`time`" instead of "`duration`" is often used in this context and also for an infinitesimal duration.
+
+NOTE: For the term "`duration`", expressions such as "`time`" or "`time interval`" are often used, but the term "`time`" is not recommended in this sense and the term "`time interval`" is deprecated in this sense to avoid confusion with the concept of "`time interval`".
+
+NOTE: The exact duration of a calendar year, calendar month, calendar week, calendar day, clock hour, or clock minute, depends on when they occur (for example a month can be 28, 29, 30, or 31 days, a minute can be 59, 60, or 61 seconds, etc). Therefore, exact duration can only be evaluated if the exact duration of the components are known.
+
+[[term-utc]]
+===== Coordinated Universal Time
+alt:[UTC]
+
+_time scale_ (<<term-time-scale>>) produced by the Bureau International des Poids et Mesures (BIPM) with the same rate as International Atomic Time (TAI), but differing from TAI only by an integral number of seconds
+
+[.source]
+BIPM Recommendation CCTF 3 (2017), including the definition of TAI as Note 1 to entry
+
+NOTE: TAI is a continuous time scale produced by the BIPM based on the best realizations of the SI second. TAI is a realization of Terrestrial Time (TT) with the same rate as that of TT, as defined by the International Astronomical Union Resolution B1.9 (2000).
+
+NOTE: UTC is the time standard commonly used across the world from which local time is derived.
+
+[[term-utc-of-day]]
+===== UTC of day
+
+_time of day_ (<<term-time-of-day>>) in _UTC_ (<<term-utc>>)
+
+[[term-standard-time]]
+===== standard time
+
+_time scale_ (<<term-time-scale>>) derived from _UTC_ (<<term-utc>>), by a time shift established in a given location by the competent authority
+
+[.source]
+IEV 113-01-17, modified - Note 1 added to entry, added examples
+
+[example]
+Central European Time (CET), Central European Summer Time (CEST), Eastern Standard Time (EST), Pacific Standard Time (PST), China Standard Time (CST), Hong Kong Time (HKT), Japanese Standard Time (JST), etc.
+
+NOTE: This time shift may be varied in the course of a year.
+
+[[term-local-time-scale]]
+===== local time scale
+
+Locally-applicable _time scale_ (<<term-time-scale>>) such as _standard time_ (<<term-standard-time>>) or a non-_UTC_ (<<term-utc>>) based time scale
+
+[[term-time-of-day]]
+===== time of day
+
+quantitative expression marking an _instant_ (<<term-instant>>) within a _calendar day_ (<<term-calendar-day>>) by the _duration_ (<<term-duration>>) elapsed after the beginning of the day
+
+[.source]
+IEV 113-01-18, modified -- "`time of day`" is the preferred term in this document, generalized to not require local standard time, Note 1 edited to remove examples originating from <<ISO8601-1>>, Note 4 added
+
+NOTE: Usually, time of day is represented by the number of hours elapsed after beginning of day the number of minutes elapsed after the last full hour, and, if necessary, the number of seconds elapsed after the last full minute, possibly with decimal parts of a second.
+
+NOTE: The duration used in the definition is modified for special situations (daylight saving time, _leap second_ (<<term-leap-second>>)).
+
+NOTE: The original definition of IEV 113-01-18 corresponds closely with that of the term "`clock time`", but in our definition, no _time scale_ (<<term-time-scale>>) is necessarily defined.
+
+NOTE: The time scale used by a time of day may or may not be based on _UTC_ (<<term-utc>>).
+
+[[term-local-time-of-day]]
+===== local time of day
+
+_time of day_ (<<term-time-of-day>>) in a _local time scale_ (<<term-local-time-scale>>)
+
+[[term-calendar]]
+===== calendar
+
+_time scale_ (<<term-time-scale>>) that uses the _time scale unit_ (<<term-time-scale-unit>>) of _calendar day_ (<<term-calendar-day>>) as its basic unit
+
+NOTE: _calendar month_ (<<term-calendar-month>>) and _calendar year_ (<<term-calendar-year>>) are time scale units often included in a calendar
+
+[example]
+The Gregorian calendar is a type of calendar.
+
+[[term-gregorian-calendar]]
+===== Gregorian calendar
+
+_calendar_ (<<term-calendar>>) in general use, introduced in 1582, to define a calendar year (<<term-calendar-year>>) that more closely approximates the tropical year than the Julian calendar
+
+NOTE: The term Gregorian calendar is used to refer to the time scale described in <<ISO8601-1,clause 4.2.1>>.
+
+[[term-common-year]]
+===== common year
+
+_calendar year_ (<<term-calendar-year>>) in the _Gregorian calendar_ (<<term-gregorian-calendar>>) that has 365 _calendar days_ (<<term-calendar-day>>)
+
+[[term-leap-year]]
+===== leap year
+
+_calendar year_ (<<term-calendar-year>>) in the _Gregorian calendar_ (<<term-gregorian-calendar>>) that has 366 _calendar days_ (<<term-calendar-day>>)
+
+[[term-centennial-year]]
+===== centennial year
+
+_calendar year_ (<<term-calendar-year>>) in the _Gregorian calendar_ (<<term-gregorian-calendar>>) whose year number is divisible without remainder by hundred
+
+[[term-leap-second]]
+===== leap second
+
+intentional time step of one _second_ (<<term-second>>) to adjust _UTC_ (<<term-utc>>) to ensure appropriate agreement with UT1, a _time scale_ (<<term-time-scale>>) based on the rotation of the Earth
+
+NOTE: See also <<ITURTF>>.
+
+NOTE: An inserted second is called positive leap second and an omitted second is called negative leap second. A positive leap second is inserted after [23:59:59Z] and can be represented as [23:59:60Z]. A negative leap second is achieved by the omission of [23:59:59Z]. Insertion or omission takes place as determined by IERS, normally on 30 June or 31 December, but if necessary on 31 March or 30 September.
+

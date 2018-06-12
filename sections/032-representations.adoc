@@ -1,0 +1,62 @@
+
+[[terms-representations]]
+==== Representations and formats
+
+[[term-dt-expression]]
+===== date and time expression
+
+expression indicating a _time_ <<term-time>>, _time interval_ <<term-time-interval>> or _recurring time interval_ <<term-recurring-time-interval>>
+
+[example]
+'2018-08-01' is a date and time expression that indicates the first day of August of 2018 in the _Gregorian calendar_ (<<term-gregorian-calendar>>).
+
+[[term-dt-representation]]
+===== date and time representation
+
+expression describing the format of one or more _date and time expressions_ (<<term-dt-expression>>)
+
+[example]
+[date] is a date and time representation that can be expanded as [year][month][day], which itself can be expanded into [YYYY][MM][DD]; '20180801' is a date and time expression that conforms to this representation.
+
+[[term-time-scale-component]]
+===== time scale component
+
+representation of a _time scale unit_ (<<term-time-scale-unit>>) within a _date and time expression_ (<<term-dt-expression>>) or a _date and time representation_ (<<term-dt-representation>>)
+
+NOTE: A time scale component is considered of a higher order if the time scale unit it represents has a strictly larger time interval than that of another, which is considered to be a lower order component.
+
+NOTE: Common usage of this term often omits the leading phrase "`time scale`", such as representing a "`time scale component calendar year`" by just "`calendar year component`". This usage is deemed accepted in this document.
+
+[example]
+calendar year, calendar month, calendar day, hour, minutes, seconds are time scale components of a complete representation.
+
+[[term-basic-format]]
+===== basic format
+
+_date and time representation_ (<<term-dt-representation>>) that does not include separators between its _time scale components_ (<<term-time-scale-component>>)
+
+[[term-extended-format]]
+===== extended format
+
+extension of the _basic format_ (<<term-basic-format>>) that includes separators between its _time scale components_ (<<term-time-scale-component>>)
+
+[[term-complete-representation]]
+===== complete representation
+
+_date and time representation_ (<<term-dt-representation>>) that includes all the _time scale components_ (<<term-time-scale-component>>) associated with the expression
+
+[[term-representation-with-reduced-precision]]
+===== representation with reduced precision
+
+abbreviation of a _date and time representation_ (<<term-dt-representation>>) by omission of lower order _time scale components_ (<<term-time-scale-component>>)
+
+[[term-decimal-representation]]
+===== decimal representation
+
+expansion of a _date and time representation_ (<<term-dt-representation>>) by addition of a decimal fraction to the lowest order _time scale component_ (<<term-time-scale-component>>) of the expression
+
+[[term-expanded-representation]]
+===== expanded representation
+
+expansion of a _date and time representation_ (<<term-dt-representation>>) to allow identification of _calendar dates_ (<<term-calendar-date>>) in _calendar years_ (<<term-calendar-year>>) outside the range [0000] till [9999]
+

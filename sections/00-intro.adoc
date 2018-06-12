@@ -3,11 +3,16 @@
 :sectnums!:
 == Introduction
 
-A number of international applications require
-the identification of transcription systems, including for
-terminology, lexicography, bibliography, and linguistics,
-especially for reverse transliteration,
-computational linguistics and machine pronunciation.
+ISO Recommendations and Standards relating to date and time concepts
+have been available since 1971.
 
-This standard sets out the necessary procedures to maintain
-the registry of transliteration systems.
+This document presents terms and definitions for selected concepts
+relevant to date and time concepts and of their representation.
+
+Specifically, the terminology presented in this document:
+
+* serve as a sound basis in the understanding of date and time;
+* guide new developments in the field by underpinning mutual understanding; and
+* serve as a quick and handy reference for those newly inaugurated to this field.
+
+Most terms in this document were sourced from <<ISO8601-1>> and <<ISO8601-2>>.
