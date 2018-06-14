@@ -9,12 +9,12 @@ base unit of measurement of time in the International System of Units (SI) as de
 
 NOTE: It is the base unit for expressing duration.
 
-NOTE: Also see <<ISO80000-3>>.
+NOTE: Also see <<ISO80000-3,3-7.a>>.
 
 [[term-clock-second]]
 ===== clock second
 
-_time interval_ <<term-time-interval>> whose duration is one _second_ (<<term-second>>), which in the 24-hour _clock_ (<<term-clock>>) is represented by a two-digit ordinal number from [00] identifying the first second to [59] or [60] identifying the last second of a clock minute ([59] without a leap second, [60] with a leap second)
+_time interval_ (<<term-time-interval>>) whose duration is one _second_ (<<term-second>>), which in the 24-hour _clock_ (<<term-clock>>) is represented by a two-digit ordinal number from [00] identifying the first second to [59] or [60] identifying the last second of a clock minute ([59] without a leap second, [60] with a leap second)
 
 NOTE: Clock second is in common parlance often referred to as second, however in this document clock second and second have different definitions.
 
@@ -25,12 +25,12 @@ unit of time, equal to 60 _seconds_ (<<term-second>>)
 
 NOTE: The duration of a minute is 60 seconds except if modified by the insertion or deletion of a leap second
 
-NOTE: Also see <<ISO80000-3>>.
+NOTE: Also see <<ISO80000-3,3-7.b>>.
 
 [[term-clock-minute]]
 ===== clock minute
 
-_time interval_ <<term-time-interval>> whose duration is one _minute_ (<<term-minute>>), which in the 24-hour clock is identified by a two-digit ordinal number from [00] identifying the first minute to [59] identifying the last minute of a clock hour
+_time interval_ (<<term-time-interval>>) whose duration is one _minute_ (<<term-minute>>), which in the 24-hour clock is identified by a two-digit ordinal number from [00] identifying the first minute to [59] identifying the last minute of a clock hour
 
 NOTE: Clock minute is in common parlance often referred to as minute, however in this document clock minute and minute have different definitions.
 
@@ -39,12 +39,12 @@ NOTE: Clock minute is in common parlance often referred to as minute, however in
 
 unit of time, equal to 60 _minutes_ (<<term-minute>>)
 
-NOTE: Also see <<ISO80000-3>>.
+NOTE: Also see <<ISO80000-3,3-7.c>>.
 
 [[term-clock-hour]]
 ===== clock hour
 
-_time interval_ <<term-time-interval>> of duration one _hour_ (<<term-hour>>), which in the 24-hour clock system is identified by a two-digit ordinal number from [00] identifying the first hour through [23] identifying the last hour of a calendar day
+_time interval_ (<<term-time-interval>>) of duration one _hour_ (<<term-hour>>), which in the 24-hour clock system is identified by a two-digit ordinal number from [00] identifying the first hour through [23] identifying the last hour of a calendar day
 
 NOTE: Clock hour is in common parlance often referred to as hour, however in this document clock hour and hour have different definitions.
 
@@ -76,12 +76,12 @@ _duration_ (<<term-duration>>) of a _calendar day_ (<<term-calendar-day>>)
 
 NOTE: The term "`day`" applies also to the duration of any _time interval_ (<<term-time-interval>>) which starts at a certain time of day on a certain calendar day and ends at the same time of day on the next calendar day.
 
-NOTE: Also see <<ISO80000-3>>.
+NOTE: Also see <<ISO80000-3,3-7.d>>.
 
 [[term-calendar-day]]
 ===== calendar day
 
-_time interval_ <<term-time-interval>> starting at the beginning of the day and ending with the beginning of the next day (the latter being the starting instant of the next calendar day)
+_time interval_ (<<term-time-interval>>) starting at the beginning of the day and ending with the beginning of the next day (the latter being the starting instant of the next calendar day)
 
 NOTE: Calendar day is in common parlance often referred to as day, however in this document calendar day and day have different definitions.
 
@@ -145,7 +145,7 @@ NOTE: In certain applications a month is considered as a duration of 30 calendar
 [[term-calendar-month]]
 ===== calendar month
 
-_time interval_ <<term-time-interval>> resulting from a defined division of a _calendar year_ (<<term-calendar-year>>), each containing a specific number of _calendar days_ (<<term-calendar-day>>)
+_time interval_ (<<term-time-interval>>) resulting from a defined division of a _calendar year_ (<<term-calendar-year>>), each containing a specific number of _calendar days_ (<<term-calendar-day>>)
 
 NOTE: In the Gregorian calendar, each calendar month within its calendar year is identified by a specific name, and represented by a two-digit ordinal number from [01] for January to [12] for December.
 
@@ -162,10 +162,12 @@ NOTE: In the _Gregorian calendar_ (<<term-gregorian-calendar>>), a year has 365 
 
 NOTE: The term "`year`" applies also to the duration of any time interval which starts at a certain time of day at a certain calendar date of the calendar year and ends at the same time of day at the same calendar date of the next calendar year with the exception noted in note 1.
 
+NOTE: Also see <<ISO80000-3,Annex C 3-7>>.
+
 [[term-calendar-year]]
 ===== calendar year
 
-_time interval_ <<term-time-interval>> defined by the _calendar_ (<<term-calendar>>) system
+_time interval_ (<<term-time-interval>>) defined by the _calendar_ (<<term-calendar>>) system
 
 NOTE: The _Gregorian calendar_ (<<term-gregorian-calendar>>) defines a calendar year to be either 365 or 366 days, which begins on January 1 and ends on December 31, each Gregorian calendar year can be identified by a 4 digit ordinal number beginning with [0000] for year zero, through [9999].
 
@@ -176,14 +178,14 @@ NOTE: The year number may be preceded by a minus sign to indicate a year precedi
 [[term-decade]]
 ===== decade
 
-_time interval_ <<term-time-interval>> unit of 10 _calendar years_ (<<term-calendar-year>>), beginning with a year whose year number is divisible without remainder by ten , in the _Gregorian calendar_ (<<term-gregorian-calendar>>)
+_time interval_ (<<term-time-interval>>) unit of 10 _calendar years_ (<<term-calendar-year>>), beginning with a year whose year number is divisible without remainder by ten , in the _Gregorian calendar_ (<<term-gregorian-calendar>>)
 
 NOTE: Decade is also used to refer to an arbitrary duration of 10 years, however decade is not used as such in this document.
 
 [[term-century]]
 ===== century
 
-_time interval_ <<term-time-interval>> of 100 _calendar years_ (<<term-calendar-year>>) duration, beginning with a _centennial year_ (<<term-centennial-year>>), in the _Gregorian calendar_ (<<term-gregorian-calendar>>)
+_time interval_ (<<term-time-interval>>) of 100 _calendar years_ (<<term-calendar-year>>) duration, beginning with a _centennial year_ (<<term-centennial-year>>), in the _Gregorian calendar_ (<<term-gregorian-calendar>>)
 
 NOTE: Century is also used to refer to an arbitrary _duration_ (<<term-duration>>) of 100 years, however century is not used as such by this document.
 

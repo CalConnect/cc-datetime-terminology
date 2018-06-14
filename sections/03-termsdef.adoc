@@ -2,7 +2,7 @@
 // TODO: define 24-hour clock
 
 [[tda]]
-== Terms, definitions and abbreviations
+== Terms, definitions, symbols and abbreviations
 
 [[terms]]
 === Terms and definitions

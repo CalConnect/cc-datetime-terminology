@@ -5,7 +5,7 @@
 [[term-dt-expression]]
 ===== date and time expression
 
-expression indicating a _time_ <<term-time>>, _time interval_ <<term-time-interval>> or _recurring time interval_ <<term-recurring-time-interval>>
+expression indicating a _time_ <<term-time>>, _time interval_ (<<term-time-interval>>) or _recurring time interval_ <<term-recurring-time-interval>>
 
 [example]
 '2018-08-01' is a date and time expression that indicates the first day of August of 2018 in the _Gregorian calendar_ (<<term-gregorian-calendar>>).

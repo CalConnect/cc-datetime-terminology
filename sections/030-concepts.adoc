@@ -8,13 +8,13 @@
 mark attributed to an _instant_ (<<term-instant>>) by means of a specified _time scale_ (<<term-time-scale>>)
 
 [.source]
-IEV 113-01-12, modified -- preferred term "`time`" placed prior to "`date`", replaced "`date`" with this preferred term "`time`" in Note 1, omission of Note 2, renumbering of Note 3 to Note 2, added Note 3 and Note 4 to entry
+<<IEV,clause 113-01-12>>, preferred term "`time`" placed prior to "`date`", replaced "`date`" with this preferred term "`time`" in Note 1, omission of Note 2, renumbering of Note 3 to Note 2, added Note 3 and Note 4 to entry
 
 NOTE: On a time scale consisting of successive steps, two distinct instants may be expressed by the same time (see Note 1 of the term _time scale_ (<<term-time-scale>>)).
 
 NOTE: In common language, the term "`date`" is mainly used when the time scale is a calendar as a sequence of days.
 
-NOTE: In IEV 113-01-12 this definition corresponds with the term "`date`".
+NOTE: In <<IEV,113-01-12>> this definition corresponds with the term "`date`".
 
 NOTE: The term "`time`" is often used in common language. However, it should only be used if the meaning is clearly visible from the context, since the term "`time`" is also used with other meanings.
 
@@ -25,7 +25,7 @@ NOTE: The term "`time`" is often used in common language. However, it should onl
 point on the _time axis_ (<<term-time-axis>>)
 
 [.source]
-IEV 113-01-08
+<<IEV,113-01-08>>
 
 NOTE: An instantaneous event occurs at a specific instant.
 
@@ -35,7 +35,7 @@ NOTE: An instantaneous event occurs at a specific instant.
 mathematical representation of the succession in time of instantaneous events along a unique axis
 
 [.source]
-IEV 113-01-07
+<<IEV,113-01-07>>
 
 NOTE: According to the special theory of relativity, the time axis depends on the choice of a spatial reference frame.
 
@@ -45,13 +45,13 @@ NOTE: According to the special theory of relativity, the time axis depends on th
 system of ordered marks which can be attributed to _instants_ (<<term-instant>>) on the _time axis_ (<<term-time-axis>>), one instant being chosen as the origin
 
 [.source]
-IEV 113-01-11, modified -- references to terms defined in this document in Note 1 to entry replaced with references to their definitions in this document
+<<IEV,113-01-11>>, references to terms defined in this document in Note 1 to entry replaced with references to their definitions in this document
 
 [NOTE]
 ====
 A time scale may amongst others be chosen as:
 
-* continuous, e.g. international atomic time (TAI) (see IEV 713-05-18);
+* continuous, e.g. international atomic time (TAI) (see <<IEV,713-05-18>>);
 * continuous with discontinuities, e.g. _Coordinated Universal Time (UTC)_ (<<term-utc>>) due to leap sec-onds, standard time due to summer time and winter time;
 * successive steps, e.g. usual calendars, where the _time axis_ (<<term-time-axis>>) is split up into a succession of consecutive time intervals and the same mark is attributed to all instants of each time interval;
 * discrete, e.g. in digital techniques.
@@ -83,7 +83,7 @@ The 24-hour clock is a type of clock.
 part of the _time axis_ (<<term-time-axis>>) limited by two _instants_ (<<term-instant>>) and, unless otherwise stated, the limiting instants themselves
 
 [.source]
-IEV 113-01-10, modified -- merged Note 1 to entry into definition, added reference to terms defined in this document, omission of Notes 2 and 3 for clarity of this document
+<<IEV,113-01-10>>, merged Note 1 to entry into definition, added reference to terms defined in this document, omission of Notes 2 and 3 for clarity of this document
 
 [[term-recurring-time-interval]]
 ===== recurring time interval
@@ -100,7 +100,7 @@ NOTE: If the time interval is repeating a set of rules, <<ISO8601-2,section 5>> 
 non-negative quantity equal to the difference between the times of the final _instant_ (<<term-instant>>) and the initial instant of the _time interval_ (<<term-time-interval>>)
 
 [.source]
-IEV 113-01-13, modified -- reference to quantitative marks deleted; definition sourced from Note 1 of entry; updated references to the definitions within this document, deleted Note 1 to entry, adopted a modified Note 2 to entry and Note 3 to entry
+<<IEV,113-01-13>>, reference to quantitative marks deleted; definition sourced from Note 1 of entry; updated references to the definitions within this document, deleted Note 1 to entry, adopted a modified Note 2 to entry and Note 3 to entry
 
 NOTE: The duration is one of the base quantities in the International System of Quantities (ISQ) on which the International System of Units (SI) is based. The term "`time`" instead of "`duration`" is often used in this context and also for an infinitesimal duration.
 
@@ -132,7 +132,7 @@ _time of day_ (<<term-time-of-day>>) in _UTC_ (<<term-utc>>)
 _time scale_ (<<term-time-scale>>) derived from _UTC_ (<<term-utc>>), by a time shift established in a given location by the competent authority
 
 [.source]
-IEV 113-01-17, modified - Note 1 added to entry, added examples
+<<IEV,113-01-17>>, modified - Note 1 added to entry, added examples
 
 [example]
 Central European Time (CET), Central European Summer Time (CEST), Eastern Standard Time (EST), Pacific Standard Time (PST), China Standard Time (CST), Hong Kong Time (HKT), Japanese Standard Time (JST), etc.
@@ -150,13 +150,13 @@ Locally-applicable _time scale_ (<<term-time-scale>>) such as _standard time_ (<
 quantitative expression marking an _instant_ (<<term-instant>>) within a _calendar day_ (<<term-calendar-day>>) by the _duration_ (<<term-duration>>) elapsed after the beginning of the day
 
 [.source]
-IEV 113-01-18, modified -- "`time of day`" is the preferred term in this document, generalized to not require local standard time, Note 1 edited to remove examples originating from <<ISO8601-1>>, Note 4 added
+<<IEV,113-01-18>>, "`time of day`" is the preferred term in this document, generalized to not require local standard time, Note 1 edited to remove examples originating from <<ISO8601-1>>, Note 4 added
 
 NOTE: Usually, time of day is represented by the number of hours elapsed after beginning of day the number of minutes elapsed after the last full hour, and, if necessary, the number of seconds elapsed after the last full minute, possibly with decimal parts of a second.
 
 NOTE: The duration used in the definition is modified for special situations (daylight saving time, _leap second_ (<<term-leap-second>>)).
 
-NOTE: The original definition of IEV 113-01-18 corresponds closely with that of the term "`clock time`", but in our definition, no _time scale_ (<<term-time-scale>>) is necessarily defined.
+NOTE: The original definition of <<IEV,113-01-18>> corresponds closely with that of the term "`clock time`", but in our definition, no _time scale_ (<<term-time-scale>>) is necessarily defined.
 
 NOTE: The time scale used by a time of day may or may not be based on _UTC_ (<<term-utc>>).
 
@@ -178,9 +178,11 @@ The Gregorian calendar is a type of calendar.
 [[term-gregorian-calendar]]
 ===== Gregorian calendar
 
-_calendar_ (<<term-calendar>>) in general use, introduced in 1582, to define a calendar year (<<term-calendar-year>>) that more closely approximates the tropical year than the Julian calendar
+_calendar_ (<<term-calendar>>) that defines a calendar year (<<term-calendar-year>>) closely approximating the tropical year
 
-NOTE: The term Gregorian calendar is used to refer to the time scale described in <<ISO8601-1,clause 4.2.1>>.
+NOTE: The Gregorian calendar is described in <<ISO8601-1,clause 4.2.1>>.
+
+NOTE: The Gregorian calendar is in general use.
 
 [[term-common-year]]
 ===== common year

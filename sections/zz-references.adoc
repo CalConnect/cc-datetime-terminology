@@ -9,3 +9,5 @@
 * [[[ISO80000-3,ISO 80000-3]]], _Quantities and units -- Part 3: Space and time_
 
 * [[[ITURTF,ITU-R TF.460-6]]], ITU Recommendation, _Standard-frequency and time-signal emissions_
+
+* [[[IEV,IEV]]], IEC 60050 (all parts), _International Electrotechnical Vocabulary_, available at http://www.electropedia.org
