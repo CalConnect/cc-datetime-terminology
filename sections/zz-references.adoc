@@ -2,12 +2,21 @@
 [bibliography]
 == Bibliography
 
-* [[[ISO8601-1,ISO 8601-1]]], _Data elements and interchange formats -- Information interchange -- Representation of dates and times -- Part 1: Basic rules_
+* [[[ISO8601-1,ISO 8601-1:--]]] footnote:[Under preparation. (Stage at the time of publication ISO/FDIS 8601-1)], _Date and time -- Representation for information interchange -- Part 1: Basic rules_
 
-* [[[ISO8601-2,ISO 8601-2]]], _Data elements and interchange formats -- Information interchange -- Representation of dates and times -- Part 1: Extensions_
+* [[[ISO8601-2,ISO 8601-2:--]]] footnote:[Under preparation. (Stage at the time of publication ISO/FDIS 8601-2)], _Date and time -- Representation for information interchange -- Part 2: Extensions_
 
 * [[[ISO80000-3,ISO 80000-3]]], _Quantities and units -- Part 3: Space and time_
+
+* [[[IEC60050-113,IEC 60050-113:2011]]], _International Electrotechnical Vocabulary -- Part 113: Physics for Quantities and units -- Part 1: General electrotechnology_
+
+* [[[IEC60050-713,IEC 60050-713:1998]]], _International Electrotechnical Vocabulary -- Part 713: Radiocommunications: transmitters, receivers, networks and operation_
 
 * [[[ITURTF,ITU-R TF.460-6]]], ITU Recommendation, _Standard-frequency and time-signal emissions_
 
 * [[[IEV,IEV]]], IEC 60050 (all parts), _International Electrotechnical Vocabulary_, available at http://www.electropedia.org
+
+* [[[BIPMRCCTF3,BIPM Recommendation CCTF 3 (2017)]]], Bureau International des Poids et Mesures / The International Bureau of Weights and Measures: Consultative Committee for Time and Frequency (CCTF),
+_Report of the 21st meeting to the International Committee for Weights and Measures_, 2017
+
+* [[[IAUR24,International Astronomical Union Resolution B1.9 (2000)]]], International Astronomical Union, _IAU Resolutions adopted at the 24th General Assembly_, 2000
