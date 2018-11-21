@@ -1,6 +1,6 @@
 
 [[terms-units]]
-==== Time scale units
+==== Time and date Units
 
 [[term-second]]
 ===== second
@@ -193,6 +193,20 @@ NOTE: The year number may be preceded by a minus sign to indicate a year precedi
 _time interval_ (<<term-time-interval>>) unit of 10 _calendar years_ (<<term-calendar-year>>), beginning with a year whose year number is divisible without remainder by ten, in the _Gregorian calendar_ (<<term-gregorian-calendar>>)
 
 NOTE: Decade is also used to refer to an arbitrary duration of 10 years, however decade is not used as such in this document.
+
+[[term-century]]
+===== century
+
+_time interval_ (<<term-time-interval>>) unit of 100 _calendar years_ (<<term-calendar-year>>), beginning with a _centennial year_ (<<term-centennial-year>>), in the _Gregorian calendar_ (<<term-gregorian-calendar>>)
+
+NOTE: Century is also used to refer to an arbitrary duration of 100 years, however century is not used as such in this document.
+
+[example]
+The "`19th century`" covers the years 1800 through 1899, however in common parlance, it is sometimes considered to cover the years 1801 through 1900.
+
+
+
+
 
 [[term-century]]
 ===== century

@@ -10,7 +10,6 @@ expression indicating a _time_ <<term-time>>, _time interval_ (<<term-time-inter
 [example]
 '2018-08-01' is a date and time expression that indicates the first day of August of 2018 in the _Gregorian calendar_ (<<term-gregorian-calendar>>).
 
-
 [[term-dt-representation]]
 ===== date and time representation
 
@@ -18,7 +17,6 @@ representation of the format of one or more _date and time expressions_ (<<term-
 
 [example]
 [date] is a date and time representation that can be expanded as [year][month][day], which itself can be expanded into [YYYY][MM][DD]; '20180801' is a date and time expression that conforms to this representation.
-
 
 [[term-time-scale-component]]
 ===== time scale component
@@ -34,6 +32,48 @@ Calendar year, calendar month, calendar day, clock hour, clock minute, clock sec
 
 [example]
 The calendar year time scale component is considered of a higher order than the calendar month time scale component, which is in turn of a higher order than the calendar day time scale component.
+
+
+[[term-basic-format]]
+===== basic format
+
+_date and time representation_ (<<term-dt-representation>>) that does not include separators between its _time scale components_ (<<term-time-scale-component>>)
+
+[[term-extended-format]]
+===== extended format
+
+extension of the _basic format_ (<<term-basic-format>>) that includes separators between its _time scale components_ (<<term-time-scale-component>>)
+
+[[term-complete-representation]]
+===== complete representation
+
+_date and time representation_ (<<term-dt-representation>>) that includes all the _time scale components_ (<<term-time-scale-component>>) associated with the expression
+
+[[term-representation-with-reduced-precision]]
+===== representation with reduced precision
+
+abbreviation of a _date and time representation_ (<<term-dt-representation>>) by omission of lower order _time scale components_ (<<term-time-scale-component>>)
+
+[[term-decimal-representation]]
+===== representation with decimal fraction
+
+expansion of a _date and time representation_ (<<term-dt-representation>>) by addition of a decimal fraction to the lowest order _time scale component_ (<<term-time-scale-component>>)
+
+[[term-decimal-sign]]
+===== decimal sign
+
+character used in a representation with decimal fraction (<<term-decimal-representation>>) to separate the integer part from the decimal fraction of a number
+
+NOTE: The representations of the decimal signs (period or comma) and their usage rules are specified in <<ISO80000-1>>.
+
+
+[[term-expanded-representation]]
+===== expanded representation
+
+expansion of a _date and time representation_ (<<term-dt-representation>>) to allow identification of _calendar dates_ (<<term-calendar-date>>) in _calendar years_ (<<term-calendar-year>>) outside the range [0000] till [9999]
+
+
+
 
 
 [[term-repeat-rule]]

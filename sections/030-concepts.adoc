@@ -24,7 +24,6 @@ NOTE: This definition corresponds closely with the definition of the term "`date
 
 
 
-
 [[term-instant]]
 ===== instant
 
@@ -34,7 +33,6 @@ NOTE: An instantaneous event occurs at a specific instant.
 
 [.source]
 <<IEV,clause "113-01-08">>
-
 
 [[term-time-axis]]
 ===== time axis
@@ -80,7 +78,7 @@ part of the _time axis_ (<<term-time-axis>>) limited by two _instants_ (<<term-i
 unit of measurement of a _duration_ (<<term-duration>>)
 
 [example]
-calendar year, calendar month, calendar day are time scale units of the Gregorian calendar; clock hour, clock minutes, clock seconds are time scale units of the 24-hour time system clock.
+Calendar year, calendar month, calendar day are time scale units of the Gregorian calendar; clock hour, clock minutes, clock seconds are time scale units of the 24-hour time system clock.
 
 
 [[term-duration]]
@@ -256,6 +254,7 @@ NOTE: An inserted second is called positive leap second and an omitted second is
 ===== time shift
 
 constant _duration_ (<<term-duration>>) difference between _times_ (<<term-time>>) of two _time scales_ (<<term-time-scale>>)
+
 
 
 
