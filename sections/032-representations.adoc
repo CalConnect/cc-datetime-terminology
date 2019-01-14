@@ -5,7 +5,7 @@
 [[term-dt-expression]]
 ===== date and time expression
 
-expression indicating a _time_ <<term-time>>, _time interval_ (<<term-time-interval>>) or _recurring time interval_ <<term-recurring-time-interval>>
+expression indicating a _time_ (<<term-time>>), _time interval_ (<<term-time-interval>>) or _recurring time interval_ <<term-recurring-time-interval>>
 
 [example]
 '2018-08-01' is a date and time expression that indicates the first day of August of 2018 in the _Gregorian calendar_ (<<term-gregorian-calendar>>).
@@ -23,12 +23,12 @@ representation of the format of one or more _date and time expressions_ (<<term-
 
 representation of a _time scale unit_ (<<term-time-scale-unit>>) within a _date and time expression_ (<<term-dt-expression>>) or a _representation_ (<<term-dt-representation>>)
 
-NOTE: A time scale component is considered of a higher order of another, if the time scale unit it represents has a strictly larger time interval than that of that another; the latter time scale component is therefore considered to be of a lower order.
+NOTE: A time scale component is considered of a higher order of another, if the time scale unit it represents has a strictly larger _time interval_ (<<term-time-interval>>) than that of that another; the latter time scale component is therefore considered to be of a lower order.
 
 NOTE: Common usage of this term often omits the leading phrase "`time scale`", such as representing a "`time scale component calendar year`" by just "`calendar year component`". This usage is deemed accepted in this document.
 
 [example]
-Calendar year, calendar month, calendar day, clock hour, clock minute, clock second are time scale components of a complete representation.
+_calendar year_ (<<term-calendar-year>>), _calendar month_ (<<term-calendar-month>>), _calendar day_ (<<term-calendar-day>>), _clock hour_ (<<term-clock-hour>>), _clock minute_ (<<term-clock-minute>>), _clock second_ (<<term-clock-second>>) are time scale components of a _complete representation_ (<<term-complete-representation>>).
 
 [example]
 The calendar year time scale component is considered of a higher order than the calendar month time scale component, which is in turn of a higher order than the calendar day time scale component.
@@ -47,7 +47,7 @@ extension of the _basic format_ (<<term-basic-format>>) that includes separators
 [[term-complete-representation]]
 ===== complete representation
 
-_date and time representation_ (<<term-dt-representation>>) that includes all the _time scale components_ (<<term-time-scale-component>>) associated with the expression
+_date and time representation_ (<<term-dt-representation>>) that includes all the _time scale components_ (<<term-time-scale-component>>) associated with the _expression_ (<<term-dt-expression>>)
 
 [[term-representation-with-reduced-precision]]
 ===== representation with reduced precision
@@ -62,7 +62,7 @@ expansion of a _date and time representation_ (<<term-dt-representation>>) by ad
 [[term-decimal-sign]]
 ===== decimal sign
 
-character used in a representation with decimal fraction (<<term-decimal-representation>>) to separate the integer part from the decimal fraction of a number
+character used in a _representation with decimal fraction_ (<<term-decimal-representation>>) to separate the integer part from the decimal fraction of a number
 
 NOTE: The representations of the decimal signs (period or comma) and their usage rules are specified in <<ISO80000-1>>.
 
@@ -70,29 +70,6 @@ NOTE: The representations of the decimal signs (period or comma) and their usage
 [[term-expanded-representation]]
 ===== expanded representation
 
-expansion of a _date and time representation_ (<<term-dt-representation>>) to allow identification of _calendar dates_ (<<term-calendar-date>>) in _calendar years_ (<<term-calendar-year>>) outside the range [0000] till [9999]
+expansion of a _date and time representation_ (<<term-dt-representation>>) to allow identification of _calendar dates_ (<<term-calendar-date>>) where the ordinal number identifying the _calendar year_ (<<term-calendar-year>>) exceeds four digits
 
-
-
-
-
-[[term-repeat-rule]]
-===== repeat rule
-
-consists of a set of _eligible time intervals_ (<<term-eligible-time-interval>>) and _selection rules_ (<<term-selection-rule>>) that allows computation of a set of _matching instants_ (<<term-matching-instant>>)
-
-[[term-selection-rule]]
-===== selection rule
-rule specifying restrictions on the value of a _time scale component_ (<<iso8601-1,clause 3.1.3.9>>)
-
-===== repeat cycle
-set of _repeating instants_ (<<iso8601-1,clause 3.1.1.2>>), calculated by a specified start instant and specified _duration_ (<<iso8601-1,clause 3.1.1.6>>) gap between the repeating instants
-
-[[term-eligible-time-interval]]
-===== eligible time interval
-_time interval_ (<<iso8601-1,clause 3.1.1.3>>) eligible for matching using _selection rules_ (<<term-selection-rule>>)
-
-[[term-matching-instant]]
-===== matching instants
-set of _instants_ (<<iso8601-1,clause 3.1.1.2>>), computed by a _repeating rule_ (<<term-repeat-rule>>), that belongs within _eligible time intervals_ (<<term-eligible-time-interval>>) and fulfils criteria set by specified _selection rules_ (<<term-selection-rule>>)
 

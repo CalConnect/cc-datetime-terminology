@@ -1,0 +1,47 @@
+<bibitem type="international-standard" id="IEC60050-713-1998">
+  <fetched>2018-11-21</fetched>
+  <title format="text/plain" language="en" script="Latn">International Electrotechnical Vocabulary -- Part 713: Radiocommunications: transmitters, receivers, networks and operation </title>
+  <uri type="src">https://webstore.iec.ch/publication/243</uri>
+  <uri type="obp">/preview/info_iec60050-713%7Bed1.0%7Db.pdf</uri>
+  <docidentifier type="IEC">IEC 60050-713:1998</docidentifier>
+  <date type="published">
+    <on>1998</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Electrotechnical Commission</name>
+      <abbreviation>IEC</abbreviation>
+      <uri>www.iec.ch</uri>
+    </organization>
+  </contributor>
+  <edition>1.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="plain" language="en" script="Latn">It has the status of a horizontal standard in accordance with IEC Guide 108.</abstract>
+  <status>
+    <stage>60</stage>
+    <substage>60</substage>
+  </status>
+  <copyright>
+    <from>1998</from>
+    <owner>
+      <organization>
+        <name>International Electrotechnical Commission</name>
+        <abbreviation>IEC</abbreviation>
+        <uri>www.iec.ch</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <editorialgroup>
+    <technical_committee number="1" type="technicalCommittee">TC 1 - Terminology</technical_committee>
+  </editorialgroup>
+  <ics>
+    <code>01.040.33</code>
+    <text>Telecommunications. Audio and video engineering (Vocabularies)</text>
+  </ics>
+  <ics>
+    <code>33.060.20</code>
+    <text>Receiving and transmitting equipment</text>
+  </ics>
+</bibitem>

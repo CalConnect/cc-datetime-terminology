@@ -1,4 +1,7 @@
 
+// FROM 8601-1
+
+
 [[terms-concepts]]
 ==== Basic concepts
 
@@ -16,7 +19,7 @@ NOTE: Common forms of date include: _calendar date_ (<<term-calendar-date>>), _o
 mark attributed to an _instant_ (<<term-instant>>) or a _time interval_
 (<<term-time-interval>>) on a specified _time scale_ (<<term-time-scale>>)
 
-NOTE: The term "`time`" is often used in common language. However, it should only be used if the meaning is clearly visible from the context, since the term "`time`" is also used with other meanings.
+NOTE: The term "`time`" is often used in common language. However, it should only be used if the meaning is clearly visible from the context.
 
 NOTE: On a time scale consisting of successive time intervals, such as a _clock_ (<<term-clock>>) or _calendar_ (<<term-calendar>>), distinct instants may be expressed by the same time.
 
@@ -39,12 +42,12 @@ NOTE: An instantaneous event occurs at a specific instant.
 
 mathematical representation of the succession in time according to the space-time model of instantaneous events along a unique axis
 
-NOTE: According to the special theory of relativity, the time axis depends on the choice of a spatial reference frame.
+NOTE: According to the theory of special relativity, the time axis depends on the choice of a spatial reference frame.
 
 NOTE: In <<IEV,clause "113-01-03">>, time according to the space-time model is defined to be the one-dimensional subspace of space-time, locally orthogonal to space.
 
 [.source]
-<<IEV,clause "113-01-07">>, clarified the original term "`time`" to be space-time "`time`", added Note 2 to entry
+<<IEV,clause "113-01-07">>, The words "`according to the space-time`" have been added; the phrase "`special theory of relativity`" has been changed to "`theory of special relativity`" for clarity; Note 2 to entry has been added.
 
 [[term-time-scale]]
 ===== time scale
@@ -56,13 +59,13 @@ system of ordered marks which can be attributed to _instants_ (<<term-instant>>)
 A time scale may amongst others be chosen as:
 
 * continuous, e.g. international atomic time (TAI) (see <<IEV,clause "713-05-18">>);
-* continuous with discontinuities, e.g. _Coordinated Universal Time (UTC)_ (<<term-utc>>) due to leap seconds, standard time due to summer time and winter time;
-* successive steps, e.g. usual _calendars_ (<<term-calendar>>), where the time axis is split up into a succession of consecutive _time intervals_ (<<term-time-interval>>) and the same mark is attributed to all instants of each time interval;
+* continuous with discontinuities, e.g. _Coordinated Universal Time (UTC)_ (<<term-utc>>) due to _leap seconds_ (<<term-leap-second>>), _standard time_ (<<term-standard-time>>) due to summer time and winter time;
+* successive steps, e.g. _calendars_ (<<term-calendar>>), where the _time axis_ (<<term-time-axis>>) is split up into a succession of consecutive _time intervals_ (<<term-time-interval>>) and the same mark is attributed to all instants of each time interval;
 * discrete, e.g. in digital techniques.
 ====
 
 [.source]
-<<IEV,clause "113-01-11">>, references to terms defined in this document in Note 1 to entry replaced with references to their definitions in this document, clarified Note 1 for document context, omission of Notes 2 and 3 for clarity.
+<<IEV,clause "113-01-11">>, The words "`amongst others`" in Note 1 to entry have been added; NOTEs 2 and 3 have been deleted.
 
 [[term-time-interval]]
 ===== time interval
@@ -78,23 +81,27 @@ part of the _time axis_ (<<term-time-axis>>) limited by two _instants_ (<<term-i
 unit of measurement of a _duration_ (<<term-duration>>)
 
 [example]
-Calendar year, calendar month, calendar day are time scale units of the Gregorian calendar; clock hour, clock minutes, clock seconds are time scale units of the 24-hour time system clock.
-
+Years, months, days, hours, minutes, seconds.
 
 [[term-duration]]
 ===== duration
 
-non-negative quantity equal to the difference between the times of the final _instant_ (<<term-instant>>) and the initial instant of the _time interval_ (<<term-time-interval>>)
+non-negative quantity of time equal to the difference between the
+final and initial _instants_ (<<term-instant>>) of a
+_time interval_ (<<term-time-interval>>)
 
 NOTE: The duration is one of the base quantities in the International System of Quantities (ISQ) on which the International System of Units (SI) is based. The term "`time`" instead of "`duration`" is often used in this context and also for an infinitesimal duration.
 
 NOTE: For the term "`duration`", expressions such as "`time`" or "`time interval`" are often used, but the term "`time`" is not recommended in this sense and the term "`time interval`" is deprecated in this sense to avoid confusion with the concept of "`time interval`".
 
-NOTE: The exact duration of a time scale unit depends on the time scale used. For example, the durations of a year, month, week, day, hour, or minute, may depend on when they occur (in a Gregorian calendar, a calendar month can have a duration of 28, 29, 30, or 31 days; in a 24-hour clock a clock minute can have a duration of 59, 60, or 61 seconds, etc). Therefore, exact duration can only be evaluated if the exact duration of each is known.
+NOTE: The exact duration of a _time scale unit_ (<<term-time-scale-unit>>) depends on the _time scale_ (<<term-time-scale>>) used. For example, the durations of a year, month, week, day, hour, or minute, may depend on when they occur [in a _Gregorian calendar_ (<<term-gregorian-calendar>>), a _calendar month_ (<<term-calendar-month>>) can have a duration of 28, 29, 30, or 31 days; in a _24-hour clock_ (<<term-24-hour-clock>>) a _clock minute_ (<<term-clock-minute>>) can have a duration of 59, 60, or 61 seconds, etc.]. Therefore, the exact duration can only be evaluated if the exact duration of each is known.
 
+NOTE: This definition is closely related to NOTE 1 of "`duration`" in <<IEV,clause="113-01-13">>.
 
+////
 [.source]
-<<IEV,clause "113-01-13">>, reference to quantitative marks deleted; definition sourced from Note 1 of entry; updated references to the definitions within this document, deleted Note 1 to entry, adopted a modified Note 2 to entry and Note 3 to entry
+<<IEV,clause "113-01-13">>, The original definition has been deleted; the definition has been taken from the original NOTE 1; Note 3 to entry has been added; NOTE 4 and 5 has been deleted.
+////
 
 
 [[term-clock]]
@@ -112,9 +119,10 @@ The _24-hour clock_ (<<term-24-hour-clock>>) is a type of clock.
 
 _clock_ (<<term-clock>>) that subdivides a _calendar day_ (<<term-calendar-day>>) into 24 _clock hours_ (<<term-clock-hour>>)
 
-NOTE: UTC (<<term-utc>>) forms the basis of today's 24-hour clocks, and is used in this document as a type of 24-hour clock.
+[example]
+UTC (<<term-utc>>) a type of 24-hour clock that is often used as the basis time scale of standard times.
 
-NOTE: The 24-hour clock is described in <<time-scale-24-hour-clock>>.
+NOTE: The mechanisms of the 24-hour clock is described in <<time-scale-24-hour-clock>>.
 
 
 [[term-recurring-time-interval]]
@@ -124,45 +132,74 @@ series of consecutive _time intervals_ (<<term-time-interval>>) of identical _du
 
 NOTE: If the duration of the time intervals is measured in _calendar_ (<<term-calendar>>) entities, the duration of each time interval depends on the calendar _dates_ (<<term-date>>) of its start and its end.
 
-NOTE: If the starting instants of time intervals are repeated according to a set of rules, <<ISO8601-2,clause 5>> "`Repeat Rules for Recurring Time Intervals`", applies.
+NOTE: If the starting instants of time intervals are repeated according to a set of rules, the "`repeat rules for recurring time intervals`" in <<ISO8601-2,clause 5>> apply.
 
 
 [[term-utc]]
 ===== UTC
 alt:[Coordinated Universal Time]
 
-_time scale_ (<<term-time-scale>>) produced by the BIPM with the same rate as International Atomic Time (TAI), but differing from TAI only by an integral number of _seconds_ (<<term-second>>)
+_time scale_ (<<term-time-scale>>) with the same rate as International Atomic Time (TAI), but differing from TAI only by an integral number of _seconds_ (<<term-second>>)
+
+NOTE: UTC is a _basis time scale_ (<<term-basis-time-scale>>) commonly used across the world from
+which local time scales are derived.
+
+NOTE: UTC is produced by the Bureau International des Poids et Mesures (BIPM), i.e. the International Bureau of Weights and Measures.
 
 NOTE: TAI is a continuous time scale produced by the BIPM based on the best realizations of the SI second. TAI is a realization of Terrestrial Time (TT) with the same rate as that of TT, as defined by <<IAUR24,IAU Resolution B1.9 (2010): Re-definition of Terrestrial Time TT>>.
 
-NOTE: UTC is the time standard commonly used across the world from which local time is derived.
-
 [.source]
-<<BIPMRCCTF3,BIPM Recommendation CCTF 3 (2017): Recommendation on the definition of timescales>>, including the definition of TAI as Note 1 to entry
+<<BIPMRCCTF3,BIPM Recommendation CCTF 3 (2017): Recommendation on the definition of timescales>>, The definition of TAI has been included as Note 3 to entry.
+
 
 [[term-utc-of-day]]
 ===== UTC of day
 
 _time of day_ (<<term-time-of-day>>) in _UTC_ (<<term-utc>>)
 
+
+[[term-basis-time-scale]]
+===== basis time scale
+
+_time scale_ (<<term-time-scale>>) established to serve as reference time
+by a competent authority
+
+NOTE: The basis time scale is not always legally UTC in all countries.
+
+[example]
+_UTC_ (<<term-utc>>), TAI, GPS system time, Galileo system time,
+BeiDou system time, LORAN station system time are basis time scales
+in current use.
+
+
 [[term-standard-time]]
 ===== standard time
 
-_time scale_ (<<term-time-scale>>) derived from _UTC_ (<<term-utc>>), by a _time shift_ (<<term-time-shift>>) established in a given location by the competent authority
+_time scale_ (<<term-time-scale>>) derived from a
+_basis time scale_ (<<term-basis-time-scale>>) with a
+_time shift_ (<<term-time-shift>>) established by a
+competent authority
 
-NOTE: This time shift may be varied in the course of a year.
+NOTE: The time shift of a standard time may vary in the course of a year,
+such as due to daylight savings.
+
+NOTE: Many standard times use UTC as their basis and are often
+associated with a geographical location.
+A timezone may be associated with one or more standard times.
+
+NOTE: This definition corresponds closely to, but is more general than, the definition of the term "`standard time`" in <<IEV,clause "113-01-17">>.
 
 [example]
-Central European Time (CET), Central European Summer Time (CEST), Eastern Standard Time (EST), Eastern Daylight Time (EDT), Pacific Standard Time (PST), China Standard Time (CST), Hong Kong Standard Time (HKT), Korea Standard Time (KST), Japanese Standard Time (JST), etc.
+Some standard times do not vary within a year, such as US Eastern Standard Time (EST), US Eastern Daylight Time (EDT), Australia Western Standard Time (AWST), China Standard Time (CST), Hong Kong Standard Time (HKT), Korea Standard Time (KST) and Japanese Standard Time (JST).
 
-[.source]
-<<IEV,clause "113-01-17">>, the original NOTE has been deleted, EXAMPLE and Note 1 to entry has been added.
+[example]
+Some standard times vary within a year, such as US Eastern Time (ET) and Australian Central Standard Time (ACST).
 
 
 [[term-local-time-scale]]
 ===== local time scale
 
-locally-applicable _time scale_ (<<term-time-scale>>) such as _standard time_ (<<term-standard-time>>) or a non-_UTC_ (<<term-utc>>) based time scale
+locally-applicable _standard time_ (<<term-standard-time>>)
 
 
 [[term-time-of-day]]
@@ -172,10 +209,21 @@ _time_ (<<term-time>>) occurring within a _calendar day_ (<<term-calendar-day>>)
 
 NOTE: Generally, time of day relates to the _duration_ (<<term-duration>>) elapsed after the beginning of the day. However, this correlation breaks when changes occur in the _time scale_ (<<term-time-scale>>) that applies to the time of day, such as _time shifts_ (<<term-time-shift>>) and _leap seconds_ (<<term-leap-second>>).
 
+////
 NOTE: The time scale used by a time of day may or may not be based on _UTC_ (<<term-utc>>).
+////
 
-NOTE: This definition corresponds closely with the definition of "`clock time`" given in <<IEV,clause "113-01-18">>, except that the concepts of _duration_ (<<term-duration>>) and _time scale_ (<<term-time-scale>>) are not used in this definition.
+NOTE: This definition corresponds closely with the definition of "`clock time`" given in <<IEV,clause "113-01-18">>, except that the concepts of duration and time scale are not used in this definition.
 
+
+
+[[term-basis-time]]
+===== basis time of day
+
+_time of day_ (<<term-time-of-day>>) in a _basis time scale_ (<<term-basis-time-scale>>)
+
+[example]
+_UTC of day_ (<<term-utc-of-day>>) is a type of basis time of day.
 
 [[term-local-time-of-day]]
 ===== local time of day
@@ -199,7 +247,7 @@ The _Gregorian calendar_ (<<term-gregorian-calendar>>) is a type of calendar.
 
 _calendar_ (<<term-calendar>>) in general use that defines a calendar year (<<term-calendar-year>>) that closely approximates the tropical year
 
-NOTE: The Gregorian calendar is described in <<gregorian-calendar>>.
+NOTE: In this document the term "`Gregorian calendar`" is used to refer to the _time scale_ (<<term-time-scale>>) described in <<gregorian-calendar>>.
 
 
 [[term-common-year]]
@@ -213,7 +261,7 @@ _calendar year_ (<<term-calendar-year>>) in the _Gregorian calendar_ (<<term-gre
 
 _calendar year_ (<<term-calendar-year>>) in the _Gregorian calendar_ (<<term-gregorian-calendar>>) that has 366 _calendar days_ (<<term-calendar-day>>)
 
-NOTE: A leap year is a calendar year whose year number is divisible by four and is not a centennial year (<<term-centennial-year>>), or a centennial year whose year number is divisible by four hundred.
+NOTE: A leap year is a calendar year whose year number is divisible by four and is not a _centennial year_ (<<term-centennial-year>>), or a centennial year whose year number is divisible by four hundred.
 
 [[term-centennial-year]]
 ===== centennial year
@@ -226,14 +274,18 @@ _calendar year_ (<<term-calendar-year>>) in the _Gregorian calendar_ (<<term-gre
 
 _calendar_ (<<term-calendar>>) based on an unbounded series of
 contiguous _calendar weeks_ (<<term-calendar-week>>)
-that uses the _time scale unit_ (<<term-time-scale-unit>>) of _calendar week_
+that uses the _time scale unit_ (<<term-time-scale-unit>>) of calendar week
 as its basic unit to represent a _calendar year_ (<<term-calendar-year>>),
 according to the rule that the first calendar week of a calendar year
 is the week including the first Thursday of that year, and that the
 last one is the week immediately preceding the first calendar week of
 the next calendar year
 
-NOTE: In the week calendar, _calendar days_ (<<term-calendar-day>>)
+NOTE: This rule is based on the principle that a week belongs to the
+calendar year in which the majority of its
+_calendar days_ (<<term-calendar-day>>) belongs.
+
+NOTE: In the week calendar, calendar days
 of the first and last calendar week of a calendar year may belong
 to the previous and the next calendar year respectively in the
 _Gregorian calendar_ (<<term-gregorian-calendar>>).
@@ -248,7 +300,7 @@ intentional time step of one _second_ (<<term-second>>) to adjust _UTC_ (<<term-
 
 NOTE: See also <<ITURTF460-6>>.
 
-NOTE: An inserted second is called positive leap second and an omitted second is called negative leap second. A positive leap second is inserted after [23:59:59Z] and can be represented as [23:59:60Z]. A negative leap second is achieved by the omission of [23:59:59Z]. Insertion or omission takes place as determined by IERS, normally on 30 June or 31 December, but if necessary on 31 March or 30 September.
+NOTE: An inserted second is called a positive leap second and an omitted second is called a negative leap second. A positive leap second is inserted after [23:59:59Z] and can be represented as [23:59:60Z]. A negative leap second is achieved by the omission of [23:59:59Z]. Insertion or omission takes place as determined by the International Earth Rotation and Reference Systems Service (IERS), normally on 30 June or 31 December, but if necessary on 31 March or 30 September.
 
 [[term-time-shift]]
 ===== time shift
@@ -258,33 +310,158 @@ constant _duration_ (<<term-duration>>) difference between _times_ (<<term-time>
 
 
 
+// BELOW FROM 8601-2
+
+
 ===== approximate date
+
 calendar date which is an estimate whose value is asserted to be possibly correct
 
 NOTE: The degree of confidence in approximation depends on the application.
 
 ===== uncertain date
-calendar date whose source is considered dubious
+
+calendar date whose source is considered _dubious_ (<<term-dubious>>)
 
 ===== date with unspecified part
+
 calendar date of which a part is unstated
 
 NOTE: The unstated part can be year, year and month, month, month and day, or year and day. It is unstated because it has not (yet) been assigned (it might be assigned in the future), or because it is classified, or unknown, or for any other reason.
 
+[[term-dubious]]
+===== dubious
+
+not to be relied upon
+
+===== qualification symbol
+
+symbol that indicates certain qualification to a value it applies to
+
+[example]
+The symbol [?] indicates that the value it applies to is uncertain
 
 ===== movable day
 
-repeatedly occurring day in a calendar that is represented by criteria set by one or more _selection rules_ (<<term-repeat-rule>>), but does not always resolve to a fixed calendar day in every repeating cycle
+repeatedly occurring day in a calendar that is represented by criteria set by one or more _selection rules_ (<<term-selection-rule>>), but does not always resolve to a fixed calendar day in every repeating cycle
 
-NOTE:	The selection of this term pays homage to the phrase "movable feast" used in some calendars to indicate the rule-based determination of annual events.
+NOTE: The selection of this term pays homage to the phrase "movable feast" used in some calendars to indicate the rule-based determination of annual events.
 
 [example]
-Thanksgiving Day in the U.S. and Canada, are considered movable days, set to the fourth Thursday in November and the second Monday in October, respectively.
+Thanksgiving Day in the U.S. and Canada are considered movable days, set to the fourth Thursday in November and the second Monday in October, respectively.
 
 [example]
 First Day of Summer (_sumardagurinn fyrsti_) in Iceland is considered a movable day, set to the first Thursday after April 18th.
 
 [example]
 Father's Day is celebrated on the third Sunday in June in North America, and is considered a movable day.
+
+===== negative duration
+
+duration in the reverse direction to the proceeding time scale
+
+
+
+
+
+// FROM 8601-2 0312-features.adoc
+
+// FROM 8601-2
+
+
+[[terms-feature]]
+===== feature
+
+single function or group of functions
+
+[[term-conformity-level]]
+===== conformity level
+
+value assigned to a subset of _features_ (<<terms-feature>>) within a _profile_ (<<term-profile>>)
+
+NOTE: A profile may refer to these conformity levels to facilitate the specification of conformance to the profile.
+
+[[term-profile]]
+===== profile
+
+subset of _features_ (<<terms-feature>>) described in a standard or a set of standards
+
+NOTE: A community may develop a profile to describe how to carry out functions or apply features specified in a standard or family of standards in a manner relevant to that community.
+
+NOTE: A profile often describes what features are to be supported and how to apply those features. In cases where multiple methods are allowed for a required feature, a profile may select a single method. In cases where a particular function allows different interpretations, a profile may select a single interpretation or provide clarification. A profile may list out features that need not be supported. It may specify several _conformity levels_ (<<term-conformity-level>>).
+
+
+===== ISO 8601 profile
+
+_profile_ (<<term-profile>>) whose base standard is the ISO {docnumber} series
+
+[[term-repeat-rule]]
+===== repeat rule
+
+set of _eligible time intervals_ (<<term-eligible-time-interval>>) and _selection rules_ (<<term-selection-rule>>) that allows computation of a set of _matching instants_ (<<term-matching-instant>>)
+
+[[term-selection-rule]]
+===== selection rule
+
+rule specifying restrictions on the value of a time scale component
+
+===== repeat cycle
+
+set of repeating instants, calculated by a specified start instant and specified duration gap between the repeating instants
+
+[[term-eligible-time-interval]]
+===== eligible time interval
+
+time interval eligible for matching using _selection rules_ (<<term-selection-rule>>)
+
+[[term-matching-instant]]
+===== matching instants
+
+set of instants, computed by a _repeat rule_ (<<term-repeat-rule>>), that belongs within _eligible time intervals_ (<<term-eligible-time-interval>>) and fulfills criteria set by specified _selection rules_ (<<term-selection-rule>>)
+
+===== date time formula
+
+expression that specifies modification of a date and time expression with a duration
+
+[[term-durational-unit]]
+===== durational unit
+
+time scale component that composes the duration date and time representation
+
+===== grouped time scale unit
+
+time scale unit composed of a duration expressed by one or more _durational units_ (<<term-durational-unit>>)
+
+[[term-sub-year-grouping]]
+===== sub-year grouping
+
+grouping composed of time scale components of a lower order than the calendar year time scale
+
+[[term-normal-sub-year-grouping]]
+===== normal sub-year grouping
+
+_sub-year grouping_ (<<term-sub-year-grouping>>) where the duration of
+its elements sum up to the duration of one calendar year
+
+NOTE: A normal sub-year grouping can be composed of time scale units with different durations.
+
+[example]
+The bimonthly time scale unit can be repeated into a normal sub-year grouping, where 12 months
+can be divided cleanly by units of 2 months each.
+
+[example]
+The four seasons in the commonly used _four season calendar_ (<<term-four-season-calendar>>)
+make a normal sub-year grouping as the duration
+of their combination is exactly one calendar year.
+
+[example]
+Six season calendars used in various cultures are examples of normal sub-year groupings.
+
+
+===== equation of time
+
+difference between mean solar time and apparent solar time, which varies with time within a calendar year
+
+NOTE: A clock is a type of device that measures mean solar time; a sundial is a type of device that measures apparent solar time.
 
 

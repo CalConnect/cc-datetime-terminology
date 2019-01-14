@@ -9,8 +9,8 @@ build:
   stage: build
   script:
     - bundle
-    - make clean all
-    - mkdir -p public && mv *.doc *.xml *.html public/
+    - make clean publish
+    - mv publish public
   artifacts:
     paths:
       - public

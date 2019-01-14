@@ -1,0 +1,126 @@
+
+[[concepts]]
+== Concepts
+
+
+=== General
+
+This clause describes commonly used concepts for the usage of time scale systems.
+
+
+=== Commonly used time scale units
+
+
+==== Day
+
+A day is a time scale unit that approximates the duration taken by the Earth for
+completing one rotation with respect to the Sun.
+
+
+==== Month
+
+A month is a time scale unit, that traditionally approximated the duration taken
+between two successive syzygies of the Moon.
+
+
+==== Year
+
+A year is a time scale unit that approximates the orbital period of the Earth around the Sun.
+
+
+
+=== Second
+
+A second is a time scale unit defined by the CIPM in the SI system based on radiation periods of the
+caesium-133 atom.
+
+Traditionally, it represented a subdivision of the day being stem:[1 / 86400] of a
+day.
+
+=== Minute
+
+A minute is a time scale unit often defined as stem:[1 / 60] of an hour or 60 seconds.
+
+
+=== Hour
+
+An hour is a time scale unit often defined as stem:[1 / 24] of a day or 3600 seconds.
+
+
+
+=== Date and time organizing systems
+
+==== General
+
+Date and time organizing systems are often used for social, administrative and
+religious purposes, in order to allow an easier identification method of
+dates and times through the usage of hierarchical time scale units.
+
+
+==== Calendar
+
+A calendar is a system to organize days, based on time intervals marked by events
+related to the astronomical motion of planetary bodies,
+synchronized to the tropical year and orbital motion of the Earth.
+
+A calendar system often includes the time scale components year, month and day.
+
+
+////
+The commonly used calendar is based on the three time scales, namely, the year, month and day.
+////
+
+////
+NOTE: This clause describes:
+--
+* Purpose of the calendar;
+* Purpose of calendar time scale components: year, month, day.
+--
+////
+
+
+
+==== Clock
+
+The clock is a time scale used to identify and measure smaller time intervals
+within a day.
+
+A clock system often includes the time scale components hour, minute and second.
+
+////
+NOTE: This clause describes:
+--
+* Purpose of the clock system;
+* Purpose of clock time scale components: hour, minutes, seconds.
+--
+////
+
+
+////
+Absolute time.
+
+For example, the vernal equinox
+
+While it is possible to use the ordinal number of the day to
+
+Date is a concept rooted in the sunrise sunset condition on earth, where the cycle between a sunrise to the next sunrise is considered a calendar day.
+
+Year is a concept based on seasons.
+
+There are two types of time.
+
+* Time based on universal physical phenomena, such as the decay of a particular element.
+* Time based on astronomical motion, such as dates based on the orbital motion
+
+Date as defined with time is another concept, where time is defined
+ rooted in the calendar
+The calendar is used
+
+* A “calendric day” (and “calendric year”) is defined by the orbit and rotation of the Earth, by astronomical phenomena.
+
+=== Duration day
+
+
+////
+
+
