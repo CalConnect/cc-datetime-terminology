@@ -9,7 +9,7 @@ build:
   stage: build
   script:
     - bundle
-    - make clean publish
+    - make clean all publish
     - mv publish public
   artifacts:
     paths:
