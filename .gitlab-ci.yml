@@ -10,7 +10,7 @@ build:
   script:
     - bundle
     - make clean all publish
-    - mv publish public
+    - mv published public
   artifacts:
     paths:
       - public
