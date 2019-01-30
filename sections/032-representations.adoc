@@ -72,4 +72,3 @@ NOTE: The representations of the decimal signs (period or comma) and their usage
 
 expansion of a _date and time representation_ (<<term-dt-representation>>) to allow identification of _calendar dates_ (<<term-calendar-date>>) where the ordinal number identifying the _calendar year_ (<<term-calendar-year>>) exceeds four digits
 
-

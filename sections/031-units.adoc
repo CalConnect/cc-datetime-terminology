@@ -1,5 +1,3 @@
-// FROM 8601-1
-
 
 [[terms-units]]
 ==== Time and date units
@@ -106,7 +104,7 @@ The _duration_ (<<term-duration>>) of a calendar day using the _24-hour clock_ (
 day amongst the sequence of _week calendar_ (<<term-week-calendar>>) days,
 namely, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or Sunday
 
-NOTE: The week calendar is defined in <<week-calendar>>.
+//NOTE: The week calendar is defined in <<week-calendar>>.
 
 [[term-calendar-day-of-month]]
 ===== calendar day of month
@@ -188,50 +186,5 @@ NOTE: Century is also used to refer to an arbitrary duration of 100 years, howev
 
 [example]
 The "`19th century`" covers the years 1800 through 1899 as in common parlance.
-
-
-
-// FROM 8601-2
-
-[[term-season]]
-===== season
-
-element of a _normal sub-year grouping_ (<<term-normal-sub-year-grouping>>),
-amongst which the transition between each element can be based on
-calendrical, meteorological, astronomical, solar or ecological events
-
-[[term-four-season-calendar]]
-===== four-season calendar
-
-calendar in general use resulting from the division of a calendar year
-into four _seasons_ (<<term-season>>)
-
-NOTE: A single calendar date may represent different seasons
-depending on local customs or location, such as the difference
-between the northern or southern hemispheres.
-
-NOTE: The four seasons are namely _spring_ (<<term-spring>>),
-_summer_ (<<term-summer>>), _autumn_ (<<term-autumn>>), and
-_winter_ (<<term-winter>>)
-
-[[term-spring]]
-===== spring
-_season_ (<<term-season>>) in the _four-season calendar_ (<<term-four-season-calendar>>)
-following _winter_ (<<term-winter>>) and preceding _summer_ (<<term-summer>>)
-
-[[term-summer]]
-===== summer
-_season_ (<<term-season>>) in the _four-season calendar_ (<<term-four-season-calendar>>)
-following _spring_ (<<term-spring>>) and preceding _autumn_ (<<term-autumn>>)
-
-[[term-autumn]]
-===== autumn
-_season_ (<<term-season>>) in the _four-season calendar_ (<<term-four-season-calendar>>)
-following _summer_ (<<term-summer>>) and preceding _winter_ (<<term-winter>>)
-
-[[term-winter]]
-===== winter
-_season_ (<<term-season>>) in the _four-season calendar_ (<<term-four-season-calendar>>)
- following _autumn_ (<<term-autumn>>) and preceding _spring_ (<<term-spring>>)
 
 

@@ -1,7 +1,4 @@
 
-// FROM 8601-1
-
-
 [[terms-concepts]]
 ==== Basic concepts
 
@@ -81,7 +78,11 @@ part of the _time axis_ (<<term-time-axis>>) limited by two _instants_ (<<term-i
 unit of measurement of a _duration_ (<<term-duration>>)
 
 [example]
-Years, months, days, hours, minutes, seconds.
+Calendar year, calendar month, calendar day are time scale units of the Gregorian calendar.
+
+[example]
+Clock hour, clock minutes, clock seconds are time scale units of the 24-hour clock.
+
 
 [[term-duration]]
 ===== duration
@@ -122,8 +123,9 @@ _clock_ (<<term-clock>>) that subdivides a _calendar day_ (<<term-calendar-day>>
 [example]
 UTC (<<term-utc>>) a type of 24-hour clock that is often used as the basis time scale of standard times.
 
+////
 NOTE: The mechanisms of the 24-hour clock is described in <<time-scale-24-hour-clock>>.
-
+////
 
 [[term-recurring-time-interval]]
 ===== recurring time interval
@@ -213,7 +215,7 @@ NOTE: Generally, time of day relates to the _duration_ (<<term-duration>>) elaps
 NOTE: The time scale used by a time of day may or may not be based on _UTC_ (<<term-utc>>).
 ////
 
-NOTE: This definition corresponds closely with the definition of "`clock time`" given in <<IEV,clause "113-01-18">>, except that the concepts of duration and time scale are not used in this definition.
+NOTE: This definition corresponds closely with the definition of "`clock time`" given in <<IEV,clause "113-01-18">>, except that the concepts of _duration_ (<<term-duration>>) and _time scale_ (<<term-time-scale>>) are not used in this definition.
 
 
 
@@ -247,7 +249,7 @@ The _Gregorian calendar_ (<<term-gregorian-calendar>>) is a type of calendar.
 
 _calendar_ (<<term-calendar>>) in general use that defines a calendar year (<<term-calendar-year>>) that closely approximates the tropical year
 
-NOTE: In this document the term "`Gregorian calendar`" is used to refer to the _time scale_ (<<term-time-scale>>) described in <<gregorian-calendar>>.
+//NOTE: In this document the term "`Gregorian calendar`" is used to refer to the _time scale_ (<<term-time-scale>>) described in <<gregorian-calendar>>.
 
 
 [[term-common-year]]
@@ -290,7 +292,7 @@ of the first and last calendar week of a calendar year may belong
 to the previous and the next calendar year respectively in the
 _Gregorian calendar_ (<<term-gregorian-calendar>>).
 
-NOTE: The week calendar is described in <<week-calendar>>.
+//NOTE: The week calendar is described in <<week-calendar>>.
 
 
 [[term-leap-second]]
@@ -310,8 +312,8 @@ constant _duration_ (<<term-duration>>) difference between _times_ (<<term-time>
 
 
 
-// BELOW FROM 8601-2
 
+// BELOW FROM 8601-2
 
 ===== approximate date
 
@@ -368,7 +370,6 @@ duration in the reverse direction to the proceeding time scale
 
 // FROM 8601-2
 
-
 [[terms-feature]]
 ===== feature
 
@@ -393,7 +394,7 @@ NOTE: A profile often describes what features are to be supported and how to app
 
 ===== ISO 8601 profile
 
-_profile_ (<<term-profile>>) whose base standard is the ISO {docnumber} series
+_profile_ (<<term-profile>>) whose base standard is the ISO 8601 series
 
 [[term-repeat-rule]]
 ===== repeat rule
@@ -464,4 +465,50 @@ difference between mean solar time and apparent solar time, which varies with ti
 
 NOTE: A clock is a type of device that measures mean solar time; a sundial is a type of device that measures apparent solar time.
 
+
+
+// 8601-2 Seasons
+
+
+[[term-season]]
+===== season
+
+element of a _normal sub-year grouping_ (<<term-normal-sub-year-grouping>>),
+amongst which the transition between each element can be based on
+calendrical, meteorological, astronomical, solar or ecological events
+
+[[term-four-season-calendar]]
+===== four-season calendar
+
+calendar in general use resulting from the division of a calendar year
+into four _seasons_ (<<term-season>>)
+
+NOTE: A single calendar date may represent different seasons
+depending on local customs or location, such as the difference
+between the northern or southern hemispheres.
+
+NOTE: The four seasons are namely _spring_ (<<term-spring>>),
+_summer_ (<<term-summer>>), _autumn_ (<<term-autumn>>), and
+_winter_ (<<term-winter>>)
+
+
+[[term-spring]]
+===== spring
+_season_ (<<term-season>>) in the _four-season calendar_ (<<term-four-season-calendar>>)
+following _winter_ (<<term-winter>>) and preceding _summer_ (<<term-summer>>)
+
+[[term-summer]]
+===== summer
+_season_ (<<term-season>>) in the _four-season calendar_ (<<term-four-season-calendar>>)
+following _spring_ (<<term-spring>>) and preceding _autumn_ (<<term-autumn>>)
+
+[[term-autumn]]
+===== autumn
+_season_ (<<term-season>>) in the _four-season calendar_ (<<term-four-season-calendar>>)
+following _summer_ (<<term-summer>>) and preceding _winter_ (<<term-winter>>)
+
+[[term-winter]]
+===== winter
+_season_ (<<term-season>>) in the _four-season calendar_ (<<term-four-season-calendar>>)
+ following _autumn_ (<<term-autumn>>) and preceding _spring_ (<<term-spring>>)
 
