@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csd-standard xmlns="https://www.calconnect.org/standards/csd">
+<bibdata type="standard">
+  <title language="en" format="text/plain">Computer applications in terminology — Naming — Structure of personal names</title>
+  <docidentifier type="csd">CC/WD 34000:2019</docidentifier>
+  <docnumber>34000</docnumber>
+  <date type="published">
+    <on>2019-01-09</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>CalConnect</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>CalConnect</name>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <version>
+    <revision-date>2019-01-09</revision-date>
+    
+  </version>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>working-draft</stage>
+  </status>
+  <copyright>
+    <from>2019</from>
+    <owner>
+      <organization>
+        <name>CalConnect</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>standard</doctype>
+    <editorialgroup>
+      <technical-committee>DATETIME</technical-committee>
+    </editorialgroup>
+  </ext>
+</bibdata>
+<preface><foreword obligation="informative"><title>Foreword</title><p id="foreword">The Calendaring and Scheduling Consortium (“CalConnect”) is a global
+non-profit organization with the aim to facilitate interoperability of
+collaborative technologies and tools through open standards.</p>
+<p id="_5f369560-a33e-4312-9477-932328127a06">CalConnect works closely with international and regional partners,
+of which the full list is available on our website
+(<link target="https://www.calconnect.org/about/liaisons-and-relationships"/>).</p>
+<p id="_9fcba4bc-d327-4021-9096-b1bcaffe5639">The procedures used to develop this document and those intended for its
+further maintenance are described in the CalConnect Directives.</p>
+<p id="_e6de33e8-69ea-4b4e-b3ee-3b3b32cfff18">In particular the different approval criteria needed for the different
+types of CalConnect documents should be noted. This document was drafted in
+accordance with the editorial rules of the CalConnect Directives.</p>
+<p id="_767a811a-0fd8-4799-9418-34cccbe3c72c">Attention is drawn to the possibility that some of the elements of this
+document may be the subject of patent rights. CalConnect shall not be
+held responsible for identifying any or all such patent rights. Details
+of any patent rights identified during the development of the document
+will be provided in the Introduction.</p>
+<p id="_2ae0d652-5904-4310-92be-985f6db10ed1">Any trade name used in this document is information given for the
+convenience of users and does not constitute an endorsement.</p>
+<p id="_788e4c44-61ec-4272-af46-7d7ac6da541f">This document was prepared by Technical Committee
+<em>DATETIME</em>.</p></foreword><introduction id="introduction" obligation="informative"><title>Introduction</title><p id="_1d991061-05bd-4b2e-b8c9-371a1d6490a0">ISO Recommendations and Standards relating to date and time concepts
+have been available since 1971.</p>
+<p id="_c7a226bd-438b-4193-bbbb-c3d3430c0f70">This document presents terms and definitions for selected concepts
+relevant to date and time concepts and of their representation.</p>
+<p id="_71b01cd5-2fff-49f3-87bc-943590712125">Specifically, the terminology presented in this document:</p>
+<ul id="_2d805c14-e844-4fe7-b44a-9b6bf63f407b">
+  <li>
+    <p id="_faf449ab-caa5-44cf-a63e-dc05861a9ca1">serve as a sound basis in the understanding of date and time;</p>
+  </li>
+  <li>
+    <p id="_76ed1679-80cb-4754-ab24-80de94d1d779">guide new developments in the field by underpinning mutual understanding; and</p>
+  </li>
+  <li>
+    <p id="_41cb7e62-4f8d-492b-a7a4-e79e28faf683">serve as a quick and handy reference for those newly inaugurated to this field.</p>
+  </li>
+</ul>
+<p id="_a9a2c098-26e0-439b-a6ba-a15d24bf85c3">Most terms in this document were sourced from <eref type="inline" bibitemid="ISO8601-1" citeas="ISO 8601-1:--"/> and <eref type="inline" bibitemid="ISO8601-2" citeas="ISO 8601-2:--"/>.</p></introduction></preface><sections>
+
+<clause id="_scope" obligation="normative"><title>Scope</title><p id="_c53cb68a-99b6-42f5-ae0a-d68b5e4aa60a">This document provides a concept system and a standard set of
+terminology related to date and time, from basic concepts to those of
+their representation.</p>
+<p id="_c0051236-b4aa-46a7-bce4-72e0af0e8624">The scope of the vocabulary provided in this document corresponds to
+that of ISO/TC 154/WG 5: Representation of dates and times.</p></clause>
+
+<clause id="tda" obligation="normative"><title>Terms and definitions</title><clause id="terms" obligation="normative"><title>Terms and definitions</title><terms id="terms-concepts" obligation="normative"><title>Basic concepts</title><term id="term-date"><preferred>date</preferred><definition><p id="_69d096c0-9552-4329-b578-dfa92c27fe8b"><em>time</em> (<xref target="term-time"/>) on the <em>calendar</em> (<xref target="term-calendar"/>) <em>time scale</em> (<xref target="term-time-scale"/>)</p></definition>
+<termnote id="_70620434-590a-474c-b824-76947e122664">
+  <p id="_f8015458-e3e6-4737-9e6e-72c39d248771">Common forms of date include: <em>calendar date</em> (<xref target="term-calendar-date"/>), <em>ordinal date</em> (<xref target="term-ordinal-date"/>), and <em>week date</em> (<xref target="term-week-date"/>).</p>
+</termnote></term>
+<term id="term-time"><preferred>time</preferred><definition><p id="_d70cead5-5f94-4905-8fa5-c96f345dd19a">mark attributed to an <em>instant</em> (<xref target="term-instant"/>) or a <em>time interval</em>
+(<xref target="term-time-interval"/>) on a specified <em>time scale</em> (<xref target="term-time-scale"/>)</p></definition>
+
+
+<termnote id="_9d4c6706-b5c2-4d5c-b225-9571886f3ee5">
+  <p id="_60d6dbd5-a4b9-4eb9-b4f9-71bdaba782ba">The term “time” is often used in common language. However, it should only be used if the meaning is clearly visible from the context.</p>
+</termnote><termnote id="_a23b1005-b00b-4ed2-b388-1c00d1981081">
+  <p id="_34e2e1c1-e691-4082-829b-b21486f4eef5">On a time scale consisting of successive time intervals, such as a <em>clock</em> (<xref target="term-clock"/>) or <em>calendar</em> (<xref target="term-calendar"/>), distinct instants may be expressed by the same time.</p>
+</termnote><termnote id="_4c6fefc2-a9a8-4910-a60a-d0a3d55c3c45">
+  <p id="_fb8d9d82-311b-4eca-8da1-75eeaacd994f">This definition corresponds closely with the definition of the term “date” in <eref type="inline" bibitemid="IEV" citeas="IEC Electropedia"><locality type="clause"><referenceFrom>113-01-12</referenceFrom></locality></eref>.</p>
+</termnote></term>
+<term id="term-instant"><preferred>instant</preferred><definition><p id="_39c0902f-00ba-4ee3-b0e8-66c78937066d">point on the <em>time axis</em> (<xref target="term-time-axis"/>)</p></definition>
+
+<termnote id="_9f4e3ab3-d34c-490a-8a1a-396c050e4cd2">
+  <p id="_9572b6f5-687e-4324-8fb9-680bc52bba4e">An instantaneous event occurs at a specific instant.</p>
+</termnote><termsource status="identical">
+  <origin bibitemid="IEV" type="inline" citeas="IEC Electropedia"><locality type="clause"><referenceFrom>113-01-08</referenceFrom></locality></origin>
+</termsource></term>
+<term id="term-time-axis"><preferred>time axis</preferred><definition><p id="_1cd5bc0a-d130-462f-9749-228e07194199">mathematical representation of the succession in time according to the space-time model of instantaneous events along a unique axis</p></definition>
+
+
+<termnote id="_aa6b1e3d-a699-4a97-a0bc-31a113a2065e">
+  <p id="_0be87d24-ca47-4bdb-8bfa-4284195772fb">According to the theory of special relativity, the time axis depends on the choice of a spatial reference frame.</p>
+</termnote><termnote id="_27117fba-54bf-435c-9934-ad2ef6582d45">
+  <p id="_2fa2c9d2-33dc-4ed2-bd25-533a39e3622d">In <eref type="inline" bibitemid="IEV" citeas="IEC Electropedia"><locality type="clause"><referenceFrom>113-01-03</referenceFrom></locality></eref>, time according to the space-time model is defined to be the one-dimensional subspace of space-time, locally orthogonal to space.</p>
+</termnote><termsource status="modified">
+  <origin bibitemid="IEV" type="inline" citeas="IEC Electropedia"><locality type="clause"><referenceFrom>113-01-07</referenceFrom></locality></origin>
+  <modification>
+    <p id="_065da6ea-432e-4066-b92b-94d3d1d67e51">The words “according to the space-time” have been added; the phrase “special theory of relativity” has been changed to “theory of special relativity” for clarity; Note 2 to entry has been added.</p>
+  </modification>
+</termsource></term>
+<term id="term-time-scale"><preferred>time scale</preferred><definition><p id="_48da4d20-f0c1-4b39-9a20-d618d55d0330">system of ordered marks which can be attributed to <em>instants</em> (<xref target="term-instant"/>) on the <em>time axis</em> (<xref target="term-time-axis"/>), one instant being chosen as the origin</p></definition>
+
+<termnote id="_3e955883-76c4-49dc-aa19-0d83a51e3438"><p id="_89e7dddc-789e-446b-9a30-1c382ceef382">A time scale may amongst others be chosen as:</p>
+<ul id="_27233112-a015-45a8-81f8-28a327e86e57">
+  <li>
+    <p id="_3a4447f8-7faf-4acf-ad5b-ba0e49e9b779">continuous, e.g. international atomic time (TAI) (see <eref type="inline" bibitemid="IEV" citeas="IEC Electropedia"><locality type="clause"><referenceFrom>713-05-18</referenceFrom></locality></eref>);</p>
+  </li>
+  <li>
+    <p id="_941d4ea6-10fd-43bc-b901-e2f76055cf1f">continuous with discontinuities, e.g. <em>Coordinated Universal Time (UTC)</em> (<xref target="term-utc"/>) due to <em>leap seconds</em> (<xref target="term-leap-second"/>), <em>standard time</em> (<xref target="term-standard-time"/>) due to summer time and winter time;</p>
+  </li>
+  <li>
+    <p id="_73f1e66a-f865-4de7-b66e-18cfe2104fda">successive steps, e.g. <em>calendars</em> (<xref target="term-calendar"/>), where the <em>time axis</em> (<xref target="term-time-axis"/>) is split up into a succession of consecutive <em>time intervals</em> (<xref target="term-time-interval"/>) and the same mark is attributed to all instants of each time interval;</p>
+  </li>
+  <li>
+    <p id="_8c412a75-d3e6-4329-b8f3-53af85f96bf3">discrete, e.g. in digital techniques.</p>
+  </li>
+</ul></termnote><termsource status="modified">
+  <origin bibitemid="IEV" type="inline" citeas="IEC Electropedia"><locality type="clause"><referenceFrom>113-01-11</referenceFrom></locality></origin>
+  <modification>
+    <p id="_4efc4195-aa98-4fc5-9196-4e0afd64bd61">The words “amongst others” in Note 1 to entry have been added; NOTEs 2 and 3 have been deleted.</p>
+  </modification>
+</termsource></term>
+<term id="term-time-interval"><preferred>time interval</preferred><definition><p id="_d38ab333-9c9f-4efc-a54b-eadbd41f66e9">part of the <em>time axis</em> (<xref target="term-time-axis"/>) limited by two <em>instants</em> (<xref target="term-instant"/>) and, unless otherwise stated, the limiting instants themselves</p></definition>
+<termsource status="modified">
+  <origin bibitemid="IEV" type="inline" citeas="IEC Electropedia"><locality type="clause"><referenceFrom>113-01-10</referenceFrom></locality></origin>
+  <modification>
+    <p id="_3a3c3221-e7de-49b5-b384-0659dded7ca4">the words “and, unless otherwise stated, the limiting instants themselves” have been added; the NOTEs have been deleted.</p>
+  </modification>
+</termsource></term>
+<term id="term-time-scale-unit"><preferred>time scale unit</preferred><definition><p id="_b665e227-11f6-4711-9f32-638711c338ce">unit of measurement of a <em>duration</em> (<xref target="term-duration"/>)</p></definition>
+
+<termexample id="_c5b1548d-7e71-405b-abf9-44365b3be9b0">
+  <p id="_f653505c-44f5-4f96-9831-c2261b4f9f1c">Calendar year, calendar month, calendar day are time scale units of the Gregorian calendar.</p>
+</termexample><termexample id="_0913fc09-7c0d-4f23-8c9e-c4b173452938">
+  <p id="_41752851-50f5-44e6-8b72-b71df131fd31">Clock hour, clock minutes, clock seconds are time scale units of the 24-hour clock.</p>
+</termexample></term>
+<term id="term-duration"><preferred>duration</preferred><definition><p id="_ec554c62-0b62-405c-9d91-da19a316f85a">non-negative quantity of time equal to the difference between the
+final and initial <em>instants</em> (<xref target="term-instant"/>) of a
+<em>time interval</em> (<xref target="term-time-interval"/>)</p></definition>
+
+
+
+<termnote id="_25b65a24-b177-4234-9a00-5241ea3eef9e">
+  <p id="_2da6f76c-3659-414d-a3ab-b27a88a904ae">The duration is one of the base quantities in the International System of Quantities (ISQ) on which the International System of Units (SI) is based. The term “time” instead of “duration” is often used in this context and also for an infinitesimal duration.</p>
+</termnote><termnote id="_0f686ddd-7245-45f0-b28a-b80b6745030e">
+  <p id="_2c5e4617-7587-46ec-acba-34b4aaf6cc58">For the term “duration”, expressions such as “time” or “time interval” are often used, but the term “time” is not recommended in this sense and the term “time interval” is deprecated in this sense to avoid confusion with the concept of “time interval”.</p>
+</termnote><termnote id="_38f90fb7-e1b0-47af-9807-4767cc41b1e0">
+  <p id="_fd9bcf6e-e9f4-4ac4-839f-4c0c2f1116c2">The exact duration of a <em>time scale unit</em> (<xref target="term-time-scale-unit"/>) depends on the <em>time scale</em> (<xref target="term-time-scale"/>) used. For example, the durations of a year, month, week, day, hour, or minute, may depend on when they occur [in a <em>Gregorian calendar</em> (<xref target="term-gregorian-calendar"/>), a <em>calendar month</em> (<xref target="term-calendar-month"/>) can have a duration of 28, 29, 30, or 31 days; in a <em>24-hour clock</em> (<xref target="term-24-hour-clock"/>) a <em>clock minute</em> (<xref target="term-clock-minute"/>) can have a duration of 59, 60, or 61 seconds, etc.]. Therefore, the exact duration can only be evaluated if the exact duration of each is known.</p>
+</termnote><termnote id="_f909fdf2-13a0-4862-8e70-4e57f1073f14">
+  <p id="_845b0978-688c-4253-9fd6-e07d0914547c">This definition is closely related to NOTE 1 of “duration” in <eref type="inline" bibitemid="IEV" citeas="IEC Electropedia"><locality type="clause"><referenceFrom>113-01-13</referenceFrom></locality></eref>.</p>
+</termnote></term>
+<term id="term-clock"><preferred>clock</preferred><definition><p id="_11f344c1-d8ff-4770-ab2f-876fb8489b27"><em>time scale</em> (<xref target="term-time-scale"/>) suited for intra-day time measurements</p></definition>
+
+<termnote id="_d2d51a81-cdc4-4c25-91a2-838fd77dd2c3">
+  <p id="_9c680ab2-53a8-4a47-9d03-367f71713eaf"><em>clock second</em> (<xref target="term-clock-second"/>), <em>clock minute</em> (<xref target="term-clock-minute"/>) and <em>clock hour</em> (<xref target="term-clock-hour"/>) are often <em>time scale units</em> (<xref target="term-time-scale-unit"/>) included in a clock.</p>
+</termnote><termexample id="_78394439-c9cf-4b5c-9f4f-1dfb9d2f3856">
+  <p id="_27a57790-b21c-4125-be91-0cdcf2e2f9d9">The <em>24-hour clock</em> (<xref target="term-24-hour-clock"/>) is a type of clock.</p>
+</termexample></term>
+<term id="term-24-hour-clock"><preferred>24-hour clock</preferred><definition><p id="_32bf0f00-704f-4caa-8f07-3bd3cafa8fcd"><em>clock</em> (<xref target="term-clock"/>) that subdivides a <em>calendar day</em> (<xref target="term-calendar-day"/>) into 24 <em>clock hours</em> (<xref target="term-clock-hour"/>)</p></definition>
+<termexample id="_6024b4fd-1022-4dcc-a9ee-66e71b3d4448">
+  <p id="_46287e37-0798-4ff2-9c73-9827b7a5bff8">UTC (<xref target="term-utc"/>) a type of 24-hour clock that is often used as the basis time scale of standard times.</p>
+</termexample></term>
+<term id="term-recurring-time-interval"><preferred>recurring time interval</preferred><definition><p id="_375ee9ef-604d-46bc-ba94-af8aeb352bd2">series of consecutive <em>time intervals</em> (<xref target="term-time-interval"/>) of identical <em>duration</em> (<xref target="term-duration"/>)</p></definition>
+
+<termnote id="_78a8a2ff-607f-4298-bad4-66676216db19">
+  <p id="_a00c8404-a819-4d65-8a70-e66dd8784070">If the duration of the time intervals is measured in <em>calendar</em> (<xref target="term-calendar"/>) entities, the duration of each time interval depends on the calendar <em>dates</em> (<xref target="term-date"/>) of its start and its end.</p>
+</termnote><termnote id="_c747b02c-a1a4-46a9-98f9-510141592a1f">
+  <p id="_8ae4db9f-9653-48d3-b5e1-6d113ab3c16c">If the starting instants of time intervals are repeated according to a set of rules, the “repeat rules for recurring time intervals” in <eref type="inline" bibitemid="ISO8601-2" citeas="ISO 8601-2:--"><locality type="clause"><referenceFrom>5</referenceFrom></locality></eref> apply.</p>
+</termnote></term>
+<term id="term-utc"><preferred>UTC</preferred>
+  <admitted>Coordinated Universal Time</admitted>
+
+<definition><p id="_b47d48c4-537e-4f08-a3f0-9ea9fc7c9724"><em>time scale</em> (<xref target="term-time-scale"/>) with the same rate as International Atomic Time (TAI), but differing from TAI only by an integral number of <em>seconds</em> (<xref target="term-second"/>)</p></definition>
+
+
+
+<termnote id="_50b52251-0b8b-4e5b-bb69-7b82dd4586e0">
+  <p id="_2b3ac830-754b-4e60-bcd5-6cf1a83d4e99">UTC is a <em>basis time scale</em> (<xref target="term-basis-time-scale"/>) commonly used across the world from
+which local time scales are derived.</p>
+</termnote><termnote id="_d6aee631-498f-42e1-af33-706592584cfe">
+  <p id="_6a0a8036-ce64-48c6-bd50-d7e97cf699d5">UTC is produced by the Bureau International des Poids et Mesures (BIPM), i.e. the International Bureau of Weights and Measures.</p>
+</termnote><termnote id="_e3ef4dc7-5303-458b-afa4-db5e572291a2">
+  <p id="_a589d1fd-c751-49ab-9aba-f62eccdddb5a">TAI is a continuous time scale produced by the BIPM based on the best realizations of the SI second. TAI is a realization of Terrestrial Time (TT) with the same rate as that of TT, as defined by <eref type="inline" bibitemid="IAUR24" citeas="International Astronomical Union Resolution B1.9 (2000)">IAU Resolution B1.9 (2010): Re-definition of Terrestrial Time TT</eref>.</p>
+</termnote><termsource status="modified">
+  <origin bibitemid="BIPMRCCTF3" type="inline" citeas="BIPM Recommendation CCTF 3 (2017)">BIPM Recommendation CCTF 3 (2017): Recommendation on the definition of timescales</origin>
+  <modification>
+    <p id="_285749d9-ee22-4717-8b2e-1caefabc0927">The definition of TAI has been included as Note 3 to entry.</p>
+  </modification>
+</termsource></term>
+<term id="term-utc-of-day">
+  <preferred>UTC of day</preferred>
+  <definition><p id="_9eb2d9d0-50b3-4a34-909f-ff93c6d1d761"><em>time of day</em> (<xref target="term-time-of-day"/>) in <em>UTC</em> (<xref target="term-utc"/>)</p></definition>
+</term>
+<term id="term-basis-time-scale"><preferred>basis time scale</preferred><definition><p id="_f9f89649-d0b1-44da-9226-670582f47207"><em>time scale</em> (<xref target="term-time-scale"/>) established to serve as reference time
+by a competent authority</p></definition>
+
+<termnote id="_0e78eb00-15eb-4702-858a-151b1cf6dfb2">
+  <p id="_d60635b6-f882-4926-9c62-353fbe8ec95b">The basis time scale is not always legally UTC in all countries.</p>
+</termnote><termexample id="_40a713ab-cc1e-43d8-ae99-63e896d9734b">
+  <p id="_ddf8d946-1c39-4a07-b408-2e8d984dd797"><em>UTC</em> (<xref target="term-utc"/>), TAI, GPS system time, Galileo system time,
+BeiDou system time, LORAN station system time are basis time scales
+in current use.</p>
+</termexample></term>
+<term id="term-standard-time"><preferred>standard time</preferred><definition><p id="_dc3ea42b-9796-4d48-8642-476f257b678d"><em>time scale</em> (<xref target="term-time-scale"/>) derived from a
+<em>basis time scale</em> (<xref target="term-basis-time-scale"/>) with a
+<em>time shift</em> (<xref target="term-time-shift"/>) established by a
+competent authority</p></definition>
+
+
+
+
+<termnote id="_97032c95-fb1f-4ce5-8200-0bc8fad66415">
+  <p id="_945301b2-1833-4e60-b555-e8fd867db139">The time shift of a standard time may vary in the course of a year,
+such as due to daylight savings.</p>
+</termnote><termnote id="_0d5953cd-2d07-4a76-84fa-8c3cfcd54cb5">
+  <p id="_0d77dd14-99f4-42d4-a8ea-47da3e189aa2">Many standard times use UTC as their basis and are often
+associated with a geographical location.
+A timezone may be associated with one or more standard times.</p>
+</termnote><termnote id="_d3312e26-1848-4494-9e50-165d179a1991">
+  <p id="_288704a2-eb53-4fda-a416-4e1a716fefc5">This definition corresponds closely to, but is more general than, the definition of the term “standard time” in <eref type="inline" bibitemid="IEV" citeas="IEC Electropedia"><locality type="clause"><referenceFrom>113-01-17</referenceFrom></locality></eref>.</p>
+</termnote><termexample id="_3ddba6f6-7fcf-4943-92b9-9669c652ba97">
+  <p id="_21fe5dcf-8eb0-406d-8ab3-6dd6440294cd">Some standard times do not vary within a year, such as US Eastern Standard Time (EST), US Eastern Daylight Time (EDT), Australia Western Standard Time (AWST), China Standard Time (CST), Hong Kong Standard Time (HKT), Korea Standard Time (KST) and Japanese Standard Time (JST).</p>
+</termexample><termexample id="_4dec4eec-189f-4c0e-b059-3c16f160ca3c">
+  <p id="_ce6eed1b-ee02-4e14-b4b2-ce65060291f1">Some standard times vary within a year, such as US Eastern Time (ET) and Australian Central Standard Time (ACST).</p>
+</termexample></term>
+<term id="term-local-time-scale">
+  <preferred>local time scale</preferred>
+  <definition><p id="_758cba90-a4d7-4040-8c5b-4083fa15f04b">locally-applicable <em>standard time</em> (<xref target="term-standard-time"/>)</p></definition>
+</term>
+<term id="term-time-of-day"><preferred>time of day</preferred><definition><p id="_c2acb271-49a5-4eb4-b8b6-c3a92e9bf865"><em>time</em> (<xref target="term-time"/>) occurring within a <em>calendar day</em> (<xref target="term-calendar-day"/>)</p></definition>
+
+<termnote id="_288474f3-c372-4080-a03e-bbaa39be38ef">
+  <p id="_2ca6423f-d06d-411a-96cf-d505b474ac97">Generally, time of day relates to the <em>duration</em> (<xref target="term-duration"/>) elapsed after the beginning of the day. However, this correlation breaks when changes occur in the <em>time scale</em> (<xref target="term-time-scale"/>) that applies to the time of day, such as <em>time shifts</em> (<xref target="term-time-shift"/>) and <em>leap seconds</em> (<xref target="term-leap-second"/>).</p>
+</termnote><termnote id="_52818665-eb24-4234-a1b8-d34e5124ddb7">
+  <p id="_2a17e84e-d1a7-40a3-bca6-64fa79722572">This definition corresponds closely with the definition of “clock time” given in <eref type="inline" bibitemid="IEV" citeas="IEC Electropedia"><locality type="clause"><referenceFrom>113-01-18</referenceFrom></locality></eref>, except that the concepts of <em>duration</em> (<xref target="term-duration"/>) and <em>time scale</em> (<xref target="term-time-scale"/>) are not used in this definition.</p>
+</termnote></term>
+<term id="term-basis-time"><preferred>basis time of day</preferred><definition><p id="_8983948a-c2de-4ec8-8c23-bd1d47ad8698"><em>time of day</em> (<xref target="term-time-of-day"/>) in a <em>basis time scale</em> (<xref target="term-basis-time-scale"/>)</p></definition>
+<termexample id="_5001ba69-110c-452e-963a-9625066d14fb">
+  <p id="_4df51ddb-5720-4b4f-acc5-00149c47b1c6"><em>UTC of day</em> (<xref target="term-utc-of-day"/>) is a type of basis time of day.</p>
+</termexample></term>
+<term id="term-local-time-of-day">
+  <preferred>local time of day</preferred>
+  <definition><p id="_be0431c7-3d4a-4da7-b9f0-07cdcf49729a"><em>time of day</em> (<xref target="term-time-of-day"/>) in a <em>local time scale</em> (<xref target="term-local-time-scale"/>)</p></definition>
+</term>
+<term id="term-calendar"><preferred>calendar</preferred><definition><p id="_276c3804-62fd-4c93-8bdc-bf637bd93278"><em>time scale</em> (<xref target="term-time-scale"/>) that uses the <em>time scale unit</em> (<xref target="term-time-scale-unit"/>) of <em>calendar day</em> (<xref target="term-calendar-day"/>) as its basic unit</p></definition>
+
+<termnote id="_75c61156-1bcf-417b-a2ea-a613261e5327">
+  <p id="_31e44d3e-23bc-4baf-8916-3f6b9205ccff"><em>calendar month</em> (<xref target="term-calendar-month"/>) and <em>calendar year</em> (<xref target="term-calendar-year"/>) are time scale units often included in a calendar.</p>
+</termnote><termexample id="_1cad4401-6734-49b0-ae56-b412e57f3e2c">
+  <p id="_dcc56f78-0eb5-4325-be3a-bb09ac47e946">The <em>Gregorian calendar</em> (<xref target="term-gregorian-calendar"/>) is a type of calendar.</p>
+</termexample></term>
+<term id="term-gregorian-calendar">
+  <preferred>Gregorian calendar</preferred>
+  <definition><p id="_6d7a639a-266a-4f63-a875-140ced63f19d"><em>calendar</em> (<xref target="term-calendar"/>) in general use that defines a calendar year (<xref target="term-calendar-year"/>) that closely approximates the tropical year</p></definition>
+</term>
+<term id="term-common-year">
+  <preferred>common year</preferred>
+  <definition><p id="_b923260f-a644-4217-afe0-99fdecc55ead"><em>calendar year</em> (<xref target="term-calendar-year"/>) in the <em>Gregorian calendar</em> (<xref target="term-gregorian-calendar"/>) that has 365 <em>calendar days</em> (<xref target="term-calendar-day"/>)</p></definition>
+</term>
+<term id="term-leap-year"><preferred>leap year</preferred><definition><p id="_0afd652e-c6fa-45c7-b7ef-6199b6c95c9c"><em>calendar year</em> (<xref target="term-calendar-year"/>) in the <em>Gregorian calendar</em> (<xref target="term-gregorian-calendar"/>) that has 366 <em>calendar days</em> (<xref target="term-calendar-day"/>)</p></definition>
+<termnote id="_8270136c-b924-4c95-976d-dd4ee5635e79">
+  <p id="_ae79da43-2e00-44e9-9fc7-392ffa2a9a2f">A leap year is a calendar year whose year number is divisible by four and is not a <em>centennial year</em> (<xref target="term-centennial-year"/>), or a centennial year whose year number is divisible by four hundred.</p>
+</termnote></term>
+<term id="term-centennial-year">
+  <preferred>centennial year</preferred>
+  <definition><p id="_61536e81-cd64-4907-8f4d-414c8d968d55"><em>calendar year</em> (<xref target="term-calendar-year"/>) in the <em>Gregorian calendar</em> (<xref target="term-gregorian-calendar"/>) whose year number is divisible without remainder by one hundred</p></definition>
+</term>
+<term id="term-week-calendar"><preferred>week calendar</preferred><definition><p id="_ca2a5e41-252a-4ca8-afc2-3335deebaa0f"><em>calendar</em> (<xref target="term-calendar"/>) based on an unbounded series of
+contiguous <em>calendar weeks</em> (<xref target="term-calendar-week"/>)
+that uses the <em>time scale unit</em> (<xref target="term-time-scale-unit"/>) of calendar week
+as its basic unit to represent a <em>calendar year</em> (<xref target="term-calendar-year"/>),
+according to the rule that the first calendar week of a calendar year
+is the week including the first Thursday of that year, and that the
+last one is the week immediately preceding the first calendar week of
+the next calendar year</p></definition>
+
+<termnote id="_2a6524d1-3260-444b-bf94-6ab1614a02a5">
+  <p id="_d87b10b3-12cf-42f7-ab68-fe8545915449">This rule is based on the principle that a week belongs to the
+calendar year in which the majority of its
+<em>calendar days</em> (<xref target="term-calendar-day"/>) belongs.</p>
+</termnote><termnote id="_52e54f5d-219f-42d9-8215-15e7c38fc1b0">
+  <p id="_7052e27c-082d-4f37-b235-5121bb57f531">In the week calendar, calendar days
+of the first and last calendar week of a calendar year may belong
+to the previous and the next calendar year respectively in the
+<em>Gregorian calendar</em> (<xref target="term-gregorian-calendar"/>).</p>
+</termnote></term>
+<term id="term-leap-second"><preferred>leap second</preferred><definition><p id="_16b011e7-fa1e-4c59-9d34-88e238f7f01e">intentional time step of one <em>second</em> (<xref target="term-second"/>) to adjust <em>UTC</em> (<xref target="term-utc"/>) to ensure appropriate agreement with UT1, a <em>time scale</em> (<xref target="term-time-scale"/>) based on the rotation of the Earth</p></definition>
+
+<termnote id="_36487ef7-f581-4a8f-b620-231e4dbd96fb">
+  <p id="_1167a6a4-e7d4-4292-8dcc-cd018c2f68d1">See also <eref type="inline" bibitemid="ITURTF460-6" citeas="ITU-R TF.460-6"/>.</p>
+</termnote><termnote id="_79982adf-3a31-493b-a5a4-881e55a6b8bf">
+  <p id="_7a8735ee-fe3b-4697-bbf2-5c678cc56a1c">An inserted second is called a positive leap second and an omitted second is called a negative leap second. A positive leap second is inserted after [23:59:59Z] and can be represented as [23:59:60Z]. A negative leap second is achieved by the omission of [23:59:59Z]. Insertion or omission takes place as determined by the International Earth Rotation and Reference Systems Service (IERS), normally on 30 June or 31 December, but if necessary on 31 March or 30 September.</p>
+</termnote></term>
+<term id="term-time-shift">
+  <preferred>time shift</preferred>
+  <definition><p id="_b1719435-4121-4c56-8905-e2bf2f6e09ea">constant <em>duration</em> (<xref target="term-duration"/>) difference between <em>times</em> (<xref target="term-time"/>) of two <em>time scales</em> (<xref target="term-time-scale"/>)</p></definition>
+</term>
+<term id="_approximate_date"><preferred>approximate date</preferred><definition><p id="_718a8e2d-4556-4157-81bc-ff035f2d846c">calendar date which is an estimate whose value is asserted to be possibly correct</p></definition>
+<termnote id="_27db8bb2-96e9-4145-b6bd-58a4fd0eadfe">
+  <p id="_fdaa74d3-db1c-44b5-8a0e-7ae8dc373b25">The degree of confidence in approximation depends on the application.</p>
+</termnote></term>
+<term id="_uncertain_date">
+  <preferred>uncertain date</preferred>
+  <definition><p id="_5d7821fd-6262-4ded-929c-fb87b59c1cad">calendar date whose source is considered <em>dubious</em> (<xref target="term-dubious"/>)</p></definition>
+</term>
+<term id="_date_with_unspecified_part"><preferred>date with unspecified part</preferred><definition><p id="_eac6c6bb-5f1e-4c68-8098-acfe3c5de6e9">calendar date of which a part is unstated</p></definition>
+<termnote id="_d7eaec4c-6936-4559-915a-a7fed507f534">
+  <p id="_bb26f97e-b0f6-40fb-9091-f01bd0291ad2">The unstated part can be year, year and month, month, month and day, or year and day. It is unstated because it has not (yet) been assigned (it might be assigned in the future), or because it is classified, or unknown, or for any other reason.</p>
+</termnote></term>
+<term id="term-dubious">
+  <preferred>dubious</preferred>
+  <definition><p id="_69ff851e-c7da-4c0f-b8e3-690a9e4aa7d5">not to be relied upon</p></definition>
+</term>
+<term id="_qualification_symbol"><preferred>qualification symbol</preferred><definition><p id="_06fa8c2a-f35c-4cb4-95c8-347c7f512e7d">symbol that indicates certain qualification to a value it applies to</p></definition>
+<termexample id="_162e48cf-6ca9-43d6-ab38-f5767dbcc0c9">
+  <p id="_95ea9289-770e-4799-992b-b1c69844015e">The symbol [?] indicates that the value it applies to is uncertain</p>
+</termexample></term>
+<term id="_movable_day"><preferred>movable day</preferred><definition><p id="_14a30cce-bcca-42b5-81ea-fe2fb42944bc">repeatedly occurring day in a calendar that is represented by criteria set by one or more <em>selection rules</em> (<xref target="term-selection-rule"/>), but does not always resolve to a fixed calendar day in every repeating cycle</p></definition>
+
+
+
+<termnote id="_d2371c09-f2c0-4e2b-bab8-73381f5703ca">
+  <p id="_ecfd363b-ba02-4870-be89-9f352e7080d3">The selection of this term pays homage to the phrase “movable feast” used in some calendars to indicate the rule-based determination of annual events.</p>
+</termnote><termexample id="_8c614fa1-5e93-4de0-aa75-c8312d27ba76">
+  <p id="_126274b3-225a-48ef-94c3-d20330d4e928">Thanksgiving Day in the U.S. and Canada are considered movable days, set to the fourth Thursday in November and the second Monday in October, respectively.</p>
+</termexample><termexample id="_b41a0f3d-bf52-4dfc-bac5-e43a0480eaae">
+  <p id="_0e4d48d0-616f-4d8a-9b61-8882068d308f">First Day of Summer (<em>sumardagurinn fyrsti</em>) in Iceland is considered a movable day, set to the first Thursday after April 18th.</p>
+</termexample><termexample id="_f1d99087-1b0d-429e-9e98-421514340b32">
+  <p id="_64e4d1af-22ec-4023-8d84-f48302126098">Father’s Day is celebrated on the third Sunday in June in North America, and is considered a movable day.</p>
+</termexample></term>
+<term id="_negative_duration">
+  <preferred>negative duration</preferred>
+  <definition><p id="_070142c1-baff-4e18-8b5f-70d1dc742fde">duration in the reverse direction to the proceeding time scale</p></definition>
+</term>
+<term id="terms-feature">
+  <preferred>feature</preferred>
+  <definition><p id="_5fdc1f5e-668f-4250-818e-8c3b284e06f0">single function or group of functions</p></definition>
+</term>
+<term id="term-conformity-level"><preferred>conformity level</preferred><definition><p id="_5b21d868-59e2-4609-a59c-ac61cd3abfba">value assigned to a subset of <em>features</em> (<xref target="terms-feature"/>) within a <em>profile</em> (<xref target="term-profile"/>)</p></definition>
+<termnote id="_912e375d-1f34-4894-8106-3fbd760862dc">
+  <p id="_f8d76b66-795d-4580-b6c5-c3fdb9be9afa">A profile may refer to these conformity levels to facilitate the specification of conformance to the profile.</p>
+</termnote></term>
+<term id="term-profile"><preferred>profile</preferred><definition><p id="_ae841b4c-4814-4fa4-bbeb-ad30d030fc5d">subset of <em>features</em> (<xref target="terms-feature"/>) described in a standard or a set of standards</p></definition>
+
+<termnote id="_89b80ec4-a5ec-40d9-8b2c-90635ace089d">
+  <p id="_debe90ac-c3a5-4663-8e2d-6256c786f4b8">A community may develop a profile to describe how to carry out functions or apply features specified in a standard or family of standards in a manner relevant to that community.</p>
+</termnote><termnote id="_b05bbc68-efae-46b3-9fce-963fb46bb6f2">
+  <p id="_3edc08ad-7c17-4027-a0e9-0b0a2ebcc9e6">A profile often describes what features are to be supported and how to apply those features. In cases where multiple methods are allowed for a required feature, a profile may select a single method. In cases where a particular function allows different interpretations, a profile may select a single interpretation or provide clarification. A profile may list out features that need not be supported. It may specify several <em>conformity levels</em> (<xref target="term-conformity-level"/>).</p>
+</termnote></term>
+<term id="_iso_8601_profile">
+  <preferred>ISO 8601 profile</preferred>
+  <definition><p id="_ac1fd21b-e7fc-49e1-a164-e197c4b0c307"><em>profile</em> (<xref target="term-profile"/>) whose base standard is the ISO 8601 series</p></definition>
+</term>
+<term id="term-repeat-rule">
+  <preferred>repeat rule</preferred>
+  <definition><p id="_e7e62771-1787-415b-904d-cb44a79d4399">set of <em>eligible time intervals</em> (<xref target="term-eligible-time-interval"/>) and <em>selection rules</em> (<xref target="term-selection-rule"/>) that allows computation of a set of <em>matching instants</em> (<xref target="term-matching-instant"/>)</p></definition>
+</term>
+<term id="term-selection-rule">
+  <preferred>selection rule</preferred>
+  <definition><p id="_f875315f-718a-442c-835a-532e949d66e6">rule specifying restrictions on the value of a time scale component</p></definition>
+</term>
+<term id="_repeat_cycle">
+  <preferred>repeat cycle</preferred>
+  <definition><p id="_14dec41a-1a16-470a-8af5-1a70dd56aa56">set of repeating instants, calculated by a specified start instant and specified duration gap between the repeating instants</p></definition>
+</term>
+<term id="term-eligible-time-interval">
+  <preferred>eligible time interval</preferred>
+  <definition><p id="_9c299eff-f1f5-4c9e-b40b-f632d678ed50">time interval eligible for matching using <em>selection rules</em> (<xref target="term-selection-rule"/>)</p></definition>
+</term>
+<term id="term-matching-instant">
+  <preferred>matching instants</preferred>
+  <definition><p id="_28078382-4f1a-4369-ab16-caa24eaa3e4b">set of instants, computed by a <em>repeat rule</em> (<xref target="term-repeat-rule"/>), that belongs within <em>eligible time intervals</em> (<xref target="term-eligible-time-interval"/>) and fulfills criteria set by specified <em>selection rules</em> (<xref target="term-selection-rule"/>)</p></definition>
+</term>
+<term id="_date_time_formula">
+  <preferred>date time formula</preferred>
+  <definition><p id="_1916811a-736c-4dd5-a260-18644430acbf">expression that specifies modification of a date and time expression with a duration</p></definition>
+</term>
+<term id="term-durational-unit">
+  <preferred>durational unit</preferred>
+  <definition><p id="_a5394308-149f-419a-aaaa-2c51823c838b">time scale component that composes the duration date and time representation</p></definition>
+</term>
+<term id="_grouped_time_scale_unit">
+  <preferred>grouped time scale unit</preferred>
+  <definition><p id="_29be518c-39d5-4048-9cd9-519b87857103">time scale unit composed of a duration expressed by one or more <em>durational units</em> (<xref target="term-durational-unit"/>)</p></definition>
+</term>
+<term id="term-sub-year-grouping">
+  <preferred>sub-year grouping</preferred>
+  <definition><p id="_27cdd70c-b343-4400-9cc6-78c046dec0b7">grouping composed of time scale components of a lower order than the calendar year time scale</p></definition>
+</term>
+<term id="term-normal-sub-year-grouping"><preferred>normal sub-year grouping</preferred><definition><p id="_fcb11b70-28dc-4b34-9033-18f2c6bcbeb5"><em>sub-year grouping</em> (<xref target="term-sub-year-grouping"/>) where the duration of
+its elements sum up to the duration of one calendar year</p></definition>
+
+
+
+<termnote id="_20e42392-b957-4bcc-adc2-f744e79506db">
+  <p id="_bce0271a-96be-4fd4-8a9c-aa1288dd0f51">A normal sub-year grouping can be composed of time scale units with different durations.</p>
+</termnote><termexample id="_089aed43-4c39-4214-ada0-07519bcbd980">
+  <p id="_3cbcdb6a-c300-49cc-9f96-a9c773b084ea">The bimonthly time scale unit can be repeated into a normal sub-year grouping, where 12 months
+can be divided cleanly by units of 2 months each.</p>
+</termexample><termexample id="_23e5d64b-9e4c-4926-a781-2d2a233fb905">
+  <p id="_aeb05980-9d65-4cc1-a7ce-b5dee621abba">The four seasons in the commonly used <em>four season calendar</em> (<xref target="term-four-season-calendar"/>)
+make a normal sub-year grouping as the duration
+of their combination is exactly one calendar year.</p>
+</termexample><termexample id="_8defc4c3-6fc3-4fad-8579-ce4eeac4898e">
+  <p id="_a0489db2-d17d-44e9-a04c-729c66db8646">Six season calendars used in various cultures are examples of normal sub-year groupings.</p>
+</termexample></term>
+<term id="_equation_of_time"><preferred>equation of time</preferred><definition><p id="_c5d95677-1131-4f6b-a106-ca85022e545c">difference between mean solar time and apparent solar time, which varies with time within a calendar year</p></definition>
+<termnote id="_7d1b1efb-659e-496d-aaa3-3219f485677f">
+  <p id="_1f0dbb1e-d309-489c-a5fb-4aebfbfb6c59">A clock is a type of device that measures mean solar time; a sundial is a type of device that measures apparent solar time.</p>
+</termnote></term>
+<term id="term-season">
+  <preferred>season</preferred>
+  <definition><p id="_03115fae-dab7-4687-bc40-baf947353967">element of a <em>normal sub-year grouping</em> (<xref target="term-normal-sub-year-grouping"/>),
+amongst which the transition between each element can be based on
+calendrical, meteorological, astronomical, solar or ecological events</p></definition>
+</term>
+<term id="term-four-season-calendar"><preferred>four-season calendar</preferred><definition><p id="_08d3b59e-9242-4ddb-a43f-aa6491b92083">calendar in general use resulting from the division of a calendar year
+into four <em>seasons</em> (<xref target="term-season"/>)</p></definition>
+
+<termnote id="_7e134bca-5ea1-470f-a45e-95084dfe8019">
+  <p id="_a18e5b0b-20a7-4583-b2ed-56cb557cf836">A single calendar date may represent different seasons
+depending on local customs or location, such as the difference
+between the northern or southern hemispheres.</p>
+</termnote><termnote id="_91b42de2-7c65-4822-82bb-e074ad498338">
+  <p id="_7cb73a5f-301d-433d-a6f7-669756eafc68">The four seasons are namely <em>spring</em> (<xref target="term-spring"/>),
+<em>summer</em> (<xref target="term-summer"/>), <em>autumn</em> (<xref target="term-autumn"/>), and
+<em>winter</em> (<xref target="term-winter"/>)</p>
+</termnote></term>
+<term id="term-spring">
+  <preferred>spring</preferred>
+  <definition><p id="_aae0550d-3414-4c0c-ba04-5945080e880d"><em>season</em> (<xref target="term-season"/>) in the <em>four-season calendar</em> (<xref target="term-four-season-calendar"/>)
+following <em>winter</em> (<xref target="term-winter"/>) and preceding <em>summer</em> (<xref target="term-summer"/>)</p></definition>
+</term>
+<term id="term-summer">
+  <preferred>summer</preferred>
+  <definition><p id="_2a62dc80-510c-47dd-a057-ca4c87c663a5"><em>season</em> (<xref target="term-season"/>) in the <em>four-season calendar</em> (<xref target="term-four-season-calendar"/>)
+following <em>spring</em> (<xref target="term-spring"/>) and preceding <em>autumn</em> (<xref target="term-autumn"/>)</p></definition>
+</term>
+<term id="term-autumn">
+  <preferred>autumn</preferred>
+  <definition><p id="_3daeafd7-3dfd-4a16-8b89-4113613e1896"><em>season</em> (<xref target="term-season"/>) in the <em>four-season calendar</em> (<xref target="term-four-season-calendar"/>)
+following <em>summer</em> (<xref target="term-summer"/>) and preceding <em>winter</em> (<xref target="term-winter"/>)</p></definition>
+</term>
+<term id="term-winter">
+  <preferred>winter</preferred>
+  <definition><p id="_64e9dc46-2fa4-4ca8-884e-1f591889227f"><em>season</em> (<xref target="term-season"/>) in the <em>four-season calendar</em> (<xref target="term-four-season-calendar"/>)
+ following <em>autumn</em> (<xref target="term-autumn"/>) and preceding <em>spring</em> (<xref target="term-spring"/>)</p></definition>
+</term></terms>
+<terms id="terms-units" obligation="normative"><title>Time and date units</title><term id="term-second"><preferred>second</preferred><definition><p id="_497724f5-d85a-4ccd-83b6-513bd9a7d618">base unit of <em>duration</em> (<xref target="term-duration"/>) measurement in the International System of Units (SI)</p></definition>
+
+<termnote id="_e86d359c-f212-4385-b8ab-6ec9dbb70ab4">
+  <p id="_7c2e9a97-1667-4060-9a0d-03314de87da6">As defined by the CGPM (Conférence générale des poids et mesures, General Conference on Weights and Measures) on the proposal of the CIPM (Comité International des Poids et Mesures, International Committee of Weights and Measures).</p>
+</termnote><termnote id="_8f455d63-98d0-421e-8634-7f62edb0b708">
+  <p id="_841aeb1e-2e0e-417d-9421-d6bc67f83f74">See also <eref type="inline" bibitemid="ISO80000-3" citeas="ISO 80000-3"/>.</p>
+</termnote></term>
+<term id="term-clock-second"><preferred>clock second</preferred><definition><p id="_65710c50-84fe-4fae-8250-7dab6fbb51d8"><em>time scale unit</em> (<xref target="term-time-scale-unit"/>) whose <em>duration</em> (<xref target="term-duration"/>) is one <em>second</em> (<xref target="term-second"/>)</p></definition>
+<termnote id="_b1e63856-528d-4bbc-bc87-05fef8b2bf2c">
+  <p id="_ab90b0e5-bb50-41db-b528-522a49abc762">Clock second is in common parlance often referred to as second, however in this document clock second and second have different definitions.</p>
+</termnote></term>
+<term id="term-minute"><preferred>minute</preferred><definition><p id="_1bc743c8-8310-422b-9234-f0de2165b443"><em>duration</em> (<xref target="term-duration"/>) of 60 <em>seconds</em> (<xref target="term-second"/>)</p></definition>
+
+<termnote id="_3e5c8d06-1af8-41e6-a7f0-b74f9952cab7">
+  <p id="_bf7800e8-c0f6-44cc-a00a-f25494902b53">See also <eref type="inline" bibitemid="ISO80000-3" citeas="ISO 80000-3"/>.</p>
+</termnote><termnote id="_1dbfbf33-d940-4670-ba59-ed6081d76f67">
+  <p id="_33d9008c-7da0-4c2b-9d01-d448287bfd9a">The duration of a minute is 60 seconds except if modified by the insertion or deletion of a leap second</p>
+</termnote></term>
+<term id="term-clock-minute"><preferred>clock minute</preferred><definition><p id="_9a7f26a7-8ec2-44ea-b461-98dc7b870c36"><em>time scale unit</em> (<xref target="term-time-scale-unit"/>) whose duration is one <em>minute</em> (<xref target="term-minute"/>)</p></definition>
+<termnote id="_b6d4bfe1-fa4a-424d-8ade-1389b2729540">
+  <p id="_a7fd78dd-3fe1-490a-8825-524954107651">Clock minute is in common parlance often referred to as minute, however in this document clock minute and minute have different definitions.</p>
+</termnote></term>
+<term id="term-hour"><preferred>hour</preferred><definition><p id="_f1e497a3-ca49-4c93-b7ac-ee1a6420bd4d"><em>duration</em> (<xref target="term-duration"/>) of 60 <em>minutes</em> (<xref target="term-minute"/>)</p></definition>
+<termnote id="_e635e7b6-346a-48df-88dd-2c734410fde7">
+  <p id="_81e29f03-9b13-4821-86b2-258263d0aa68">See also <eref type="inline" bibitemid="ISO80000-3" citeas="ISO 80000-3"/>.</p>
+</termnote></term>
+<term id="term-clock-hour"><preferred>clock hour</preferred><definition><p id="_151f9e38-e626-4bea-b146-9833fd090fb9"><em>time scale unit</em> (<xref target="term-time-scale-unit"/>) whose <em>duration</em> (<xref target="term-duration"/>) is  one <em>hour</em> (<xref target="term-hour"/>)</p></definition>
+<termnote id="_90f07844-c0a2-4062-a2a1-2f8e6aab440e">
+  <p id="_eff15b1b-ce97-44c2-9f07-67cc17518085">Clock hour is in common parlance often referred to as hour, however in this document clock hour and hour have different definitions.</p>
+</termnote></term>
+<term id="term-calendar-date">
+  <preferred>calendar date</preferred>
+  <definition><p id="_03c5debe-2ab8-4e7f-810d-4b294b3ed716">particular <em>calendar day</em> (<xref target="term-calendar-day"/>) represented by its <em>calendar year</em> (<xref target="term-calendar-year"/>), its <em>calendar month</em> (<xref target="term-calendar-month"/>) and its <em>calendar day of month</em> (<xref target="term-calendar-day-of-month"/>)</p></definition>
+</term>
+<term id="term-ordinal-date">
+  <preferred>ordinal date</preferred>
+  <definition><p id="_0375d73c-bc9d-4bfd-b55e-5bdd16a4ce7e">particular <em>calendar day</em> (<xref target="term-calendar-day"/>) represented by its <em>calendar year</em> (<xref target="term-calendar-year"/>) and its <em>calendar day of year</em> (<xref target="term-calendar-day-of-year"/>)</p></definition>
+</term>
+<term id="term-week-date">
+  <preferred>week date</preferred>
+  <definition><p id="_666d2bed-4eb4-4c50-a08d-6e1b4cfbb843">particular <em>calendar day</em> (<xref target="term-calendar-day"/>) represented by its <em>calendar year</em> (<xref target="term-calendar-year"/>)
+to which its <em>calendar week</em> (<xref target="term-calendar-week"/>) belongs, its <em>calendar week of year</em> (<xref target="term-calendar-week-of-year"/>), and its <em>calendar day of week</em> (<xref target="term-calendar-day-of-week"/>)</p></definition>
+</term>
+<term id="term-day"><preferred>day</preferred><definition><p id="_760b544f-7cb2-457e-a8b7-07d05c7988bd"><em>duration</em> (<xref target="term-duration"/>) of a <em>calendar day</em> (<xref target="term-calendar-day"/>)</p></definition>
+
+<termnote id="_16814548-34ad-44bb-9e64-973f72533cd6">
+  <p id="_3c80af8c-27b5-4259-9965-af8fa3831c59">The term “day” applies also to the duration of any <em>time interval</em> (<xref target="term-time-interval"/>) which starts at a certain <em>time of day</em> (<xref target="term-time-of-day"/>) on a certain calendar day and ends at the same time of day on the next calendar day.</p>
+</termnote><termnote id="_f92a8ee1-cd56-4e0d-bcc3-9a410721a03e">
+  <p id="_f1b614b5-f241-4cfb-844b-e26a369faa18">See also <eref type="inline" bibitemid="ISO80000-3" citeas="ISO 80000-3"/>.</p>
+</termnote></term>
+<term id="term-calendar-day"><preferred>calendar day</preferred><definition><p id="_797a5988-ac69-4b7c-8e69-b923447c0d34"><em>time scale unit</em> (<xref target="term-time-scale-unit"/>) starting at the beginning of the day and ending with the beginning of the next day [the latter being the starting <em>instant</em> (<xref target="term-instant"/>) of the next calendar day]</p></definition>
+
+<termnote id="_b7368d3f-9e9c-4d00-a743-a2f8faf185bc">
+  <p id="_fd7d03b0-f6fa-4013-85dd-1cfd61201a47">Calendar day is in common parlance often referred to as day, however in this document calendar day and day have different definitions.</p>
+</termnote><termnote id="_482452af-f822-487d-b441-4d7c5a5dddfa"><p id="_09625ef8-2d7f-498f-a771-3c94ecd1b029">The <em>duration</em> (<xref target="term-duration"/>) of a calendar day using the <em>24-hour clock</em> (<xref target="term-24-hour-clock"/>) is 24 <em>hours</em> (<xref target="term-hour"/>); except if modified by:</p>
+<ul id="_c1f6b119-1dda-48b3-bb20-d594c67600ea">
+  <li>
+    <p id="_bbd18b81-a681-4027-a5a8-8f075b691c33">the insertion or deletion of <em>leap seconds</em> (<xref target="term-leap-second"/>), by decision of the IERS; or</p>
+  </li>
+  <li>
+    <p id="_b9fb2765-9eb1-4860-a4d2-1459d610b6e3">the insertion or deletion of other time intervals, as may be prescribed by local authorities to alter the <em>time scale</em> (<xref target="term-time-scale"/>) of local time.</p>
+  </li>
+</ul></termnote></term>
+<term id="term-calendar-day-of-week">
+  <preferred>calendar day of week</preferred>
+  <definition><p id="_07c8ab7f-fa82-44a8-97fb-8022f8aede2e">day amongst the sequence of <em>week calendar</em> (<xref target="term-week-calendar"/>) days,
+namely, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or Sunday</p></definition>
+</term>
+<term id="term-calendar-day-of-month">
+  <preferred>calendar day of month</preferred>
+  <definition><p id="_bb098a8c-7eee-4a02-bd18-ceed8cf35b41">ordinal number of a <em>calendar day</em> (<xref target="term-calendar-day"/>) within a <em>calendar month</em> (<xref target="term-calendar-month"/>)</p></definition>
+</term>
+<term id="term-calendar-day-of-year">
+  <preferred>calendar day of year</preferred>
+  <definition><p id="_437f137c-43a5-4172-8e69-8e499e3caf64">ordinal number of a <em>calendar day</em> (<xref target="term-calendar-day"/>) within a <em>calendar year</em> (<xref target="term-calendar-year"/>)</p></definition>
+</term>
+<term id="term-week"><preferred>week</preferred><definition><p id="_ce2c8013-f253-4cdb-a938-68ab6baf9399"><em>duration</em> (<xref target="term-duration"/>) of a <em>calendar week</em> (<xref target="term-calendar-week"/>)</p></definition>
+<termnote id="_f57b731d-0e43-4d7c-86b3-0b5ee13b0499">
+  <p id="_0d3db66e-6ee7-4b89-95ce-3254648730c9">The term “week” applies also to the duration of any <em>time interval</em> (<xref target="term-time-interval"/>) which starts at a certain <em>time of day</em> (<xref target="term-time-of-day"/>) at a certain <em>calendar day of week</em> (<xref target="term-calendar-day-of-week"/>) and ends at the same time of day at the same calendar day of week in the next calendar week.</p>
+</termnote></term>
+<term id="term-calendar-week">
+  <preferred>calendar week</preferred>
+  <definition><p id="_bcd6d077-cb06-43be-ae9f-9e49d3cbd2f9"><em>time scale unit</em> (<xref target="term-time-scale-unit"/>) of seven <em>calendar days</em> (<xref target="term-calendar-day"/>) within a single <em>calendar year</em> (<xref target="term-calendar-year"/>) which begins on Monday and ends on Sunday,
+according to the <em>week calendar</em> (<xref target="term-week-calendar"/>)</p></definition>
+</term>
+<term id="term-calendar-week-of-year">
+  <preferred>calendar week of year</preferred>
+  <definition><p id="_1abe0766-86cc-4c1b-bee3-e332f66dc111">ordinal number of a <em>calendar week</em> (<xref target="term-calendar-week"/>) within a <em>calendar year</em> (<xref target="term-calendar-year"/>) of the <em>week calendar</em> (<xref target="term-week-calendar"/>)</p></definition>
+</term>
+<term id="term-month"><preferred>month</preferred><definition><p id="_644bd154-0327-42d6-aad0-4226db06c1fa"><em>duration</em> (<xref target="term-duration"/>) of a <em>calendar month</em> (<xref target="term-calendar-month"/>)</p></definition>
+
+<termnote id="_729f97a4-f6f5-4274-9c6a-663e822c549b">
+  <p id="_a2caea7e-10f5-4a97-bf27-994ff9320ea3">The term “month” applies also to the duration of any <em>time interval</em> (<xref target="term-time-interval"/>) which starts at a certain <em>time of day</em> (<xref target="term-time-of-day"/>) at a certain <em>calendar day</em> (<xref target="term-calendar-day"/>) of the calendar month and ends at the same time of day at the same calendar day of the next calendar month, if it exists.</p>
+</termnote><termnote id="_e6b09577-5207-4f8a-8edb-dc991e131f4d">
+  <p id="_9bcbd345-1c55-4a2d-9808-2ca31f7bb6f6">In certain applications a month is considered as a duration of 30 calendar days, but such usage is not supported by this document.</p>
+</termnote></term>
+<term id="term-calendar-month"><preferred>calendar month</preferred><definition><p id="_fc8d451b-09f0-45ff-a75d-d6cd5c71e0c4"><em>time scale unit</em> (<xref target="term-time-scale-unit"/>) resulting from a defined division of a <em>calendar year</em> (<xref target="term-calendar-year"/>), each containing a specific number of <em>calendar days</em> (<xref target="term-calendar-day"/>)</p></definition>
+<termnote id="_43d73f6c-47d0-4fd4-84f7-eb71235c4366">
+  <p id="_1650c830-f13a-4dca-a7a5-183aa9aec4a2">A calendar month is in common parlance often referred to as month, however in this document calendar month and month have different definitions.</p>
+</termnote></term>
+<term id="term-year"><preferred>year</preferred><definition><p id="_0501a246-3dcb-425f-b08c-2b3072ce0326"><em>duration</em> (<xref target="term-duration"/>) of a <em>calendar year</em> (<xref target="term-calendar-year"/>)</p></definition>
+
+<termnote id="_e477fd7d-fa62-4fcf-b311-df05f46f7634">
+  <p id="_973056a3-4dc6-4e21-b1e2-666e486fb9ba">In the <em>Gregorian calendar</em> (<xref target="term-gregorian-calendar"/>), a year has 365 or 366 <em>days</em> (<xref target="term-day"/>). The duration is 366 days if the corresponding <em>time interval</em> (<xref target="term-time-interval"/>) begins February 28 or earlier in a <em>leap year</em> (<xref target="term-leap-year"/>) or March 2 or later in a year immediately preceding a leap year. If the interval begins February 29 (on a leap year), or March 1 of a year preceding a leap year, the end date has to be agreed on. Otherwise the duration is 365 days.</p>
+</termnote><termnote id="_5994d340-b092-48d7-bb48-a8be165b19fb">
+  <p id="_a60ab68d-dde8-4371-8b5b-980afa49bb8c">The term “year” applies also to the duration of any <em>time interval</em> (<xref target="term-time-interval"/>) which starts at a certain <em>time of day</em> (<xref target="term-time-of-day"/>) at a certain <em>calendar date</em> (<xref target="term-calendar-date"/>) of the calendar year and ends at the same time of day at the same calendar date of the next calendar year with the exception noted in Note 1 to entry.</p>
+</termnote></term>
+<term id="term-calendar-year">
+  <preferred>calendar year</preferred>
+  <definition><p id="_a9f47d1f-2c38-4ac9-8979-5148784cbe21"><em>time scale unit</em> (<xref target="term-time-scale-unit"/>) defined by the <em>calendar</em> (<xref target="term-calendar"/>) system</p></definition>
+</term>
+<term id="term-decade"><preferred>decade</preferred><definition><p id="_94fa45f4-60c2-49e4-b54c-08f9665273e7"><em>time scale unit</em> (<xref target="term-time-scale-unit"/>) of 10 <em>calendar years</em> (<xref target="term-calendar-year"/>), beginning with a year whose year number is divisible without remainder by ten</p></definition>
+<termnote id="_9f39bc53-5e83-422d-8048-5a063f1e0cf2">
+  <p id="_389898a4-fd8e-4ab6-9bd9-cde7e31f6bf8">Decade is also used to refer to an arbitrary <em>duration</em> (<xref target="term-duration"/>) of 10 years, however decade is not used as such in this document.</p>
+</termnote></term>
+<term id="term-century"><preferred>century</preferred><definition><p id="_adfac45e-5dbb-42c8-892a-a2da17e18a45"><em>time scale unit</em> (<xref target="term-time-scale-unit"/>) of 100 <em>calendar years</em> (<xref target="term-calendar-year"/>) <em>duration</em> (<xref target="term-duration"/>), beginning with a year whose year number is divisible without remainder by 100</p></definition>
+
+<termnote id="_d38bfe52-a6e1-460e-b1a7-ab33a9912d3c">
+  <p id="_42d3bebe-416b-4af7-bcd7-f0122229b9a8">Century is also used to refer to an arbitrary duration of 100 years, however century is not used as such in this document.</p>
+</termnote><termexample id="_becf8837-bbfb-4864-ac5b-e4f64df3a914">
+  <p id="_d4ffc129-12c5-41a9-b221-bf474923bf08">The “19th century” covers the years 1800 through 1899 as in common parlance.</p>
+</termexample></term></terms>
+<terms id="terms-representations" obligation="normative"><title>Representations and formats</title><term id="term-dt-expression"><preferred>date and time expression</preferred><definition><p id="_f828f716-8e65-47ce-84f1-76db9d601985">expression indicating a <em>time</em> (<xref target="term-time"/>), <em>time interval</em> (<xref target="term-time-interval"/>) or <em>recurring time interval</em> <xref target="term-recurring-time-interval"/></p></definition>
+<termexample id="_7da78550-3ca0-4151-968b-404aee1c47b1">
+  <p id="_054fdfc3-d2fa-449a-aa8e-4feccf3a04cf">‘2018-08-01’ is a date and time expression that indicates the first day of August of 2018 in the <em>Gregorian calendar</em> (<xref target="term-gregorian-calendar"/>).</p>
+</termexample></term>
+<term id="term-dt-representation"><preferred>date and time representation</preferred><definition><p id="_220f0374-c609-4f6c-9061-dd0ffba6817c">representation of the format of one or more <em>date and time expressions</em> (<xref target="term-dt-expression"/>)</p></definition>
+<termexample id="_d8e4a21d-9db8-48fa-a617-f5e783efe398">
+  <p id="_394269b5-d4f4-4bd2-ae9a-7a1a2e16c2ce">[date] is a date and time representation that can be expanded as [year][month][day], which itself can be expanded into [YYYY][MM][DD]; ‘20180801’ is a date and time expression that conforms to this representation.</p>
+</termexample></term>
+<term id="term-time-scale-component"><preferred>time scale component</preferred><definition><p id="_919c5f8b-293f-4869-bb15-b2392fa53bca">representation of a <em>time scale unit</em> (<xref target="term-time-scale-unit"/>) within a <em>date and time expression</em> (<xref target="term-dt-expression"/>) or a <em>representation</em> (<xref target="term-dt-representation"/>)</p></definition>
+
+
+
+<termnote id="_11b0fd86-e849-45b5-9cc3-4ab590620624">
+  <p id="_53deb285-2bf1-4427-a554-057b68d51c95">A time scale component is considered of a higher order of another, if the time scale unit it represents has a strictly larger <em>time interval</em> (<xref target="term-time-interval"/>) than that of that another; the latter time scale component is therefore considered to be of a lower order.</p>
+</termnote><termnote id="_dda2510c-24bd-4013-b9aa-e0254cba6791">
+  <p id="_e5f6e129-a53f-430c-972f-260000450c79">Common usage of this term often omits the leading phrase “time scale”, such as representing a “time scale component calendar year” by just “calendar year component”. This usage is deemed accepted in this document.</p>
+</termnote><termexample id="_83e47a52-51c0-4551-b1af-3f16d6c025ba">
+  <p id="_f803ca42-003e-4fb3-ab6b-a67b05a001b4"><em>calendar year</em> (<xref target="term-calendar-year"/>), <em>calendar month</em> (<xref target="term-calendar-month"/>), <em>calendar day</em> (<xref target="term-calendar-day"/>), <em>clock hour</em> (<xref target="term-clock-hour"/>), <em>clock minute</em> (<xref target="term-clock-minute"/>), <em>clock second</em> (<xref target="term-clock-second"/>) are time scale components of a <em>complete representation</em> (<xref target="term-complete-representation"/>).</p>
+</termexample><termexample id="_40584d60-4e21-48e4-9140-658fea7c056c">
+  <p id="_e5c23937-b77f-4704-b85f-49d6f1f45f12">The calendar year time scale component is considered of a higher order than the calendar month time scale component, which is in turn of a higher order than the calendar day time scale component.</p>
+</termexample></term>
+<term id="term-basic-format">
+  <preferred>basic format</preferred>
+  <definition><p id="_50674dea-ecde-4e57-b787-8efd80d69f7c"><em>date and time representation</em> (<xref target="term-dt-representation"/>) that does not include separators between its <em>time scale components</em> (<xref target="term-time-scale-component"/>)</p></definition>
+</term>
+<term id="term-extended-format">
+  <preferred>extended format</preferred>
+  <definition><p id="_373eabd1-ad69-44c5-8ffd-f11c5216bb49">extension of the <em>basic format</em> (<xref target="term-basic-format"/>) that includes separators between its <em>time scale components</em> (<xref target="term-time-scale-component"/>)</p></definition>
+</term>
+<term id="term-complete-representation">
+  <preferred>complete representation</preferred>
+  <definition><p id="_fead6690-9025-48aa-ba2d-84ee3a599a57"><em>date and time representation</em> (<xref target="term-dt-representation"/>) that includes all the <em>time scale components</em> (<xref target="term-time-scale-component"/>) associated with the <em>expression</em> (<xref target="term-dt-expression"/>)</p></definition>
+</term>
+<term id="term-representation-with-reduced-precision">
+  <preferred>representation with reduced precision</preferred>
+  <definition><p id="_0f5b27f4-b07d-469a-a928-206c7780d047">abbreviation of a <em>date and time representation</em> (<xref target="term-dt-representation"/>) by omission of lower order <em>time scale components</em> (<xref target="term-time-scale-component"/>)</p></definition>
+</term>
+<term id="term-decimal-representation">
+  <preferred>representation with decimal fraction</preferred>
+  <definition><p id="_2a31fccc-f0b5-4496-8728-ab63e846c13a">expansion of a <em>date and time representation</em> (<xref target="term-dt-representation"/>) by addition of a decimal fraction to the lowest order <em>time scale component</em> (<xref target="term-time-scale-component"/>)</p></definition>
+</term>
+<term id="term-decimal-sign"><preferred>decimal sign</preferred><definition><p id="_4ccfe94e-e61f-4a61-9eb1-402343a0c50e">character used in a <em>representation with decimal fraction</em> (<xref target="term-decimal-representation"/>) to separate the integer part from the decimal fraction of a number</p></definition>
+<termnote id="_8bea6821-d6ab-477f-bf3b-80fc930282ed">
+  <p id="_16aaf787-4fd0-40f1-b824-595a9c846830">The representations of the decimal signs (period or comma) and their usage rules are specified in <eref type="inline" bibitemid="ISO80000-1" citeas="ISO 80000-1"/>.</p>
+</termnote></term>
+<term id="term-expanded-representation">
+  <preferred>expanded representation</preferred>
+  <definition><p id="_2a72cb09-244a-457b-94ad-6d854b042bf3">expansion of a <em>date and time representation</em> (<xref target="term-dt-representation"/>) to allow identification of <em>calendar dates</em> (<xref target="term-calendar-date"/>) where the ordinal number identifying the <em>calendar year</em> (<xref target="term-calendar-year"/>) exceeds four digits</p></definition>
+</term></terms></clause>
+<definitions id="abbreviations"><title>Abbreviations</title><p id="_78598779-7b73-485f-914b-b4a5efe999d6">For the purposes of this document, the following abbreviations apply.</p>
+<dl id="_7a51452a-121c-4f03-bbda-70d5b8678b52">
+  <dt>BIPM</dt>
+  <dd>
+    <p id="_d24459b2-a4a9-4438-9133-846f5291f513">Bureau International des Poids et Mesures / The International Bureau of Weights and Measures</p>
+  </dd>
+  <dt>CIPM</dt>
+  <dd>
+    <p id="_65ffb9b7-7904-4f08-98b8-33c6cd0f0a94">Comité International des Poids et Mesures / The International Committee of Weights and Measures</p>
+  </dd>
+  <dt>TAI</dt>
+  <dd>
+    <p id="_b7a5f45f-f791-48bb-8e23-255ab4453156">International Atomic Time</p>
+  </dd>
+  <dt>UTC</dt>
+  <dd>
+    <p id="_79e8d8e6-087b-4218-96ae-ea9d95706424">Coordinated Universal Time</p>
+  </dd>
+  <dt>SI</dt>
+  <dd>
+    <p id="_14d1981d-caa4-4db2-b0bb-e8e3494c67b8">International System of Units</p>
+  </dd>
+  <dt>ISQ</dt>
+  <dd>
+    <p id="_9db94804-9654-4be0-b2e1-d892cc8396a8">International System of Quantities</p>
+  </dd>
+</dl></definitions></clause>
+<clause id="concepts" obligation="normative"><title>Concepts</title><clause id="_general" obligation="normative">
+  <title>General</title>
+  <p id="_6ad5c2bc-7eed-4fd3-badd-350f7ecee58f">This clause describes commonly used concepts for the usage of time scale systems.</p>
+</clause>
+<clause id="_commonly_used_time_scale_units" obligation="normative"><title>Commonly used time scale units</title><clause id="_day" obligation="normative">
+  <title>Day</title>
+  <p id="_b15eeaf7-6852-4b7a-a71f-2f61816df44b">A day is a time scale unit that approximates the duration taken by the Earth for
+completing one rotation with respect to the Sun.</p>
+</clause>
+<clause id="_month" obligation="normative">
+  <title>Month</title>
+  <p id="_48cbd8e6-5efc-40ae-af3b-ba5c3b3e6e8e">A month is a time scale unit, that traditionally approximated the duration taken
+between two successive syzygies of the Moon.</p>
+</clause>
+<clause id="_year" obligation="normative">
+  <title>Year</title>
+  <p id="_6a92cf08-f004-4b3b-9964-976d48bd8d08">A year is a time scale unit that approximates the orbital period of the Earth around the Sun.</p>
+</clause></clause>
+<clause id="_second" obligation="normative"><title>Second</title><p id="_ef92cd3d-f96a-4537-b8b8-a3240be52c93">A second is a time scale unit defined by the CIPM in the SI system based on radiation periods of the
+caesium-133 atom.</p>
+<p id="_f9c2b1b2-4812-4c12-9f56-c01d185fe293">Traditionally, it represented a subdivision of the day being <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>86400</mn></mfrac></math></stem> of a
+day.</p></clause>
+<clause id="_minute" obligation="normative">
+  <title>Minute</title>
+  <p id="_03c2a04d-4513-4016-b536-9d101d9ac45a">A minute is a time scale unit often defined as <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>60</mn></mfrac></math></stem> of an hour or 60 seconds.</p>
+</clause>
+<clause id="_hour" obligation="normative">
+  <title>Hour</title>
+  <p id="_3968880a-7e71-4069-bff2-c14a3e195c8d">An hour is a time scale unit often defined as <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>24</mn></mfrac></math></stem> of a day or 3600 seconds.</p>
+</clause>
+<clause id="_date_and_time_organizing_systems" obligation="normative"><title>Date and time organizing systems</title><clause id="_general_2" obligation="normative">
+  <title>General</title>
+  <p id="_0cc6f3d8-c699-41e9-949d-ad95621ab337">Date and time organizing systems are often used for social, administrative and
+religious purposes, in order to allow an easier identification method of
+dates and times through the usage of hierarchical time scale units.</p>
+</clause>
+<clause id="_calendar" obligation="normative"><title>Calendar</title><p id="_86231fef-684d-4ffc-b796-9536969a69f3">A calendar is a system to organize days, based on time intervals marked by events
+related to the astronomical motion of planetary bodies,
+synchronized to the tropical year and orbital motion of the Earth.</p>
+<p id="_492ae8e1-4631-4748-9bb5-d088de52c293">A calendar system often includes the time scale components year, month and day.</p></clause>
+<clause id="_clock" obligation="normative"><title>Clock</title><p id="_d0fb0bd4-0339-4a4d-9786-106be3922d4d">The clock is a time scale used to identify and measure smaller time intervals
+within a day.</p>
+<p id="_4ffab125-8bcb-465c-86d7-77d059095cb5">A clock system often includes the time scale components hour, minute and second.</p></clause></clause></clause>
+</sections><bibliography><references id="_normative_references" obligation="informative">
+  <title>Normative References</title>
+</references><references id="_bibliography" obligation="informative"><title>Bibliography</title><bibitem id="BIPMRCCTF3">
+  <formattedref format="application/x-isodoc+xml">Bureau International des Poids et Mesures / The International Bureau of Weights and Measures: Consultative Committee for Time and Frequency (CCTF),
+<em>Report of the 21st meeting to the International Committee for Weights and Measures</em>, 2017</formattedref>
+  <docidentifier>BIPM Recommendation CCTF 3 (2017)</docidentifier>
+</bibitem><bibitem id="IAUR24">
+  <formattedref format="application/x-isodoc+xml">International Astronomical Union, <em>IAU Resolutions adopted at the 24th General Assembly</em>, 2000</formattedref>
+  <docidentifier>International Astronomical Union Resolution B1.9 (2000)</docidentifier>
+</bibitem>
+<bibitem id="ISOIEC646" type="standard">
+  <fetched>2019-07-11</fetched>
+  <title type="title-main" format="text/plain" language="en" script="Latn">ISO 7-bit coded character set for information interchange</title>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Information technology</title>
+  <title type="main" format="text/plain" language="en" script="Latn">ISO 7-bit coded character set for information interchange - Information technology</title>
+  <uri type="src">https://www.iso.org/standard/4777.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:4777:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/00/47/4777.detail.rss</uri>
+  <docidentifier type="ISO">ISO/IEC 646</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Electrotechnical Commission</name>
+      <abbreviation>IEC</abbreviation>
+      <uri>www.iec.ch</uri>
+    </organization>
+  </contributor>
+  <edition>3</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>90</stage>
+    <substage>93</substage>
+  </status>
+  <copyright>
+    <from>1991</from>
+    <owner>
+      <organization>
+        <name>ISO/IEC</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 646:1983</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="instance">
+    <bibitem type="standard">
+      <fetched>2019-07-11</fetched>
+      <title type="title-main" format="text/plain" language="en" script="Latn">ISO 7-bit coded character set for information interchange</title>
+      <title type="title-intro" format="text/plain" language="en" script="Latn">Information technology</title>
+      <title type="main" format="text/plain" language="en" script="Latn">ISO 7-bit coded character set for information interchange - Information technology</title>
+      <uri type="src">https://www.iso.org/standard/4777.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:4777:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/00/47/4777.detail.rss</uri>
+      <docidentifier type="ISO">ISO/IEC 646:1991</docidentifier>
+      <date type="published">
+        <on>1991</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Electrotechnical Commission</name>
+          <abbreviation>IEC</abbreviation>
+          <uri>www.iec.ch</uri>
+        </organization>
+      </contributor>
+      <edition>3</edition>
+      <language>en</language>
+      <language>fr</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">Specifies a set of 128 control and graphic characters such as letters, digits and symbols with their coded representation. Applies to alphabets of the Latin script.</abstract>
+      <status>
+        <stage>90</stage>
+        <substage>93</substage>
+      </status>
+      <copyright>
+        <from>1991</from>
+        <owner>
+          <organization>
+            <name>ISO/IEC</name>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 646:1983</formattedref>
+        </bibitem>
+      </relation>
+    </bibitem>
+  </relation>
+</bibitem>
+<bibitem id="ISO8601-1" type="standard">
+  <title format="text/plain">Date and time — Representation for information interchange — Part 1: Basic rules</title>
+  <docidentifier type="ISO">ISO 8601-1:—</docidentifier>
+  <date type="published">
+    <on>--</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>ISO</name>
+    </organization>
+  </contributor>
+  <note format="text/plain">ISO DATE: Under preparation. (Stage at the time of publication ISO/FDIS 8601-1)</note>
+</bibitem><bibitem id="ISO8601-2" type="standard">
+  <title format="text/plain">Date and time — Representation for information interchange — Part 2: Extensions</title>
+  <docidentifier type="ISO">ISO 8601-2:—</docidentifier>
+  <date type="published">
+    <on>--</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>ISO</name>
+    </organization>
+  </contributor>
+  <note format="text/plain">ISO DATE: Under preparation. (Stage at the time of publication ISO/FDIS 8601-2)</note>
+</bibitem>
+<bibitem id="ISO80000-1" type="standard">
+  <fetched>2019-07-11</fetched>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Quantities and units</title>
+  <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: General</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Quantities and units - Part 1: General</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Grandeurs et unités</title>
+  <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 1: Généralités</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Grandeurs et unités - Partie 1: Généralités</title>
+  <uri type="src">https://www.iso.org/standard/30669.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:30669:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/03/06/30669.detail.rss</uri>
+  <docidentifier type="ISO">ISO 80000-1</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>90</stage>
+    <substage>92</substage>
+  </status>
+  <copyright>
+    <from>2009</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 31-0:1992</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 31-0:1992/Amd 1:1998</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 31-0:1992/Amd 2:2005</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 1000:1992</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 1000:1992/Amd 1:1998</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="updates">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 80000-1:2009/Cor 1:2011</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/CD 80000-1</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/DIS 80000-1</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="instance">
+    <bibitem type="standard">
+      <fetched>2019-07-11</fetched>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Quantities and units</title>
+      <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: General</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Quantities and units - Part 1: General</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Grandeurs et unités</title>
+      <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 1: Généralités</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Grandeurs et unités - Partie 1: Généralités</title>
+      <uri type="src">https://www.iso.org/standard/30669.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:30669:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/03/06/30669.detail.rss</uri>
+      <docidentifier type="ISO">ISO 80000-1:2009</docidentifier>
+      <date type="published">
+        <on>2009</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <language>fr</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">ISO 80000-1:2009 gives general information and definitions concerning quantities, systems of quantities, units, quantity and unit symbols, and coherent unit systems, especially the International System of Quantities, ISQ, and the International System of Units, SI.The principles laid down in ISO 80000-1:2009 are intended for general use within the various fields of science and technology and as an introduction to other parts of the Quantities and units series.Ordinal quantities and nominal properties are outside the scope of ISO 80000-1:2009.</abstract>
+      <abstract format="text/plain" language="fr" script="Latn">L’ISO 80000‑1:2009 donne des informations générales et des définitions à propos des grandeurs, des systèmes de grandeurs, des unités, des symboles de grandeurs et d’unités, et des systèmes cohérents d’unités, notamment le Système international de grandeurs (ISQ) et le Système international d’unités (SI).Les principes établis dans l’ISO 80000‑1:2009 sont prévus pour un usage général dans les divers domaines scientifiques et techniques, ainsi qu’en introduction aux autres parties de la présente Norme internationale.Les grandeurs ordinales et les propriétés qualitatives sont hors du domaine d’application de l’ISO 80000‑1:2009.</abstract>
+      <status>
+        <stage>90</stage>
+        <substage>92</substage>
+      </status>
+      <copyright>
+        <from>2009</from>
+        <owner>
+          <organization>
+            <name>ISO</name>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 31-0:1992</formattedref>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 31-0:1992/Amd 1:1998</formattedref>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 31-0:1992/Amd 2:2005</formattedref>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 1000:1992</formattedref>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 1000:1992/Amd 1:1998</formattedref>
+        </bibitem>
+      </relation>
+      <relation type="updates">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 80000-1:2009/Cor 1:2011</formattedref>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/CD 80000-1</formattedref>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/DIS 80000-1</formattedref>
+        </bibitem>
+      </relation>
+    </bibitem>
+  </relation>
+</bibitem>
+
+<bibitem id="ISO80000-3" type="standard">
+  <fetched>2019-07-11</fetched>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Quantities and units</title>
+  <title type="title-part" format="text/plain" language="en" script="Latn">Part 3: Space and time</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Quantities and units - Part 3: Space and time</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Grandeurs et unités</title>
+  <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 3: Espace et temps</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Grandeurs et unités - Partie 3: Espace et temps</title>
+  <uri type="src">https://www.iso.org/standard/31888.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:31888:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/03/18/31888.detail.rss</uri>
+  <docidentifier type="ISO">ISO 80000-3</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>90</stage>
+    <substage>92</substage>
+  </status>
+  <copyright>
+    <from>2006</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 31-1:1992</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 31-1:1992/Amd 1:1998</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 31-2:1992</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 31-2:1992/Amd 1:1998</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="updates">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 80000-3</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="instance">
+    <bibitem type="standard">
+      <fetched>2019-07-11</fetched>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Quantities and units</title>
+      <title type="title-part" format="text/plain" language="en" script="Latn">Part 3: Space and time</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Quantities and units - Part 3: Space and time</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Grandeurs et unités</title>
+      <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 3: Espace et temps</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Grandeurs et unités - Partie 3: Espace et temps</title>
+      <uri type="src">https://www.iso.org/standard/31888.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:31888:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/03/18/31888.detail.rss</uri>
+      <docidentifier type="ISO">ISO 80000-3:2006</docidentifier>
+      <date type="published">
+        <on>2006</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <language>fr</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">ISO 80000-3:2006 gives names, symbols and definitions for quantities and units of space and time. Where appropriate, conversion factors are also given.</abstract>
+      <abstract format="text/plain" language="fr" script="Latn">L’ISO 80000-3:2006 spécifie les noms, les symboles et les définitions des grandeurs et unités d’espace et de temps. Des facteurs de conversion sont également indiqués, s’il y a lieu.</abstract>
+      <status>
+        <stage>90</stage>
+        <substage>92</substage>
+      </status>
+      <copyright>
+        <from>2006</from>
+        <owner>
+          <organization>
+            <name>ISO</name>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 31-1:1992</formattedref>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 31-1:1992/Amd 1:1998</formattedref>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 31-2:1992</formattedref>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 31-2:1992/Amd 1:1998</formattedref>
+        </bibitem>
+      </relation>
+      <relation type="updates">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 80000-3</formattedref>
+        </bibitem>
+      </relation>
+    </bibitem>
+  </relation>
+</bibitem>
+
+<bibitem id="IEC60050-113" type="standard">
+  <title type="title-main" format="text/plain" language="en" script="Latn">International Electrotechnical Vocabulary (IEV)</title>
+  <title type="title-part" format="text/plain" language="en" script="Latn">Part 113: Physics for electrotechnology</title>
+  <title type="main" format="text/plain" language="en" script="Latn">International Electrotechnical Vocabulary (IEV) - Part 113: Physics for electrotechnology</title>
+  <uri type="src">https://webstore.iec.ch/publication/164</uri>
+  <uri type="obp">/preview/info_iec60050-113%7Bed1.0%7Db.pdf</uri>
+  <docidentifier type="IEC">IEC 60050-113:2011</docidentifier>
+  <date type="published">
+    <on>2011</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Electrotechnical Commission</name>
+      <abbreviation>IEC</abbreviation>
+      <uri>www.iec.ch</uri>
+    </organization>
+  </contributor>
+  <edition>1.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/plain" language="en" script="Latn">IEC 60050-113:2011 gives the general terminology on physical concepts used in the fields of electricity, electronics and telecommunications. Its target is to collect the most usual concepts in space and time, macroscopic physics, mechanics, thermodynamics, particle physics, and solid-state physics, and to present them as terms and descriptions given in logical order according to their interdependence. The descriptions are definitions from the terminological point of view, but they are not always complete definitions in physical sense. Their main goal is to distinguish among particular concepts. In consequence, this part of the IEV should not be regarded as a physical textbook, but rather as a set of terms with their equivalents in many languages and with descriptions in the main IEV languages. This first edition cancels and replaces Sections 111-13, 111-14 and 111-16 of International Standard IEC 60050-111:1996 and its Amendment 1:2005. It has the status of a horizontal standard in accordance with IEC Guide 108. The contents of the corrigendum of September 2011 have been included in this copy.</abstract>
+  <status>
+    <stage>60</stage>
+    <substage>60</substage>
+  </status>
+  <copyright>
+    <from>2011</from>
+    <owner>
+      <organization>
+        <name>International Electrotechnical Commission</name>
+        <abbreviation>IEC</abbreviation>
+        <uri>www.iec.ch</uri>
+      </organization>
+    </owner>
+  </copyright>
+</bibitem>
+
+<bibitem id="IEC60050-713" type="standard">
+  <title type="title-main" format="text/plain" language="en" script="Latn">International Electrotechnical Vocabulary (IEV)</title>
+  <title type="title-part" format="text/plain" language="en" script="Latn">Part 713: Radiocommunications: transmitters, receivers, networks and operation</title>
+  <title type="main" format="text/plain" language="en" script="Latn">International Electrotechnical Vocabulary (IEV) - Part 713: Radiocommunications: transmitters, receivers, networks and operation</title>
+  <uri type="src">https://webstore.iec.ch/publication/243</uri>
+  <uri type="obp">/preview/info_iec60050-713%7Bed1.0%7Db.pdf</uri>
+  <docidentifier type="IEC">IEC 60050-713:1998</docidentifier>
+  <date type="published">
+    <on>1998</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Electrotechnical Commission</name>
+      <abbreviation>IEC</abbreviation>
+      <uri>www.iec.ch</uri>
+    </organization>
+  </contributor>
+  <edition>1.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/plain" language="en" script="Latn">It has the status of a horizontal standard in accordance with IEC Guide 108.</abstract>
+  <status>
+    <stage>60</stage>
+    <substage>60</substage>
+  </status>
+  <copyright>
+    <from>1998</from>
+    <owner>
+      <organization>
+        <name>International Electrotechnical Commission</name>
+        <abbreviation>IEC</abbreviation>
+        <uri>www.iec.ch</uri>
+      </organization>
+    </owner>
+  </copyright>
+</bibitem>
+<bibitem id="ITURTF460-6">
+  <formattedref format="application/x-isodoc+xml">
+    <em>Standard-frequency and time-signal emissions</em>
+  </formattedref>
+  <docidentifier>ITU-R TF.460-6</docidentifier>
+</bibitem><bibitem id="IEV">
+  <formattedref format="application/x-isodoc+xml">
+    <em>IEC Electropedia</em>
+  </formattedref>
+  <docidentifier type="IEC">IEC Electropedia</docidentifier>
+</bibitem></references></bibliography>
+</csd-standard>

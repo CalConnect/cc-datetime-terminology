@@ -1,4 +1,4 @@
-= Computer applications in terminology -- Naming -- Structure of personal names
+= Date and time -- Concepts and terminology
 :docnumber: 34000
 :copyright-year: 2019
 :language: en
