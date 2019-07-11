@@ -1,0 +1,1670 @@
+<?xml version="1.0"?>
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:epub="http://www.idpf.org/2007/ops">
+  <head><style>
+  <!--
+/*
+    0 CSS RESET
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font-size: 100%; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  vertical-align: baseline; }
+
+html, body, div, span, applet, object, iframe,
+p, blockquote,
+a, abbr, acronym, address, big, cite,
+del, dfn, em, img, ins, q, s,
+small, strike, strong, sub, sup, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-family: "Overpass", sans-serif; }
+
+code, pre, tt, kbd, samp {
+  font-family: "Space Mono", monospace;
+  font-variant-ligatures: none; }
+
+code *, pre *, tt *, kbd *, samp * {
+  font-family: "Space Mono", monospace !important;
+  font-variant-ligatures: none; }
+
+h1, h2, h3, h4, h5, h6, .h2Annex {
+  font-family: "Overpass", sans-serif; }
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto; }
+
+dt {
+  grid-column-start: 1; }
+
+dd {
+  grid-column-start: 2; }
+
+dd p, dt p {
+  margin-top: 0px; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+    1. HTML & Body
+*/
+body {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  color: #1d1d1d;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.4em;
+  background-color: #ffffff; }
+
+main {
+  margin: 0 3em 0 6em; }
+
+#toc {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400; }
+
+/*
+    2. Responsive navigation layout
+*/
+@media screen and (min-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 323px;
+    font-size: 0.9em;
+    overflow: auto;
+    padding: 0 0 0 45px;
+    margin-right: 30px;
+    background-color: #f7f7f7; }
+  #toggle {
+    position: fixed;
+    height: 100%;
+    width: 30px;
+    background-color: #1d1d1d;
+    color: white !important;
+    cursor: pointer;
+    z-index: 100; }
+  #toggle span {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%); }
+  .container {
+    padding-left: 360px; }
+  .rule.toc {
+    display: none; }
+  h1.toc-contents {
+    margin-top: 1em; }
+  ul#toc-list {
+    padding: 0;
+    margin: 0; } }
+
+@media screen and (max-width: 768px) {
+  #toc {
+    padding: 0 1.5em 0 1.5em;
+    overflow: visible; } }
+
+@media screen {
+  div.figure > img {
+    width: 100%;
+    height: auto; } }
+
+#toc ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#toc li {
+  padding: 5px 10px; }
+
+#toc a {
+  color: #485094;
+  text-decoration: none;
+  display: block; }
+
+#toc a:hover {
+  color: white; }
+
+#toc .h2 {
+  padding-left: 30px; }
+
+#toc .h3 {
+  padding-left: 50px; }
+
+#toc .toc-active a {
+  color: white; }
+
+#toc .toc-active, #toc li:hover {
+  background: #1d1d1d;
+  box-shadow: inset -5px 0px 10px -5px #1d1d1d !important; }
+
+#toc li:hover a {
+  color: white; }
+
+/*
+    Document types + stages
+*/
+.document-type-band {
+  left: 0;
+  top: 180px;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 99;
+  /*box-shadow: -5px 0px 10px #1d1d1d*/ }
+
+.document-stage-band {
+  left: 0;
+  top: 0;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 98;
+  box-shadow: -5px 0px 10px #1d1d1d; }
+
+.document-type {
+  position: relative;
+  width: 25px; }
+
+.document-stage {
+  position: relative;
+  width: 25px; }
+
+p.document-type, p.document-stage {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 0;
+  margin-left: 6px;
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  display: block;
+  bottom: 0; }
+
+p.document-type {
+  font-weight: 400;
+  height: 210px; }
+
+#governance-band p.document-type {
+  font-weight: 400;
+  height: 230px !important; }
+
+p.document-stage {
+  font-weight: 300;
+  height: 160px; }
+
+#standard-band {
+  background-color: #0AC442; }
+
+#standard {
+  border-bottom: solid 3px #0AC442; }
+
+#directive-band {
+  background-color: #540D6E; }
+
+#directive {
+  border-bottom: solid 3px #540D6E; }
+
+#guide-band {
+  background-color: #D183C9; }
+
+#guide {
+  border-bottom: solid 3px #D183C9; }
+
+#specification-band {
+  background-color: #65AFFF; }
+
+#specification {
+  border-bottom: solid 3px #65AFFF; }
+
+#report-band {
+  background-color: #3A405A; }
+
+#report {
+  border-bottom: solid 3px #3A405A; }
+
+#amendment-band {
+  background-color: #F26430; }
+
+#amendment {
+  border-bottom: solid 3px #F26430; }
+
+#corrigendum-band {
+  background-color: #C84630; }
+
+#corrigendum {
+  border-bottom: solid 3px #C84630; }
+
+#administrative-band {
+  background-color: #BFAE48; }
+
+#administrative {
+  border-bottom: solid 3px #BFAE48; }
+
+#advisory-band {
+  background-color: #BD9391; }
+
+#advisory {
+  border-bottom: solid 3px #BD9391; }
+
+#proposal-band {
+  background-color: #39A0ED; }
+
+#proposal {
+  border-bottom: solid 3px #39A0ED; }
+
+#working-draft-band {
+  background-color: #2D7393; }
+
+#working-draft {
+  border-bottom: solid 3px #2D7393; }
+
+#committee-draft-band {
+  background-color: #2A6B7C; }
+
+#committee-draft {
+  border-bottom: solid 3px #2A6B7C; }
+
+#draft-standard-band {
+  background-color: #1C7F7A; }
+
+#draft-standard {
+  border-bottom: solid 3px #1C7F7A; }
+
+#final-draft-band {
+  background-color: #53C170; }
+
+#final-draft {
+  border-bottom: solid 3px #53C170; }
+
+#published-band {
+  background-color: #069E2D; }
+
+#published {
+  border-bottom: solid 3px #069E2D; }
+
+#withdrawn-band {
+  background-color: #004E64; }
+
+#withdrawn {
+  border-bottom: solid 3px #004E64; }
+
+#cancelled-band {
+  background-color: #2E382E; }
+
+#cancelled {
+  border-bottom: solid 3px #2E382E; }
+
+.coverpage-maturity {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0 0 2em 0;
+  text-transform: uppercase; }
+
+/*
+    3. TYPOGRAPHY
+*/
+/*
+    3.1 Titles
+*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Overpass", sans-serif;
+  color: #0e1a85;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0.3em; }
+
+h1 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  margin-top: 2em; }
+
+h1#content {
+  margin-top: 2em; }
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 400; }
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 400; }
+
+/*
+  span[id^="toc"]:after {
+    float: left;
+    padding-right: 4px;
+    margin-left: -20px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 0.8em;
+    color: #cfcfcf;
+    content: "\f0c1";
+  }
+  */
+.TermNum, .Terms, .AltTerms {
+  color: #485094;
+  font-weight: 400; }
+
+p.TermNum {
+  font-size: 0.9em;
+  line-height: 1em;
+  margin: 0;
+  margin-top: 2em; }
+
+p.Terms {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  margin: 0; }
+
+/*
+  p.AltTerms {
+    font-style: italic;
+    margin: 0;
+  }
+  */
+span.obligation {
+  font-weight: 400; }
+
+/*
+    3.2 Links
+*/
+a, a:visited {
+  text-decoration: none;
+  color: #485094; }
+
+a:hover {
+  color: white;
+  background: #1d1d1d;
+  box-shadow: 3px 0 0 #1d1d1d, -3px 0 0 #1d1d1d;
+  /* padding: 2px 0 2px 0; */ }
+
+::selection {
+  background: #1d1d1d;
+  /* WebKit/Blink Browsers */
+  color: white; }
+
+::-moz-selection {
+  background: #1d1d1d;
+  /* Gecko Browsers */
+  color: white; }
+
+.contact-info a:hover {
+  color: #485094;
+  text-decoration: underline;
+  background: none;
+  box-shadow: 0 0 0 0; }
+
+/*
+    3.3 Lists
+*/
+ol {
+  margin-left: 1.2em; }
+
+ul {
+  position: relative;
+  margin-left: 0;
+  list-style: none;
+  padding-left: 1.2em; }
+
+ul > li:before {
+  content: "\2014";
+  position: absolute;
+  left: 0; }
+
+main li {
+  margin-top: 1em;
+  padding-left: 0.5em; }
+
+#toc ul {
+  margin-bottom: 0.25em; }
+
+#toc li {
+  list-style-type: none; }
+
+#toc li:before {
+  content: " ";
+  display: none; }
+
+/*
+    3.4 Rules
+*/
+.rule {
+  width: 100%;
+  height: 1px;
+  background-color: #0e1a85;
+  margin: 2em 0; }
+
+h2 p {
+  display: inline; }
+
+/*
+    3.5 Bibliograhy
+*/
+p.Biblio, p.NormRef {
+  margin-top: 1em; }
+
+p.Biblio:before, p.NormRef:before {
+  content: "\2014";
+  padding-right: 1em; }
+
+/*
+    3.6 Source Code + figures
+*/
+.figure, .Sourcecode {
+  font-family: "Space Mono", monospace;
+  font-variant-ligatures: none;
+  background-color: #f7f7f7;
+  font-size: 0.8em;
+  line-height: 1.6em;
+  padding: 1.5em;
+  margin: 2em 0 1em 0;
+  overflow: auto; }
+
+.FigureTitle, .SourceTitle, .AdmonitionTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+/*
+    3.7 Notes
+*/
+.Note, .Admonition {
+  color: #47430c;
+  padding: 0.25em;
+  margin: 0; }
+
+.Note p, .Admonition p {
+  margin: 1em; }
+
+.Note {
+  background-color: #fff495; }
+
+.Admonition {
+  background-color: #ffcccc; }
+
+/*
+    3.8 Examples
+*/
+table.example {
+  background-color: #e1eef1; }
+
+td.example {
+  padding: 0 1em 0 1em;
+  margin: 2em 0 1em 0; }
+
+.example {
+  background-color: #e1eef1;
+  padding: 0.5em;
+  margin: 2em 0 1em 0;
+  text-align: left;
+  padding-left: 2em; }
+
+.example p {
+  margin: 0; }
+
+.example .example-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-left: -1.5em; }
+
+.example .Sourcecode {
+  background: none; }
+
+/*
+    3.9 Tables
+*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: 300;
+  margin: 1em 0 2em 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 2em; }
+
+table, th, td {
+  border: 1px solid black;
+  font-size: 0.95em; }
+
+td, th {
+  padding: 1em; }
+
+td.header {
+  font-weight: 400; }
+
+p.TableTitle {
+  text-align: center;
+  margin-top: 2.5em;
+  font-weight: 400; }
+
+/*
+  3.10 Footnotes
+*/
+a.footnote-number {
+  vertical-align: super;
+  font-size: 0.8em; }
+
+.footnote {
+  font-size: 0.9em; }
+
+/*
+    3.11 Blockquotes
+*/
+.Quote {
+  background-color: #f7f7f7;
+  font-style: italic;
+  width: 80%;
+  padding: 1.5em;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.QuoteAttribution {
+  text-align: right; }
+
+/*
+    3.12 Formulas
+*/
+.formula, .Formula {
+  background-color: #f7f7f7;
+  padding: 1.5em;
+  margin-top: 2em;
+  text-align: center; }
+
+/*
+    3.13 Contact Info
+*/
+.contact-info {
+  background-color: #f7f7f7;
+  padding: 1em;
+  margin-top: 2em;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; }
+
+.contact-info p, .contact-info a {
+  font-family: "Space Mono", monospace;
+  font-variant-ligatures: none;
+  font-weight: 400;
+  line-height: 1.3em;
+  font-size: 1em;
+  margin: 0; }
+
+.contact-info .name {
+  font-weight: 700; }
+
+/*
+    Keywords
+*/
+span.keyword {
+  font-weight: 600; }
+
+/*
+    Paragraphs
+*/
+p {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+/* Admonitions */
+.Admonition, .admonition {
+  background-color: #ffb3b3;
+  /* color: #47430c;*/
+  padding: 0.5em;
+  margin: 1.5em 0 1.5em 0;
+  text-align: left; }
+
+.Admonition p, .admonition p {
+  margin: 0; }
+
+/*
+    4.0 Page header
+*/
+/*
+    4.1 Top Logo
+*/
+.wrapper-top {
+  background-color: #0e1a85;
+  /* background-image: url("img/dots@2x.png"); */
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAACXBIWXMAABYlAAAWJQFJUiTwAAADwUlEQVR4nO3YgQ2AMAwDwcAiWZ1NizrH30lIeIEq9nPOGSDqPgC7+93v/suy3Mmvhx+6VAAIcwFAmc4nyzYAIMgGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAIS5AKCs3oFk2QYAJNkAIMwFAGX1DiTLNgAgyQYAYS4AKKt3IFm2AQBJNgAIcwFAWb0DybINAEiyAUCYCwDK6h1Ilm0AQJINAMJcAFBW70CybAMAkmwAEOYCgLJ6B5JlGwCQZAOAMBcAlNU7kCzbAIAkGwCEuQCgrN6BZNkGACTZACDMBQBl9Q4kyzYAIMkGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAIS5AKCs3oFk2QYAJNkAIMwFAGX1DiTLNgAgyQYAYS4AKKt3IFm2AQBJNgAIcwFAWb0DybINAEiyAUCYCwDK6h1Ilm0AQJINAMJcAFBW70CybAMAkmwAEOYCgLJ6B5JlGwCQZAOAMBcAlNU7kCzbAIAkGwCEuQCgrN6BZNkGACTZACDMBQBl9Q4kyzYAIMkGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAFTNzA9ggAr9aahO8QAAAABJRU5ErkJggg==");
+  color: #ffffff;
+  padding: 2em 0; }
+
+.doc-number {
+  font-size: 0.5em;
+  font-family: "Overpass", sans-serif; }
+
+.coverpage-title {
+  padding-bottom: 0.5em;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 600;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.title-section1 {
+  padding: 0 2em 0 3em; }
+
+.prefatory-section {
+  padding: 0 3em 0 6em; }
+
+.zzSTDTitle1, .MsoCommentText {
+  display: none; }
+
+.coverpage {
+  text-align: center;
+  padding-left: 1.5em; }
+
+.coverpage-logo span, .coverpage-tc-name span {
+  font-family: "Overpass", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.coverpage-tc-name {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin: 0.25em 0; }
+
+.coverpage-contributors {
+  margin-top: 1em;
+  line-height: 1.5em;
+  font-weight: 300; }
+
+.coverpage-contributors .role {
+  font-variant-caps: all-small-caps;
+  background: #f7f7f7;
+  border-radius: 5px;
+  padding: 0.1em 0.5em;
+  margin-left: 1em;
+  color: #485094;
+  font-size: 0.9em;
+  font-weight: 900; }
+
+.coverpage-contributors .person {
+  display: block;
+  font-weight: 300; }
+
+/*
+    4.2 Document Identity
+*/
+.coverpage-doc-identity {
+  font-size: 2em;
+  line-height: 2em; }
+
+.coverpage-title .title-second {
+  display: none; }
+
+.coverpage-stage-block {
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
+  margin: 2em 0em 2em 0em;
+  text-transform: uppercase; }
+
+/*
+    4.3 Draft Warning
+*/
+.coverpage-warning {
+  border-top: solid 1px #f36f36;
+  border-bottom: solid 1px #f36f36;
+  margin: 1em 2em;
+  color: #485094;
+  padding: 1em; }
+
+.coverpage-warning .title {
+  color: #f36f36;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2em; }
+
+/*
+    4.4 Copyright
+*/
+.copyright {
+  padding: 1em;
+  font-size: 0.9em;
+  text-align: left; }
+
+.copyright .name, .copyright .address {
+  color: #485094; }
+
+/*
+    5.0 Other styles
+*/
+/*
+To top button
+*/
+#myBtn {
+  font-family: "Space Mono", monospace;
+  font-variant-ligatures: none;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: #1d1d1d;
+  opacity: 0.15;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  border-radius: 4px; }
+
+#myBtn:hover {
+  opacity: 1; }
+
+a.anchorjs-link:hover {
+  background: none;
+  color: #485094;
+  box-shadow: none; }
+
+@page {
+  margin: 2cm 1cm 2cm 1cm; }
+
+@media print {
+  h1, .title-section1 {
+    page-break-before: always; }
+  #toggle, .document-stage-band,
+  .document-type-band, #myBtn {
+    display: none; }
+  .container {
+    padding-left: 0; }
+  nav {
+    position: relative;
+    width: auto;
+    font-size: 0.9em;
+    overflow: auto;
+    padding: 0;
+    margin-right: 0;
+    background-color: white; }
+  #toc .toc-active a {
+    color: #485094; }
+  #toc .toc-active, #toc li:hover {
+    background: white;
+    box-shadow: none !important; }
+  #toc li:hover a {
+    color: black; }
+  h1.toc-contents {
+    margin-top: 2em; } }
+
+-->
+</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Date and time&#x2009;&#x2014;&#x2009;Concepts and terminology</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--TOC script import-->
+<script type="text/javascript" src="https://cdn.rawgit.com/jgallen23/toc/0.3.2/dist/toc.min.js"></script>
+<script type="text/javascript">function toclevel() { var i; var text = "";
+  for(i = 1; i <= 2; i++) {
+    if (i > 1) { text += ","; } text += "h" + i + ":not(:empty):not(.TermNum)"; } 
+  return text;}
+</script>
+
+<!--Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Space+Mono:400,700" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Overpass:300,300i,600,900" rel="stylesheet" />
+
+<!--Font awesome import for the link icon-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
+<style class="anchorjs"></style>
+</head>
+  <body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container">
+    <div class="title-section"><div class="document-stage-band" id="working-draft-band">
+  <p class="document-stage">Working Draft</p>
+</div>
+
+<div class="document-type-band" id="standard-band">
+  <p class="document-type">CalConnect Standard</p>
+</div>
+
+<div id="toggle"> <span>&#x2022;</span> </div>
+
+<header>
+
+  <!--<div class="WordSection1">-->
+  <div class="coverpage">
+    <div class="wrapper-top">
+
+      <div class="coverpage-doc-identity">
+        <div class="doc-number">
+          <span class="docnumber">CC/WD 34000:2019</span>
+          <!-- <span class="docnumber-separator">:</span>
+            <span class="docyear">2019</span> -->
+        </div>
+
+        <div class="coverpage-title">
+          <span class="title-first">Date and time&#x2009;&#x2014;&#x2009;Concepts and terminology</span>
+          <!--<span class="title-second"></span>-->
+        </div>
+      </div>
+
+      <div class="coverpage-logo">
+        <span>The Calendaring and Scheduling Consortium</span>
+      </div>
+
+      <div class="coverpage-tc-name">
+        <span>TC DATETIME</span>
+      </div>
+
+      
+
+      
+
+      <div class="coverpage-contributors">
+        
+
+      </div>
+    </div>
+
+    <div class="title-section1">
+      <div class="coverpage-stage-block">
+        <span class="coverpage-stage" id="standard">CalConnect Standard</span>
+      </div>
+
+      <div class="coverpage-stage-block">
+        <span class="coverpage-maturity" id="working-draft">Working Draft</span>
+      </div>
+
+      
+      <div class="coverpage-warning">
+        <span class="title">Warning for Drafts</span>
+
+        <p class="content">
+        This document is not a CalConnect Standard. It is distributed for review and
+        comment, and is subject to change without notice and may not be referred to as
+        a Standard. Recipients of this draft are invited to submit, with their
+        comments, notification of any relevant patent rights of which they are aware
+        and to provide supporting documentation.
+        </p>
+      </div>
+      
+
+      <div class="copyright">
+        <p class="year">
+        &#xA9; 2019 The Calendaring and Scheduling Consortium, Inc.
+        </p>
+
+        <p class="message">
+        All rights reserved. Unless otherwise specified, no part of this
+        publication may be reproduced or utilized otherwise in any form or by any
+        means, electronic or mechanical, including photocopying, or posting on the
+        internet or an intranet, without prior written permission. Permission can
+        be requested from the address below.
+        </p>
+
+        <div class="contact-info">
+          <p class="name">The Calendaring and Scheduling Consortium, Inc.</p>
+          <p class="address">
+          4390 Chaffin Lane<br />
+          McKinleyville<br />
+          California 95519<br />
+          United States of America<br />
+          <br />
+          <a href="mailto:copyright@calconnect.org">copyright@calconnect.org</a><br />
+          <a href="www.calconnect.org">www.calconnect.org</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="rule"></div>
+    </div>
+  </div>
+</header>
+
+      <p>&#xA0;</p>
+    </div>
+    <br />
+    <div class="prefatory-section"><nav>
+  <h1 id="content">Contents</h1>
+  <div id="toc"></div>
+
+</nav>
+
+
+<div class="rule toc"></div>
+
+      <p>&#xA0;</p>
+    </div>
+    <br />
+    <main class="main-section"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <br />
+      <div>
+        <h1 class="ForewordTitle">Foreword</h1>
+        <p id="foreword">The Calendaring and Scheduling Consortium (&#x201C;CalConnect&#x201D;) is a global
+non-profit organization with the aim to facilitate interoperability of
+collaborative technologies and tools through open standards.</p>
+        <p id="_5028213d-5532-4433-8f05-3928d2dbeefa">CalConnect works closely with international and regional partners,
+of which the full list is available on our website
+(<a href="https://www.calconnect.org/about/liaisons-and-relationships">https://www.calconnect.org/about/liaisons-and-relationships</a>).</p>
+        <p id="_7d66c61b-c85a-4950-a6d6-99290e1044b4">The procedures used to develop this document and those intended for its
+further maintenance are described in the CalConnect Directives.</p>
+        <p id="_0c37b833-445b-4223-982a-e604c273a384">In particular the different approval criteria needed for the different
+types of CalConnect documents should be noted. This document was drafted in
+accordance with the editorial rules of the CalConnect Directives.</p>
+        <p id="_eb1ae499-6c90-4939-9ce9-be44053f6dcb">Attention is drawn to the possibility that some of the elements of this
+document may be the subject of patent rights. CalConnect shall not be
+held responsible for identifying any or all such patent rights. Details
+of any patent rights identified during the development of the document
+will be provided in the Introduction.</p>
+        <p id="_71baf773-980b-4465-ba9d-e9131389a5e9">Any trade name used in this document is information given for the
+convenience of users and does not constitute an endorsement.</p>
+        <p id="_a9d347a8-0598-4c2d-a65e-2200cf0f4713">This document was prepared by Technical Committee
+<i>DATETIME</i>.</p>
+      </div>
+      <br />
+      <div class="Section3" id="introduction">
+        <h1 class="IntroTitle">Introduction</h1>
+        <p id="_0278996c-a7a9-425e-89a8-20540a9b788b">ISO Recommendations and Standards relating to date and time concepts
+have been available since 1971.</p>
+        <p id="_0544bb7e-7c36-437d-b031-35be82f12d6c">This document presents terms and definitions for selected concepts
+relevant to date and time concepts and of their representation.</p>
+        <p id="_62aa50dc-c546-4173-937d-ff5cacc56931">Specifically, the terminology presented in this document:</p>
+        <ul id="_53a85fac-d8d5-40b5-befe-92ae3f8b07d6">
+  <li>
+    <p id="_c3409c45-0faa-4b2c-a910-69c2ee4b68db">serve as a sound basis in the understanding of date and time;</p>
+  </li>
+  <li>
+    <p id="_91b83275-6586-40ca-9160-920da716b64f">guide new developments in the field by underpinning mutual understanding; and</p>
+  </li>
+  <li>
+    <p id="_f3046124-e204-40e0-9a24-b2adfaebc513">serve as a quick and handy reference for those newly inaugurated to this field.</p>
+  </li>
+</ul>
+        <p id="_9aa989f1-56e2-4bac-a539-1ea0d3bee0b7">Most terms in this document were sourced from <a href="#ISO8601-1">ISO 8601-1:--</a> and <a href="#ISO8601-2">ISO 8601-2:--</a>.</p>
+      </div>
+      <p class="zzSTDTitle1">Date and time&#x2009;&#x2014;&#x2009;Concepts and terminology</p>
+      <div id="_scope">
+        <h1>1.&#xA0; Scope</h1>
+        <p id="_98dcab2a-f947-413f-be9c-fabc16f42747">This document provides a concept system and a standard set of
+terminology related to date and time, from basic concepts to those of
+their representation.</p>
+        <p id="_6a0042a5-e188-4c4f-ae4a-4a431a362e08">The scope of the vocabulary provided in this document corresponds to
+that of ISO/TC 154/WG 5: Representation of dates and times.</p>
+      </div>
+      <div>
+        <h1>2.&#xA0; Normative references</h1>
+        <p>There are no normative references in this document.</p>
+      </div>
+      <div id="tda"><h1>3.&#xA0; Terms, definitions, symbols and abbreviated terms</h1><p>For the purposes of this document,
+    the following terms and definitions apply.</p>
+<div id="terms"><h2>3.1. Terms and definitions</h2><div id="terms-concepts"><h3>3.1.1. Basic concepts</h3><h4 class="TermNum" id="term-date">3.1.1.1.&#xA0;<p class="Terms" style="text-align:left;">date</p></h4><p id="_9793f925-fd36-4e41-87f5-321c03bc5bec"><i>time</i> (<a href="#term-time">Clause 3.1.1.2</a>) on the <i>calendar</i> (<a href="#term-calendar">Clause 3.1.1.20</a>) <i>time scale</i> (<a href="#term-time-scale">Clause 3.1.1.5</a>)</p>
+<div class="Note"><p>Note 1 to entry: Common forms of date include: <i>calendar date</i> (<a href="#term-calendar-date">Clause 3.1.2.7</a>), <i>ordinal date</i> (<a href="#term-ordinal-date">Clause 3.1.2.8</a>), and <i>week date</i> (<a href="#term-week-date">Clause 3.1.2.9</a>).</p></div>
+<h4 class="TermNum" id="term-time">3.1.1.2.&#xA0;<p class="Terms" style="text-align:left;">time</p></h4><p id="_a395ab78-2629-4309-a1f2-52be08ace317">mark attributed to an <i>instant</i> (<a href="#term-instant">Clause 3.1.1.3</a>) or a <i>time interval</i>
+(<a href="#term-time-interval">Clause 3.1.1.6</a>) on a specified <i>time scale</i> (<a href="#term-time-scale">Clause 3.1.1.5</a>)</p>
+
+
+<div class="Note"><p>Note 1 to entry: The term &#x201C;time&#x201D; is often used in common language. However, it should only be used if the meaning is clearly visible from the context.</p></div><div class="Note"><p>Note 2 to entry: On a time scale consisting of successive time intervals, such as a <i>clock</i> (<a href="#term-clock">Clause 3.1.1.9</a>) or <i>calendar</i> (<a href="#term-calendar">Clause 3.1.1.20</a>), distinct instants may be expressed by the same time.</p></div><div class="Note"><p>Note 3 to entry: This definition corresponds closely with the definition of the term &#x201C;date&#x201D; in <a href="#IEV">IEC Electropedia, Clause 113-01-12</a>.</p></div>
+<h4 class="TermNum" id="term-instant">3.1.1.3.&#xA0;<p class="Terms" style="text-align:left;">instant</p></h4><p id="_b6381840-b5ff-4b64-bfc6-6fec9c168b48">point on the <i>time axis</i> (<a href="#term-time-axis">Clause 3.1.1.4</a>)</p>
+
+<div class="Note"><p>Note 1 to entry: An instantaneous event occurs at a specific instant.</p></div><p>[SOURCE: <a href="#IEV">IEC Electropedia, Clause 113-01-08</a>]</p>
+<h4 class="TermNum" id="term-time-axis">3.1.1.4.&#xA0;<p class="Terms" style="text-align:left;">time axis</p></h4><p id="_95fca1ff-8e9d-46f9-b948-009823d01678">mathematical representation of the succession in time according to the space-time model of instantaneous events along a unique axis</p>
+
+
+<div class="Note"><p>Note 1 to entry: According to the theory of special relativity, the time axis depends on the choice of a spatial reference frame.</p></div><div class="Note"><p>Note 2 to entry: In <a href="#IEV">IEC Electropedia, Clause 113-01-03</a>, time according to the space-time model is defined to be the one-dimensional subspace of space-time, locally orthogonal to space.</p></div><p>[SOURCE: <a href="#IEV">IEC Electropedia, Clause 113-01-07</a>, modified &mdash; The words &#x201C;according to the space-time&#x201D; have been added; the phrase &#x201C;special theory of relativity&#x201D; has been changed to &#x201C;theory of special relativity&#x201D; for clarity; Note 2 to entry has been added.]</p>
+<h4 class="TermNum" id="term-time-scale">3.1.1.5.&#xA0;<p class="Terms" style="text-align:left;">time scale</p></h4><p id="_d323e122-0328-4e6b-9cbf-e9716e6b25a6">system of ordered marks which can be attributed to <i>instants</i> (<a href="#term-instant">Clause 3.1.1.3</a>) on the <i>time axis</i> (<a href="#term-time-axis">Clause 3.1.1.4</a>), one instant being chosen as the origin</p>
+
+<div class="Note"><p>Note 1 to entry: A time scale may amongst others be chosen as:<ul id="_dbf4743d-f008-4d90-bfd7-05462740c4cf">
+  <li>
+    <p id="_d35efdad-d343-4429-8a3c-8fcb90851abc">continuous, e.g. international atomic time (TAI) (see <a href="#IEV">IEC Electropedia, Clause 713-05-18</a>);</p>
+  </li>
+  <li>
+    <p id="_33503a5e-e996-44ac-8426-f98df0e55bc9">continuous with discontinuities, e.g. <i>Coordinated Universal Time (UTC)</i> (<a href="#term-utc">Clause 3.1.1.12</a>) due to <i>leap seconds</i> (<a href="#term-leap-second">Clause 3.1.1.26</a>), <i>standard time</i> (<a href="#term-standard-time">Clause 3.1.1.15</a>) due to summer time and winter time;</p>
+  </li>
+  <li>
+    <p id="_acb9411b-eef8-4457-b0f5-0090b971550b">successive steps, e.g. <i>calendars</i> (<a href="#term-calendar">Clause 3.1.1.20</a>), where the <i>time axis</i> (<a href="#term-time-axis">Clause 3.1.1.4</a>) is split up into a succession of consecutive <i>time intervals</i> (<a href="#term-time-interval">Clause 3.1.1.6</a>) and the same mark is attributed to all instants of each time interval;</p>
+  </li>
+  <li>
+    <p id="_05b77e6e-72ba-47db-bc69-20d42466a2f7">discrete, e.g. in digital techniques.</p>
+  </li>
+</ul></p></div><p>[SOURCE: <a href="#IEV">IEC Electropedia, Clause 113-01-11</a>, modified &mdash; The words &#x201C;amongst others&#x201D; in Note 1 to entry have been added; NOTEs 2 and 3 have been deleted.]</p>
+<h4 class="TermNum" id="term-time-interval">3.1.1.6.&#xA0;<p class="Terms" style="text-align:left;">time interval</p></h4><p id="_683c5b6c-baa6-48e2-be45-6752fd668c77">part of the <i>time axis</i> (<a href="#term-time-axis">Clause 3.1.1.4</a>) limited by two <i>instants</i> (<a href="#term-instant">Clause 3.1.1.3</a>) and, unless otherwise stated, the limiting instants themselves</p>
+<p>[SOURCE: <a href="#IEV">IEC Electropedia, Clause 113-01-10</a>, modified &mdash; the words &#x201C;and, unless otherwise stated, the limiting instants themselves&#x201D; have been added; the NOTEs have been deleted.]</p>
+<h4 class="TermNum" id="term-time-scale-unit">3.1.1.7.&#xA0;<p class="Terms" style="text-align:left;">time scale unit</p></h4><p id="_73fe0194-b158-4809-8404-78590c1311c7">unit of measurement of a <i>duration</i> (<a href="#term-duration">Clause 3.1.1.8</a>)</p>
+
+<div id="_440338a0-2e37-4292-a37f-2c4199cb9f2d" class="example"><p class="example-title">EXAMPLE 1</p>
+  <p id="_ff3b3865-8416-4fa7-b1c7-8f935011434c">Calendar year, calendar month, calendar day are time scale units of the Gregorian calendar.</p>
+</div><div id="_6f216a2b-9ac3-42e7-a18e-e153c34e34b4" class="example"><p class="example-title">EXAMPLE 2</p>
+  <p id="_82c51970-2c36-4197-8889-280fd0eb657b">Clock hour, clock minutes, clock seconds are time scale units of the 24-hour clock.</p>
+</div>
+<h4 class="TermNum" id="term-duration">3.1.1.8.&#xA0;<p class="Terms" style="text-align:left;">duration</p></h4><p id="_3ac61777-98e1-466d-bdce-b84ca35f7971">non-negative quantity of time equal to the difference between the
+final and initial <i>instants</i> (<a href="#term-instant">Clause 3.1.1.3</a>) of a
+<i>time interval</i> (<a href="#term-time-interval">Clause 3.1.1.6</a>)</p>
+
+
+
+<div class="Note"><p>Note 1 to entry: The duration is one of the base quantities in the International System of Quantities (ISQ) on which the International System of Units (SI) is based. The term &#x201C;time&#x201D; instead of &#x201C;duration&#x201D; is often used in this context and also for an infinitesimal duration.</p></div><div class="Note"><p>Note 2 to entry: For the term &#x201C;duration&#x201D;, expressions such as &#x201C;time&#x201D; or &#x201C;time interval&#x201D; are often used, but the term &#x201C;time&#x201D; is not recommended in this sense and the term &#x201C;time interval&#x201D; is deprecated in this sense to avoid confusion with the concept of &#x201C;time interval&#x201D;.</p></div><div class="Note"><p>Note 3 to entry: The exact duration of a <i>time scale unit</i> (<a href="#term-time-scale-unit">Clause 3.1.1.7</a>) depends on the <i>time scale</i> (<a href="#term-time-scale">Clause 3.1.1.5</a>) used. For example, the durations of a year, month, week, day, hour, or minute, may depend on when they occur [in a <i>Gregorian calendar</i> (<a href="#term-gregorian-calendar">Clause 3.1.1.21</a>), a <i>calendar month</i> (<a href="#term-calendar-month">Clause 3.1.2.19</a>) can have a duration of 28, 29, 30, or 31 days; in a <i>24-hour clock</i> (<a href="#term-24-hour-clock">Clause 3.1.1.10</a>) a <i>clock minute</i> (<a href="#term-clock-minute">Clause 3.1.2.4</a>) can have a duration of 59, 60, or 61 seconds, etc.]. Therefore, the exact duration can only be evaluated if the exact duration of each is known.</p></div><div class="Note"><p>Note 4 to entry: This definition is closely related to NOTE 1 of &#x201C;duration&#x201D; in <a href="#IEV">IEC Electropedia, Clause 113-01-13</a>.</p></div>
+<h4 class="TermNum" id="term-clock">3.1.1.9.&#xA0;<p class="Terms" style="text-align:left;">clock</p></h4><p id="_9c9e51e6-e758-43ff-9ec5-bd2fff47d061"><i>time scale</i> (<a href="#term-time-scale">Clause 3.1.1.5</a>) suited for intra-day time measurements</p>
+
+<div class="Note"><p>Note 1 to entry: <i>clock second</i> (<a href="#term-clock-second">Clause 3.1.2.2</a>), <i>clock minute</i> (<a href="#term-clock-minute">Clause 3.1.2.4</a>) and <i>clock hour</i> (<a href="#term-clock-hour">Clause 3.1.2.6</a>) are often <i>time scale units</i> (<a href="#term-time-scale-unit">Clause 3.1.1.7</a>) included in a clock.</p></div><div id="_6bbe1b9f-a870-4f19-b925-022dc405d58a" class="example"><p class="example-title">EXAMPLE</p>
+  <p id="_9a56f902-6b82-416f-a25d-25c9e3f50fd6">The <i>24-hour clock</i> (<a href="#term-24-hour-clock">Clause 3.1.1.10</a>) is a type of clock.</p>
+</div>
+<h4 class="TermNum" id="term-24-hour-clock">3.1.1.10.&#xA0;<p class="Terms" style="text-align:left;">24-hour clock</p></h4><p id="_6821de79-78ef-4636-87d8-601706163756"><i>clock</i> (<a href="#term-clock">Clause 3.1.1.9</a>) that subdivides a <i>calendar day</i> (<a href="#term-calendar-day">Clause 3.1.2.11</a>) into 24 <i>clock hours</i> (<a href="#term-clock-hour">Clause 3.1.2.6</a>)</p>
+<div id="_38435204-60b4-4567-83e0-2055405478bb" class="example"><p class="example-title">EXAMPLE</p>
+  <p id="_b765fe69-81ea-4686-9c10-b18ca38e4374">UTC (<a href="#term-utc">Clause 3.1.1.12</a>) a type of 24-hour clock that is often used as the basis time scale of standard times.</p>
+</div>
+<h4 class="TermNum" id="term-recurring-time-interval">3.1.1.11.&#xA0;<p class="Terms" style="text-align:left;">recurring time interval</p></h4><p id="_0602e9ec-08a2-489f-82e5-fde9695ea6d8">series of consecutive <i>time intervals</i> (<a href="#term-time-interval">Clause 3.1.1.6</a>) of identical <i>duration</i> (<a href="#term-duration">Clause 3.1.1.8</a>)</p>
+
+<div class="Note"><p>Note 1 to entry: If the duration of the time intervals is measured in <i>calendar</i> (<a href="#term-calendar">Clause 3.1.1.20</a>) entities, the duration of each time interval depends on the calendar <i>dates</i> (<a href="#term-date">Clause 3.1.1.1</a>) of its start and its end.</p></div><div class="Note"><p>Note 2 to entry: If the starting instants of time intervals are repeated according to a set of rules, the &#x201C;repeat rules for recurring time intervals&#x201D; in <a href="#ISO8601-2">ISO 8601-2:--, Clause 5</a> apply.</p></div>
+<h4 class="TermNum" id="term-utc">3.1.1.12.&#xA0;<p class="Terms" style="text-align:left;">UTC</p></h4>
+  <p class="AltTerms" style="text-align:left;">Coordinated Universal Time</p>
+
+<p id="_941d2b2e-6caa-4b35-877c-d753c16538b9"><i>time scale</i> (<a href="#term-time-scale">Clause 3.1.1.5</a>) with the same rate as International Atomic Time (TAI), but differing from TAI only by an integral number of <i>seconds</i> (<a href="#term-second">Clause 3.1.2.1</a>)</p>
+
+
+
+<div class="Note"><p>Note 1 to entry: UTC is a <i>basis time scale</i> (<a href="#term-basis-time-scale">Clause 3.1.1.14</a>) commonly used across the world from
+which local time scales are derived.</p></div><div class="Note"><p>Note 2 to entry: UTC is produced by the Bureau International des Poids et Mesures (BIPM), i.e. the International Bureau of Weights and Measures.</p></div><div class="Note"><p>Note 3 to entry: TAI is a continuous time scale produced by the BIPM based on the best realizations of the SI second. TAI is a realization of Terrestrial Time (TT) with the same rate as that of TT, as defined by <a href="#IAUR24">IAU Resolution B1.9 (2010): Re-definition of Terrestrial Time TT</a>.</p></div><p>[SOURCE: <a href="#BIPMRCCTF3">BIPM Recommendation CCTF 3 (2017): Recommendation on the definition of timescales</a>, modified &mdash; The definition of TAI has been included as Note 3 to entry.]</p>
+<h4 class="TermNum" id="term-utc-of-day">3.1.1.13.&#xA0;<p class="Terms" style="text-align:left;">UTC of day</p></h4>
+  
+  <p id="_4a86e453-69f1-4052-80a3-90438aec47e0"><i>time of day</i> (<a href="#term-time-of-day">Clause 3.1.1.17</a>) in <i>UTC</i> (<a href="#term-utc">Clause 3.1.1.12</a>)</p>
+
+<h4 class="TermNum" id="term-basis-time-scale">3.1.1.14.&#xA0;<p class="Terms" style="text-align:left;">basis time scale</p></h4><p id="_9f0c4018-21fc-44c8-b140-81c15d925bf4"><i>time scale</i> (<a href="#term-time-scale">Clause 3.1.1.5</a>) established to serve as reference time
+by a competent authority</p>
+
+<div class="Note"><p>Note 1 to entry: The basis time scale is not always legally UTC in all countries.</p></div><div id="_13716918-9900-4b5f-a4f4-54d156c2682f" class="example"><p class="example-title">EXAMPLE</p>
+  <p id="_b238e729-c428-40a3-a06d-c78a4512d22f"><i>UTC</i> (<a href="#term-utc">Clause 3.1.1.12</a>), TAI, GPS system time, Galileo system time,
+BeiDou system time, LORAN station system time are basis time scales
+in current use.</p>
+</div>
+<h4 class="TermNum" id="term-standard-time">3.1.1.15.&#xA0;<p class="Terms" style="text-align:left;">standard time</p></h4><p id="_f9c562c9-56b7-4641-8766-a34dc20bb2a2"><i>time scale</i> (<a href="#term-time-scale">Clause 3.1.1.5</a>) derived from a
+<i>basis time scale</i> (<a href="#term-basis-time-scale">Clause 3.1.1.14</a>) with a
+<i>time shift</i> (<a href="#term-time-shift">Clause 3.1.1.27</a>) established by a
+competent authority</p>
+
+
+
+
+<div class="Note"><p>Note 1 to entry: The time shift of a standard time may vary in the course of a year,
+such as due to daylight savings.</p></div><div class="Note"><p>Note 2 to entry: Many standard times use UTC as their basis and are often
+associated with a geographical location.
+A timezone may be associated with one or more standard times.</p></div><div class="Note"><p>Note 3 to entry: This definition corresponds closely to, but is more general than, the definition of the term &#x201C;standard time&#x201D; in <a href="#IEV">IEC Electropedia, Clause 113-01-17</a>.</p></div><div id="_228bc2c4-2d65-4be0-9863-f2ad8c4df8c3" class="example"><p class="example-title">EXAMPLE 1</p>
+  <p id="_689cd95a-f8e5-4ec8-9e94-e530ad94f011">Some standard times do not vary within a year, such as US Eastern Standard Time (EST), US Eastern Daylight Time (EDT), Australia Western Standard Time (AWST), China Standard Time (CST), Hong Kong Standard Time (HKT), Korea Standard Time (KST) and Japanese Standard Time (JST).</p>
+</div><div id="_a516aa67-7711-4db4-bf99-e21d26c50161" class="example"><p class="example-title">EXAMPLE 2</p>
+  <p id="_4bf1a58d-d959-4a45-a563-c9f1bf18b9fb">Some standard times vary within a year, such as US Eastern Time (ET) and Australian Central Standard Time (ACST).</p>
+</div>
+<h4 class="TermNum" id="term-local-time-scale">3.1.1.16.&#xA0;<p class="Terms" style="text-align:left;">local time scale</p></h4>
+  
+  <p id="_d5ef4f18-a790-4b67-aaed-7b5f6f8752de">locally-applicable <i>standard time</i> (<a href="#term-standard-time">Clause 3.1.1.15</a>)</p>
+
+<h4 class="TermNum" id="term-time-of-day">3.1.1.17.&#xA0;<p class="Terms" style="text-align:left;">time of day</p></h4><p id="_8627ae38-91bc-4919-ad4a-f95413a7a7f6"><i>time</i> (<a href="#term-time">Clause 3.1.1.2</a>) occurring within a <i>calendar day</i> (<a href="#term-calendar-day">Clause 3.1.2.11</a>)</p>
+
+<div class="Note"><p>Note 1 to entry: Generally, time of day relates to the <i>duration</i> (<a href="#term-duration">Clause 3.1.1.8</a>) elapsed after the beginning of the day. However, this correlation breaks when changes occur in the <i>time scale</i> (<a href="#term-time-scale">Clause 3.1.1.5</a>) that applies to the time of day, such as <i>time shifts</i> (<a href="#term-time-shift">Clause 3.1.1.27</a>) and <i>leap seconds</i> (<a href="#term-leap-second">Clause 3.1.1.26</a>).</p></div><div class="Note"><p>Note 2 to entry: This definition corresponds closely with the definition of &#x201C;clock time&#x201D; given in <a href="#IEV">IEC Electropedia, Clause 113-01-18</a>, except that the concepts of <i>duration</i> (<a href="#term-duration">Clause 3.1.1.8</a>) and <i>time scale</i> (<a href="#term-time-scale">Clause 3.1.1.5</a>) are not used in this definition.</p></div>
+<h4 class="TermNum" id="term-basis-time">3.1.1.18.&#xA0;<p class="Terms" style="text-align:left;">basis time of day</p></h4><p id="_1f1d5401-b3bf-4b7c-af69-f089bc9f1edb"><i>time of day</i> (<a href="#term-time-of-day">Clause 3.1.1.17</a>) in a <i>basis time scale</i> (<a href="#term-basis-time-scale">Clause 3.1.1.14</a>)</p>
+<div id="_2dcf2347-4f34-45ad-a573-e1003685ec92" class="example"><p class="example-title">EXAMPLE</p>
+  <p id="_b397cdac-0e45-4bac-8fb4-82fd029effc9"><i>UTC of day</i> (<a href="#term-utc-of-day">Clause 3.1.1.13</a>) is a type of basis time of day.</p>
+</div>
+<h4 class="TermNum" id="term-local-time-of-day">3.1.1.19.&#xA0;<p class="Terms" style="text-align:left;">local time of day</p></h4>
+  
+  <p id="_5907dc69-b593-4299-9e45-81c6c3f7dced"><i>time of day</i> (<a href="#term-time-of-day">Clause 3.1.1.17</a>) in a <i>local time scale</i> (<a href="#term-local-time-scale">Clause 3.1.1.16</a>)</p>
+
+<h4 class="TermNum" id="term-calendar">3.1.1.20.&#xA0;<p class="Terms" style="text-align:left;">calendar</p></h4><p id="_29b0d3f8-0165-4d54-8325-b656f9108d62"><i>time scale</i> (<a href="#term-time-scale">Clause 3.1.1.5</a>) that uses the <i>time scale unit</i> (<a href="#term-time-scale-unit">Clause 3.1.1.7</a>) of <i>calendar day</i> (<a href="#term-calendar-day">Clause 3.1.2.11</a>) as its basic unit</p>
+
+<div class="Note"><p>Note 1 to entry: <i>calendar month</i> (<a href="#term-calendar-month">Clause 3.1.2.19</a>) and <i>calendar year</i> (<a href="#term-calendar-year">Clause 3.1.2.21</a>) are time scale units often included in a calendar.</p></div><div id="_f81e2eb0-f45a-4ac2-9c16-173e19c85c23" class="example"><p class="example-title">EXAMPLE</p>
+  <p id="_d847f964-e53e-45f1-90be-49ab22dd53e7">The <i>Gregorian calendar</i> (<a href="#term-gregorian-calendar">Clause 3.1.1.21</a>) is a type of calendar.</p>
+</div>
+<h4 class="TermNum" id="term-gregorian-calendar">3.1.1.21.&#xA0;<p class="Terms" style="text-align:left;">Gregorian calendar</p></h4>
+  
+  <p id="_cd949148-585e-4404-9786-b16f4081720d"><i>calendar</i> (<a href="#term-calendar">Clause 3.1.1.20</a>) in general use that defines a calendar year (<a href="#term-calendar-year">Clause 3.1.2.21</a>) that closely approximates the tropical year</p>
+
+<h4 class="TermNum" id="term-common-year">3.1.1.22.&#xA0;<p class="Terms" style="text-align:left;">common year</p></h4>
+  
+  <p id="_678bfd3e-79f2-4969-9079-a1c0a9804975"><i>calendar year</i> (<a href="#term-calendar-year">Clause 3.1.2.21</a>) in the <i>Gregorian calendar</i> (<a href="#term-gregorian-calendar">Clause 3.1.1.21</a>) that has 365 <i>calendar days</i> (<a href="#term-calendar-day">Clause 3.1.2.11</a>)</p>
+
+<h4 class="TermNum" id="term-leap-year">3.1.1.23.&#xA0;<p class="Terms" style="text-align:left;">leap year</p></h4><p id="_cbba37c8-c72f-425a-95f0-7aea92f3a375"><i>calendar year</i> (<a href="#term-calendar-year">Clause 3.1.2.21</a>) in the <i>Gregorian calendar</i> (<a href="#term-gregorian-calendar">Clause 3.1.1.21</a>) that has 366 <i>calendar days</i> (<a href="#term-calendar-day">Clause 3.1.2.11</a>)</p>
+<div class="Note"><p>Note 1 to entry: A leap year is a calendar year whose year number is divisible by four and is not a <i>centennial year</i> (<a href="#term-centennial-year">Clause 3.1.1.24</a>), or a centennial year whose year number is divisible by four hundred.</p></div>
+<h4 class="TermNum" id="term-centennial-year">3.1.1.24.&#xA0;<p class="Terms" style="text-align:left;">centennial year</p></h4>
+  
+  <p id="_b06f1b84-2055-4f21-a024-ade5b41b2a42"><i>calendar year</i> (<a href="#term-calendar-year">Clause 3.1.2.21</a>) in the <i>Gregorian calendar</i> (<a href="#term-gregorian-calendar">Clause 3.1.1.21</a>) whose year number is divisible without remainder by one hundred</p>
+
+<h4 class="TermNum" id="term-week-calendar">3.1.1.25.&#xA0;<p class="Terms" style="text-align:left;">week calendar</p></h4><p id="_5cac0055-8d80-4198-9367-8b1f493eae51"><i>calendar</i> (<a href="#term-calendar">Clause 3.1.1.20</a>) based on an unbounded series of
+contiguous <i>calendar weeks</i> (<a href="#term-calendar-week">Clause 3.1.2.16</a>)
+that uses the <i>time scale unit</i> (<a href="#term-time-scale-unit">Clause 3.1.1.7</a>) of calendar week
+as its basic unit to represent a <i>calendar year</i> (<a href="#term-calendar-year">Clause 3.1.2.21</a>),
+according to the rule that the first calendar week of a calendar year
+is the week including the first Thursday of that year, and that the
+last one is the week immediately preceding the first calendar week of
+the next calendar year</p>
+
+<div class="Note"><p>Note 1 to entry: This rule is based on the principle that a week belongs to the
+calendar year in which the majority of its
+<i>calendar days</i> (<a href="#term-calendar-day">Clause 3.1.2.11</a>) belongs.</p></div><div class="Note"><p>Note 2 to entry: In the week calendar, calendar days
+of the first and last calendar week of a calendar year may belong
+to the previous and the next calendar year respectively in the
+<i>Gregorian calendar</i> (<a href="#term-gregorian-calendar">Clause 3.1.1.21</a>).</p></div>
+<h4 class="TermNum" id="term-leap-second">3.1.1.26.&#xA0;<p class="Terms" style="text-align:left;">leap second</p></h4><p id="_328043d7-923b-4171-a207-5c57020a79cd">intentional time step of one <i>second</i> (<a href="#term-second">Clause 3.1.2.1</a>) to adjust <i>UTC</i> (<a href="#term-utc">Clause 3.1.1.12</a>) to ensure appropriate agreement with UT1, a <i>time scale</i> (<a href="#term-time-scale">Clause 3.1.1.5</a>) based on the rotation of the Earth</p>
+
+<div class="Note"><p>Note 1 to entry: See also <a href="#ITURTF460-6">ITU-R TF.460-6</a>.</p></div><div class="Note"><p>Note 2 to entry: An inserted second is called a positive leap second and an omitted second is called a negative leap second. A positive leap second is inserted after [23:59:59Z] and can be represented as [23:59:60Z]. A negative leap second is achieved by the omission of [23:59:59Z]. Insertion or omission takes place as determined by the International Earth Rotation and Reference Systems Service (IERS), normally on 30 June or 31 December, but if necessary on 31 March or 30 September.</p></div>
+<h4 class="TermNum" id="term-time-shift">3.1.1.27.&#xA0;<p class="Terms" style="text-align:left;">time shift</p></h4>
+  
+  <p id="_992b5e48-e4cb-47e4-bf85-c7b22edba0ff">constant <i>duration</i> (<a href="#term-duration">Clause 3.1.1.8</a>) difference between <i>times</i> (<a href="#term-time">Clause 3.1.1.2</a>) of two <i>time scales</i> (<a href="#term-time-scale">Clause 3.1.1.5</a>)</p>
+
+<h4 class="TermNum" id="_approximate_date">3.1.1.28.&#xA0;<p class="Terms" style="text-align:left;">approximate date</p></h4><p id="_6f80131d-bad8-4aef-8fdd-1c7909b97ae3">calendar date which is an estimate whose value is asserted to be possibly correct</p>
+<div class="Note"><p>Note 1 to entry: The degree of confidence in approximation depends on the application.</p></div>
+<h4 class="TermNum" id="_uncertain_date">3.1.1.29.&#xA0;<p class="Terms" style="text-align:left;">uncertain date</p></h4>
+  
+  <p id="_5b4fc694-d281-41e0-89c9-9ba7e592642a">calendar date whose source is considered <i>dubious</i> (<a href="#term-dubious">Clause 3.1.1.31</a>)</p>
+
+<h4 class="TermNum" id="_date_with_unspecified_part">3.1.1.30.&#xA0;<p class="Terms" style="text-align:left;">date with unspecified part</p></h4><p id="_ccffd7b0-6166-4f91-a12e-543ad1ed8a08">calendar date of which a part is unstated</p>
+<div class="Note"><p>Note 1 to entry: The unstated part can be year, year and month, month, month and day, or year and day. It is unstated because it has not (yet) been assigned (it might be assigned in the future), or because it is classified, or unknown, or for any other reason.</p></div>
+<h4 class="TermNum" id="term-dubious">3.1.1.31.&#xA0;<p class="Terms" style="text-align:left;">dubious</p></h4>
+  
+  <p id="_c983227c-c596-47c0-a599-0d6a2bea7753">not to be relied upon</p>
+
+<h4 class="TermNum" id="_qualification_symbol">3.1.1.32.&#xA0;<p class="Terms" style="text-align:left;">qualification symbol</p></h4><p id="_775f40d6-597d-49df-a20e-4defd84f290b">symbol that indicates certain qualification to a value it applies to</p>
+<div id="_00f5e919-f09d-4432-ac3c-4677ca4c973f" class="example"><p class="example-title">EXAMPLE</p>
+  <p id="_c47b78b9-7704-4351-981d-3403d4337181">The symbol [?] indicates that the value it applies to is uncertain</p>
+</div>
+<h4 class="TermNum" id="_movable_day">3.1.1.33.&#xA0;<p class="Terms" style="text-align:left;">movable day</p></h4><p id="_1a19a78b-0f7e-406e-b7eb-a2767b90722c">repeatedly occurring day in a calendar that is represented by criteria set by one or more <i>selection rules</i> (<a href="#term-selection-rule">Clause 3.1.1.40</a>), but does not always resolve to a fixed calendar day in every repeating cycle</p>
+
+
+
+<div class="Note"><p>Note 1 to entry: The selection of this term pays homage to the phrase &#x201C;movable feast&#x201D; used in some calendars to indicate the rule-based determination of annual events.</p></div><div id="_527234b5-d1b1-43c5-8c1c-50a9fb390ba9" class="example"><p class="example-title">EXAMPLE 1</p>
+  <p id="_1bfb4499-ef49-4b59-8199-11317cadf0e5">Thanksgiving Day in the U.S. and Canada are considered movable days, set to the fourth Thursday in November and the second Monday in October, respectively.</p>
+</div><div id="_d3baf23a-f301-42e3-b089-eda20dabfc5e" class="example"><p class="example-title">EXAMPLE 2</p>
+  <p id="_2f08425b-5155-4993-8c4b-51dad70a1e16">First Day of Summer (<i>sumardagurinn fyrsti</i>) in Iceland is considered a movable day, set to the first Thursday after April 18th.</p>
+</div><div id="_60bd10ba-e5c0-4470-a50b-7ee7a019e68a" class="example"><p class="example-title">EXAMPLE 3</p>
+  <p id="_2931e46e-ac6e-4936-902b-2fa9267c1f30">Father&#x2019;s Day is celebrated on the third Sunday in June in North America, and is considered a movable day.</p>
+</div>
+<h4 class="TermNum" id="_negative_duration">3.1.1.34.&#xA0;<p class="Terms" style="text-align:left;">negative duration</p></h4>
+  
+  <p id="_9efa7ad9-45a6-40b9-91fe-3818e3ba5580">duration in the reverse direction to the proceeding time scale</p>
+
+<h4 class="TermNum" id="terms-feature">3.1.1.35.&#xA0;<p class="Terms" style="text-align:left;">feature</p></h4>
+  
+  <p id="_86349bf3-b119-4243-9883-49a2a514f930">single function or group of functions</p>
+
+<h4 class="TermNum" id="term-conformity-level">3.1.1.36.&#xA0;<p class="Terms" style="text-align:left;">conformity level</p></h4><p id="_b8a89b1a-d91d-4be1-ac4d-fb8d1ac73f3a">value assigned to a subset of <i>features</i> (<a href="#terms-feature">Clause 3.1.1.35</a>) within a <i>profile</i> (<a href="#term-profile">Clause 3.1.1.37</a>)</p>
+<div class="Note"><p>Note 1 to entry: A profile may refer to these conformity levels to facilitate the specification of conformance to the profile.</p></div>
+<h4 class="TermNum" id="term-profile">3.1.1.37.&#xA0;<p class="Terms" style="text-align:left;">profile</p></h4><p id="_e4bee73e-6870-4b99-8c95-dc76580b5d8e">subset of <i>features</i> (<a href="#terms-feature">Clause 3.1.1.35</a>) described in a standard or a set of standards</p>
+
+<div class="Note"><p>Note 1 to entry: A community may develop a profile to describe how to carry out functions or apply features specified in a standard or family of standards in a manner relevant to that community.</p></div><div class="Note"><p>Note 2 to entry: A profile often describes what features are to be supported and how to apply those features. In cases where multiple methods are allowed for a required feature, a profile may select a single method. In cases where a particular function allows different interpretations, a profile may select a single interpretation or provide clarification. A profile may list out features that need not be supported. It may specify several <i>conformity levels</i> (<a href="#term-conformity-level">Clause 3.1.1.36</a>).</p></div>
+<h4 class="TermNum" id="_iso_8601_profile">3.1.1.38.&#xA0;<p class="Terms" style="text-align:left;">ISO 8601 profile</p></h4>
+  
+  <p id="_ef33454d-40b5-499c-a63c-a0d77c6a75aa"><i>profile</i> (<a href="#term-profile">Clause 3.1.1.37</a>) whose base standard is the ISO 8601 series</p>
+
+<h4 class="TermNum" id="term-repeat-rule">3.1.1.39.&#xA0;<p class="Terms" style="text-align:left;">repeat rule</p></h4>
+  
+  <p id="_ea2fed65-b583-4cd8-a1bb-51d271846ecd">set of <i>eligible time intervals</i> (<a href="#term-eligible-time-interval">Clause 3.1.1.42</a>) and <i>selection rules</i> (<a href="#term-selection-rule">Clause 3.1.1.40</a>) that allows computation of a set of <i>matching instants</i> (<a href="#term-matching-instant">Clause 3.1.1.43</a>)</p>
+
+<h4 class="TermNum" id="term-selection-rule">3.1.1.40.&#xA0;<p class="Terms" style="text-align:left;">selection rule</p></h4>
+  
+  <p id="_730db876-a020-4eab-97ab-0561283e906f">rule specifying restrictions on the value of a time scale component</p>
+
+<h4 class="TermNum" id="_repeat_cycle">3.1.1.41.&#xA0;<p class="Terms" style="text-align:left;">repeat cycle</p></h4>
+  
+  <p id="_80c5d3d2-750f-4269-952a-1d3cbcd2e85c">set of repeating instants, calculated by a specified start instant and specified duration gap between the repeating instants</p>
+
+<h4 class="TermNum" id="term-eligible-time-interval">3.1.1.42.&#xA0;<p class="Terms" style="text-align:left;">eligible time interval</p></h4>
+  
+  <p id="_e672fa6b-8f2a-4f10-8719-178cdb7886ff">time interval eligible for matching using <i>selection rules</i> (<a href="#term-selection-rule">Clause 3.1.1.40</a>)</p>
+
+<h4 class="TermNum" id="term-matching-instant">3.1.1.43.&#xA0;<p class="Terms" style="text-align:left;">matching instants</p></h4>
+  
+  <p id="_572b75e9-f8dc-4998-a748-29be6b6d09bc">set of instants, computed by a <i>repeat rule</i> (<a href="#term-repeat-rule">Clause 3.1.1.39</a>), that belongs within <i>eligible time intervals</i> (<a href="#term-eligible-time-interval">Clause 3.1.1.42</a>) and fulfills criteria set by specified <i>selection rules</i> (<a href="#term-selection-rule">Clause 3.1.1.40</a>)</p>
+
+<h4 class="TermNum" id="_date_time_formula">3.1.1.44.&#xA0;<p class="Terms" style="text-align:left;">date time formula</p></h4>
+  
+  <p id="_b43547c7-4b9a-481d-aaad-21579968057a">expression that specifies modification of a date and time expression with a duration</p>
+
+<h4 class="TermNum" id="term-durational-unit">3.1.1.45.&#xA0;<p class="Terms" style="text-align:left;">durational unit</p></h4>
+  
+  <p id="_5dfea930-1c05-40ed-a675-a236f8ba83c7">time scale component that composes the duration date and time representation</p>
+
+<h4 class="TermNum" id="_grouped_time_scale_unit">3.1.1.46.&#xA0;<p class="Terms" style="text-align:left;">grouped time scale unit</p></h4>
+  
+  <p id="_f45f15aa-5872-4871-b6aa-f2c6678d7532">time scale unit composed of a duration expressed by one or more <i>durational units</i> (<a href="#term-durational-unit">Clause 3.1.1.45</a>)</p>
+
+<h4 class="TermNum" id="term-sub-year-grouping">3.1.1.47.&#xA0;<p class="Terms" style="text-align:left;">sub-year grouping</p></h4>
+  
+  <p id="_2110de81-8b7e-42bc-ac73-2038e60db31b">grouping composed of time scale components of a lower order than the calendar year time scale</p>
+
+<h4 class="TermNum" id="term-normal-sub-year-grouping">3.1.1.48.&#xA0;<p class="Terms" style="text-align:left;">normal sub-year grouping</p></h4><p id="_7fea0606-f9bd-40f1-a02a-4a13ea8dec93"><i>sub-year grouping</i> (<a href="#term-sub-year-grouping">Clause 3.1.1.47</a>) where the duration of
+its elements sum up to the duration of one calendar year</p>
+
+
+
+<div class="Note"><p>Note 1 to entry: A normal sub-year grouping can be composed of time scale units with different durations.</p></div><div id="_6896dc53-60b2-4053-a381-88546fa16337" class="example"><p class="example-title">EXAMPLE 1</p>
+  <p id="_549a76b8-3fef-4eaa-99df-891c00a8732b">The bimonthly time scale unit can be repeated into a normal sub-year grouping, where 12 months
+can be divided cleanly by units of 2 months each.</p>
+</div><div id="_be6c5b2a-3e40-4270-a6af-0ca1e112e107" class="example"><p class="example-title">EXAMPLE 2</p>
+  <p id="_898e629d-5c73-46a8-b3a3-f6eefae10bbd">The four seasons in the commonly used <i>four season calendar</i> (<a href="#term-four-season-calendar">Clause 3.1.1.51</a>)
+make a normal sub-year grouping as the duration
+of their combination is exactly one calendar year.</p>
+</div><div id="_c71ee75b-3454-45f6-a86e-8b201ae807d1" class="example"><p class="example-title">EXAMPLE 3</p>
+  <p id="_659e8608-0f88-443e-a1bd-3fbbefb81003">Six season calendars used in various cultures are examples of normal sub-year groupings.</p>
+</div>
+<h4 class="TermNum" id="_equation_of_time">3.1.1.49.&#xA0;<p class="Terms" style="text-align:left;">equation of time</p></h4><p id="_2cbe410d-907e-4e0e-acb7-2e0c26dd9136">difference between mean solar time and apparent solar time, which varies with time within a calendar year</p>
+<div class="Note"><p>Note 1 to entry: A clock is a type of device that measures mean solar time; a sundial is a type of device that measures apparent solar time.</p></div>
+<h4 class="TermNum" id="term-season">3.1.1.50.&#xA0;<p class="Terms" style="text-align:left;">season</p></h4>
+  
+  <p id="_17cd0998-c6e4-4c9c-a1a4-fba6bf95dfe5">element of a <i>normal sub-year grouping</i> (<a href="#term-normal-sub-year-grouping">Clause 3.1.1.48</a>),
+amongst which the transition between each element can be based on
+calendrical, meteorological, astronomical, solar or ecological events</p>
+
+<h4 class="TermNum" id="term-four-season-calendar">3.1.1.51.&#xA0;<p class="Terms" style="text-align:left;">four-season calendar</p></h4><p id="_0c98c1dc-e461-477e-8e8b-b06b9fa196e0">calendar in general use resulting from the division of a calendar year
+into four <i>seasons</i> (<a href="#term-season">Clause 3.1.1.50</a>)</p>
+
+<div class="Note"><p>Note 1 to entry: A single calendar date may represent different seasons
+depending on local customs or location, such as the difference
+between the northern or southern hemispheres.</p></div><div class="Note"><p>Note 2 to entry: The four seasons are namely <i>spring</i> (<a href="#term-spring">Clause 3.1.1.52</a>),
+<i>summer</i> (<a href="#term-summer">Clause 3.1.1.53</a>), <i>autumn</i> (<a href="#term-autumn">Clause 3.1.1.54</a>), and
+<i>winter</i> (<a href="#term-winter">Clause 3.1.1.55</a>)</p></div>
+<h4 class="TermNum" id="term-spring">3.1.1.52.&#xA0;<p class="Terms" style="text-align:left;">spring</p></h4>
+  
+  <p id="_54a4d723-caa6-43d8-8c56-5f1b64d9c4c7"><i>season</i> (<a href="#term-season">Clause 3.1.1.50</a>) in the <i>four-season calendar</i> (<a href="#term-four-season-calendar">Clause 3.1.1.51</a>)
+following <i>winter</i> (<a href="#term-winter">Clause 3.1.1.55</a>) and preceding <i>summer</i> (<a href="#term-summer">Clause 3.1.1.53</a>)</p>
+
+<h4 class="TermNum" id="term-summer">3.1.1.53.&#xA0;<p class="Terms" style="text-align:left;">summer</p></h4>
+  
+  <p id="_019966d3-6089-4fd7-bab1-59f93166e0ce"><i>season</i> (<a href="#term-season">Clause 3.1.1.50</a>) in the <i>four-season calendar</i> (<a href="#term-four-season-calendar">Clause 3.1.1.51</a>)
+following <i>spring</i> (<a href="#term-spring">Clause 3.1.1.52</a>) and preceding <i>autumn</i> (<a href="#term-autumn">Clause 3.1.1.54</a>)</p>
+
+<h4 class="TermNum" id="term-autumn">3.1.1.54.&#xA0;<p class="Terms" style="text-align:left;">autumn</p></h4>
+  
+  <p id="_d0b02051-252f-4b7b-b393-8033f2c8bbc1"><i>season</i> (<a href="#term-season">Clause 3.1.1.50</a>) in the <i>four-season calendar</i> (<a href="#term-four-season-calendar">Clause 3.1.1.51</a>)
+following <i>summer</i> (<a href="#term-summer">Clause 3.1.1.53</a>) and preceding <i>winter</i> (<a href="#term-winter">Clause 3.1.1.55</a>)</p>
+
+<h4 class="TermNum" id="term-winter">3.1.1.55.&#xA0;<p class="Terms" style="text-align:left;">winter</p></h4>
+  
+  <p id="_b293681e-8010-4b6c-9134-14395959270b"><i>season</i> (<a href="#term-season">Clause 3.1.1.50</a>) in the <i>four-season calendar</i> (<a href="#term-four-season-calendar">Clause 3.1.1.51</a>)
+ following <i>autumn</i> (<a href="#term-autumn">Clause 3.1.1.54</a>) and preceding <i>spring</i> (<a href="#term-spring">Clause 3.1.1.52</a>)</p>
+</div>
+<div id="terms-units"><h3>3.1.2. Time and date units</h3><h4 class="TermNum" id="term-second">3.1.2.1.&#xA0;<p class="Terms" style="text-align:left;">second</p></h4><p id="_bd4f2e48-806f-4181-935f-6057d280859c">base unit of <i>duration</i> (<a href="#term-duration">Clause 3.1.1.8</a>) measurement in the International System of Units (SI)</p>
+
+<div class="Note"><p>Note 1 to entry: As defined by the CGPM (Conf&#xE9;rence g&#xE9;n&#xE9;rale des poids et mesures, General Conference on Weights and Measures) on the proposal of the CIPM (Comit&#xE9; International des Poids et Mesures, International Committee of Weights and Measures).</p></div><div class="Note"><p>Note 2 to entry: See also <a href="#ISO80000-3">ISO 80000-3</a>.</p></div>
+<h4 class="TermNum" id="term-clock-second">3.1.2.2.&#xA0;<p class="Terms" style="text-align:left;">clock second</p></h4><p id="_2f4bdad5-f0a3-4d25-a444-732ce7eae956"><i>time scale unit</i> (<a href="#term-time-scale-unit">Clause 3.1.1.7</a>) whose <i>duration</i> (<a href="#term-duration">Clause 3.1.1.8</a>) is one <i>second</i> (<a href="#term-second">Clause 3.1.2.1</a>)</p>
+<div class="Note"><p>Note 1 to entry: Clock second is in common parlance often referred to as second, however in this document clock second and second have different definitions.</p></div>
+<h4 class="TermNum" id="term-minute">3.1.2.3.&#xA0;<p class="Terms" style="text-align:left;">minute</p></h4><p id="_b498f154-3fc8-4789-a688-dfb0bfeb9abb"><i>duration</i> (<a href="#term-duration">Clause 3.1.1.8</a>) of 60 <i>seconds</i> (<a href="#term-second">Clause 3.1.2.1</a>)</p>
+
+<div class="Note"><p>Note 1 to entry: See also <a href="#ISO80000-3">ISO 80000-3</a>.</p></div><div class="Note"><p>Note 2 to entry: The duration of a minute is 60 seconds except if modified by the insertion or deletion of a leap second</p></div>
+<h4 class="TermNum" id="term-clock-minute">3.1.2.4.&#xA0;<p class="Terms" style="text-align:left;">clock minute</p></h4><p id="_c57578ee-e17f-4c43-a22c-32e3d3d13118"><i>time scale unit</i> (<a href="#term-time-scale-unit">Clause 3.1.1.7</a>) whose duration is one <i>minute</i> (<a href="#term-minute">Clause 3.1.2.3</a>)</p>
+<div class="Note"><p>Note 1 to entry: Clock minute is in common parlance often referred to as minute, however in this document clock minute and minute have different definitions.</p></div>
+<h4 class="TermNum" id="term-hour">3.1.2.5.&#xA0;<p class="Terms" style="text-align:left;">hour</p></h4><p id="_f96d289d-8e69-4dee-9128-2b05301b18f9"><i>duration</i> (<a href="#term-duration">Clause 3.1.1.8</a>) of 60 <i>minutes</i> (<a href="#term-minute">Clause 3.1.2.3</a>)</p>
+<div class="Note"><p>Note 1 to entry: See also <a href="#ISO80000-3">ISO 80000-3</a>.</p></div>
+<h4 class="TermNum" id="term-clock-hour">3.1.2.6.&#xA0;<p class="Terms" style="text-align:left;">clock hour</p></h4><p id="_d912a709-bd74-400f-a21f-e12e6a2cecc6"><i>time scale unit</i> (<a href="#term-time-scale-unit">Clause 3.1.1.7</a>) whose <i>duration</i> (<a href="#term-duration">Clause 3.1.1.8</a>) is  one <i>hour</i> (<a href="#term-hour">Clause 3.1.2.5</a>)</p>
+<div class="Note"><p>Note 1 to entry: Clock hour is in common parlance often referred to as hour, however in this document clock hour and hour have different definitions.</p></div>
+<h4 class="TermNum" id="term-calendar-date">3.1.2.7.&#xA0;<p class="Terms" style="text-align:left;">calendar date</p></h4>
+  
+  <p id="_b6386c03-44d8-4d07-965f-0c9d3770b28c">particular <i>calendar day</i> (<a href="#term-calendar-day">Clause 3.1.2.11</a>) represented by its <i>calendar year</i> (<a href="#term-calendar-year">Clause 3.1.2.21</a>), its <i>calendar month</i> (<a href="#term-calendar-month">Clause 3.1.2.19</a>) and its <i>calendar day of month</i> (<a href="#term-calendar-day-of-month">Clause 3.1.2.13</a>)</p>
+
+<h4 class="TermNum" id="term-ordinal-date">3.1.2.8.&#xA0;<p class="Terms" style="text-align:left;">ordinal date</p></h4>
+  
+  <p id="_d4f4a9d8-5c47-4246-85ad-f3b94f11451b">particular <i>calendar day</i> (<a href="#term-calendar-day">Clause 3.1.2.11</a>) represented by its <i>calendar year</i> (<a href="#term-calendar-year">Clause 3.1.2.21</a>) and its <i>calendar day of year</i> (<a href="#term-calendar-day-of-year">Clause 3.1.2.14</a>)</p>
+
+<h4 class="TermNum" id="term-week-date">3.1.2.9.&#xA0;<p class="Terms" style="text-align:left;">week date</p></h4>
+  
+  <p id="_f2133b64-2285-4cad-a5fe-f0e5bc48f335">particular <i>calendar day</i> (<a href="#term-calendar-day">Clause 3.1.2.11</a>) represented by its <i>calendar year</i> (<a href="#term-calendar-year">Clause 3.1.2.21</a>)
+to which its <i>calendar week</i> (<a href="#term-calendar-week">Clause 3.1.2.16</a>) belongs, its <i>calendar week of year</i> (<a href="#term-calendar-week-of-year">Clause 3.1.2.17</a>), and its <i>calendar day of week</i> (<a href="#term-calendar-day-of-week">Clause 3.1.2.12</a>)</p>
+
+<h4 class="TermNum" id="term-day">3.1.2.10.&#xA0;<p class="Terms" style="text-align:left;">day</p></h4><p id="_699a469c-a581-490f-a3df-3606363e90f2"><i>duration</i> (<a href="#term-duration">Clause 3.1.1.8</a>) of a <i>calendar day</i> (<a href="#term-calendar-day">Clause 3.1.2.11</a>)</p>
+
+<div class="Note"><p>Note 1 to entry: The term &#x201C;day&#x201D; applies also to the duration of any <i>time interval</i> (<a href="#term-time-interval">Clause 3.1.1.6</a>) which starts at a certain <i>time of day</i> (<a href="#term-time-of-day">Clause 3.1.1.17</a>) on a certain calendar day and ends at the same time of day on the next calendar day.</p></div><div class="Note"><p>Note 2 to entry: See also <a href="#ISO80000-3">ISO 80000-3</a>.</p></div>
+<h4 class="TermNum" id="term-calendar-day">3.1.2.11.&#xA0;<p class="Terms" style="text-align:left;">calendar day</p></h4><p id="_c36d816f-8e09-456a-9ac8-d9ffb606f5a5"><i>time scale unit</i> (<a href="#term-time-scale-unit">Clause 3.1.1.7</a>) starting at the beginning of the day and ending with the beginning of the next day [the latter being the starting <i>instant</i> (<a href="#term-instant">Clause 3.1.1.3</a>) of the next calendar day]</p>
+
+<div class="Note"><p>Note 1 to entry: Calendar day is in common parlance often referred to as day, however in this document calendar day and day have different definitions.</p></div><div class="Note"><p>Note 2 to entry: The <i>duration</i> (<a href="#term-duration">Clause 3.1.1.8</a>) of a calendar day using the <i>24-hour clock</i> (<a href="#term-24-hour-clock">Clause 3.1.1.10</a>) is 24 <i>hours</i> (<a href="#term-hour">Clause 3.1.2.5</a>); except if modified by:<ul id="_07b282a8-ec1a-465e-83b1-db6eca95535e">
+  <li>
+    <p id="_cf6b22b4-1805-4f3d-9ba9-41c23bce50ff">the insertion or deletion of <i>leap seconds</i> (<a href="#term-leap-second">Clause 3.1.1.26</a>), by decision of the IERS; or</p>
+  </li>
+  <li>
+    <p id="_1fd7748a-acb7-4755-bee8-aaeeb5074805">the insertion or deletion of other time intervals, as may be prescribed by local authorities to alter the <i>time scale</i> (<a href="#term-time-scale">Clause 3.1.1.5</a>) of local time.</p>
+  </li>
+</ul></p></div>
+<h4 class="TermNum" id="term-calendar-day-of-week">3.1.2.12.&#xA0;<p class="Terms" style="text-align:left;">calendar day of week</p></h4>
+  
+  <p id="_75369139-dfad-4966-8411-49554b67fe88">day amongst the sequence of <i>week calendar</i> (<a href="#term-week-calendar">Clause 3.1.1.25</a>) days,
+namely, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or Sunday</p>
+
+<h4 class="TermNum" id="term-calendar-day-of-month">3.1.2.13.&#xA0;<p class="Terms" style="text-align:left;">calendar day of month</p></h4>
+  
+  <p id="_8eb7a876-b987-4623-b978-2c86ce0b176b">ordinal number of a <i>calendar day</i> (<a href="#term-calendar-day">Clause 3.1.2.11</a>) within a <i>calendar month</i> (<a href="#term-calendar-month">Clause 3.1.2.19</a>)</p>
+
+<h4 class="TermNum" id="term-calendar-day-of-year">3.1.2.14.&#xA0;<p class="Terms" style="text-align:left;">calendar day of year</p></h4>
+  
+  <p id="_bac44c78-176e-4b52-8b4e-947d0e6ec0b5">ordinal number of a <i>calendar day</i> (<a href="#term-calendar-day">Clause 3.1.2.11</a>) within a <i>calendar year</i> (<a href="#term-calendar-year">Clause 3.1.2.21</a>)</p>
+
+<h4 class="TermNum" id="term-week">3.1.2.15.&#xA0;<p class="Terms" style="text-align:left;">week</p></h4><p id="_653bbdfb-774c-48b4-9a2a-47a26d269567"><i>duration</i> (<a href="#term-duration">Clause 3.1.1.8</a>) of a <i>calendar week</i> (<a href="#term-calendar-week">Clause 3.1.2.16</a>)</p>
+<div class="Note"><p>Note 1 to entry: The term &#x201C;week&#x201D; applies also to the duration of any <i>time interval</i> (<a href="#term-time-interval">Clause 3.1.1.6</a>) which starts at a certain <i>time of day</i> (<a href="#term-time-of-day">Clause 3.1.1.17</a>) at a certain <i>calendar day of week</i> (<a href="#term-calendar-day-of-week">Clause 3.1.2.12</a>) and ends at the same time of day at the same calendar day of week in the next calendar week.</p></div>
+<h4 class="TermNum" id="term-calendar-week">3.1.2.16.&#xA0;<p class="Terms" style="text-align:left;">calendar week</p></h4>
+  
+  <p id="_703b0ebf-66d5-4abe-96c7-03cdb3e9931f"><i>time scale unit</i> (<a href="#term-time-scale-unit">Clause 3.1.1.7</a>) of seven <i>calendar days</i> (<a href="#term-calendar-day">Clause 3.1.2.11</a>) within a single <i>calendar year</i> (<a href="#term-calendar-year">Clause 3.1.2.21</a>) which begins on Monday and ends on Sunday,
+according to the <i>week calendar</i> (<a href="#term-week-calendar">Clause 3.1.1.25</a>)</p>
+
+<h4 class="TermNum" id="term-calendar-week-of-year">3.1.2.17.&#xA0;<p class="Terms" style="text-align:left;">calendar week of year</p></h4>
+  
+  <p id="_b800d9c1-5fc2-4a98-ac8b-e0d02e02bf6b">ordinal number of a <i>calendar week</i> (<a href="#term-calendar-week">Clause 3.1.2.16</a>) within a <i>calendar year</i> (<a href="#term-calendar-year">Clause 3.1.2.21</a>) of the <i>week calendar</i> (<a href="#term-week-calendar">Clause 3.1.1.25</a>)</p>
+
+<h4 class="TermNum" id="term-month">3.1.2.18.&#xA0;<p class="Terms" style="text-align:left;">month</p></h4><p id="_1694fbfe-bc07-44c2-bac4-3068c8f3395b"><i>duration</i> (<a href="#term-duration">Clause 3.1.1.8</a>) of a <i>calendar month</i> (<a href="#term-calendar-month">Clause 3.1.2.19</a>)</p>
+
+<div class="Note"><p>Note 1 to entry: The term &#x201C;month&#x201D; applies also to the duration of any <i>time interval</i> (<a href="#term-time-interval">Clause 3.1.1.6</a>) which starts at a certain <i>time of day</i> (<a href="#term-time-of-day">Clause 3.1.1.17</a>) at a certain <i>calendar day</i> (<a href="#term-calendar-day">Clause 3.1.2.11</a>) of the calendar month and ends at the same time of day at the same calendar day of the next calendar month, if it exists.</p></div><div class="Note"><p>Note 2 to entry: In certain applications a month is considered as a duration of 30 calendar days, but such usage is not supported by this document.</p></div>
+<h4 class="TermNum" id="term-calendar-month">3.1.2.19.&#xA0;<p class="Terms" style="text-align:left;">calendar month</p></h4><p id="_4e490507-66d0-4354-8052-6e16c42f0025"><i>time scale unit</i> (<a href="#term-time-scale-unit">Clause 3.1.1.7</a>) resulting from a defined division of a <i>calendar year</i> (<a href="#term-calendar-year">Clause 3.1.2.21</a>), each containing a specific number of <i>calendar days</i> (<a href="#term-calendar-day">Clause 3.1.2.11</a>)</p>
+<div class="Note"><p>Note 1 to entry: A calendar month is in common parlance often referred to as month, however in this document calendar month and month have different definitions.</p></div>
+<h4 class="TermNum" id="term-year">3.1.2.20.&#xA0;<p class="Terms" style="text-align:left;">year</p></h4><p id="_a39f3abf-2d7a-474d-8984-fee930284352"><i>duration</i> (<a href="#term-duration">Clause 3.1.1.8</a>) of a <i>calendar year</i> (<a href="#term-calendar-year">Clause 3.1.2.21</a>)</p>
+
+<div class="Note"><p>Note 1 to entry: In the <i>Gregorian calendar</i> (<a href="#term-gregorian-calendar">Clause 3.1.1.21</a>), a year has 365 or 366 <i>days</i> (<a href="#term-day">Clause 3.1.2.10</a>). The duration is 366 days if the corresponding <i>time interval</i> (<a href="#term-time-interval">Clause 3.1.1.6</a>) begins February 28 or earlier in a <i>leap year</i> (<a href="#term-leap-year">Clause 3.1.1.23</a>) or March 2 or later in a year immediately preceding a leap year. If the interval begins February 29 (on a leap year), or March 1 of a year preceding a leap year, the end date has to be agreed on. Otherwise the duration is 365 days.</p></div><div class="Note"><p>Note 2 to entry: The term &#x201C;year&#x201D; applies also to the duration of any <i>time interval</i> (<a href="#term-time-interval">Clause 3.1.1.6</a>) which starts at a certain <i>time of day</i> (<a href="#term-time-of-day">Clause 3.1.1.17</a>) at a certain <i>calendar date</i> (<a href="#term-calendar-date">Clause 3.1.2.7</a>) of the calendar year and ends at the same time of day at the same calendar date of the next calendar year with the exception noted in Note 1 to entry.</p></div>
+<h4 class="TermNum" id="term-calendar-year">3.1.2.21.&#xA0;<p class="Terms" style="text-align:left;">calendar year</p></h4>
+  
+  <p id="_e8d00a83-7966-46a2-a8ee-9c19875f43df"><i>time scale unit</i> (<a href="#term-time-scale-unit">Clause 3.1.1.7</a>) defined by the <i>calendar</i> (<a href="#term-calendar">Clause 3.1.1.20</a>) system</p>
+
+<h4 class="TermNum" id="term-decade">3.1.2.22.&#xA0;<p class="Terms" style="text-align:left;">decade</p></h4><p id="_da8282d0-284f-4948-aee1-41e2e8c9f5d4"><i>time scale unit</i> (<a href="#term-time-scale-unit">Clause 3.1.1.7</a>) of 10 <i>calendar years</i> (<a href="#term-calendar-year">Clause 3.1.2.21</a>), beginning with a year whose year number is divisible without remainder by ten</p>
+<div class="Note"><p>Note 1 to entry: Decade is also used to refer to an arbitrary <i>duration</i> (<a href="#term-duration">Clause 3.1.1.8</a>) of 10 years, however decade is not used as such in this document.</p></div>
+<h4 class="TermNum" id="term-century">3.1.2.23.&#xA0;<p class="Terms" style="text-align:left;">century</p></h4><p id="_14bbe395-994f-4ab7-9a2d-50875f481194"><i>time scale unit</i> (<a href="#term-time-scale-unit">Clause 3.1.1.7</a>) of 100 <i>calendar years</i> (<a href="#term-calendar-year">Clause 3.1.2.21</a>) <i>duration</i> (<a href="#term-duration">Clause 3.1.1.8</a>), beginning with a year whose year number is divisible without remainder by 100</p>
+
+<div class="Note"><p>Note 1 to entry: Century is also used to refer to an arbitrary duration of 100 years, however century is not used as such in this document.</p></div><div id="_2d343e60-1945-4893-89be-a7a96f4f8329" class="example"><p class="example-title">EXAMPLE</p>
+  <p id="_2893cdf5-df4a-4835-908f-ee2b47ffa26c">The &#x201C;19th century&#x201D; covers the years 1800 through 1899 as in common parlance.</p>
+</div></div>
+<div id="terms-representations"><h3>3.1.3. Representations and formats</h3><h4 class="TermNum" id="term-dt-expression">3.1.3.1.&#xA0;<p class="Terms" style="text-align:left;">date and time expression</p></h4><p id="_1f9545da-d48f-4a4b-9f31-a5c910787ae6">expression indicating a <i>time</i> (<a href="#term-time">Clause 3.1.1.2</a>), <i>time interval</i> (<a href="#term-time-interval">Clause 3.1.1.6</a>) or <i>recurring time interval</i> <a href="#term-recurring-time-interval">Clause 3.1.1.11</a></p>
+<div id="_a62252ae-79ed-45b3-a180-b3bb14fbdca4" class="example"><p class="example-title">EXAMPLE</p>
+  <p id="_65c61eca-6d29-4e88-a77e-8de6da2a4872">&#x2018;2018-08-01&#x2019; is a date and time expression that indicates the first day of August of 2018 in the <i>Gregorian calendar</i> (<a href="#term-gregorian-calendar">Clause 3.1.1.21</a>).</p>
+</div>
+<h4 class="TermNum" id="term-dt-representation">3.1.3.2.&#xA0;<p class="Terms" style="text-align:left;">date and time representation</p></h4><p id="_576655c3-a735-498f-bbcc-b09f89aae5ed">representation of the format of one or more <i>date and time expressions</i> (<a href="#term-dt-expression">Clause 3.1.3.1</a>)</p>
+<div id="_4eaad4bf-ba08-4fcb-9e78-53d640fb6231" class="example"><p class="example-title">EXAMPLE</p>
+  <p id="_9cc02724-86d8-447b-a53f-773f6c630900">[date] is a date and time representation that can be expanded as [year][month][day], which itself can be expanded into [YYYY][MM][DD]; &#x2018;20180801&#x2019; is a date and time expression that conforms to this representation.</p>
+</div>
+<h4 class="TermNum" id="term-time-scale-component">3.1.3.3.&#xA0;<p class="Terms" style="text-align:left;">time scale component</p></h4><p id="_c0f9ed39-b052-4585-b73c-3daa1b04cb51">representation of a <i>time scale unit</i> (<a href="#term-time-scale-unit">Clause 3.1.1.7</a>) within a <i>date and time expression</i> (<a href="#term-dt-expression">Clause 3.1.3.1</a>) or a <i>representation</i> (<a href="#term-dt-representation">Clause 3.1.3.2</a>)</p>
+
+
+
+<div class="Note"><p>Note 1 to entry: A time scale component is considered of a higher order of another, if the time scale unit it represents has a strictly larger <i>time interval</i> (<a href="#term-time-interval">Clause 3.1.1.6</a>) than that of that another; the latter time scale component is therefore considered to be of a lower order.</p></div><div class="Note"><p>Note 2 to entry: Common usage of this term often omits the leading phrase &#x201C;time scale&#x201D;, such as representing a &#x201C;time scale component calendar year&#x201D; by just &#x201C;calendar year component&#x201D;. This usage is deemed accepted in this document.</p></div><div id="_6009460a-7fa0-4603-949d-7deada655e49" class="example"><p class="example-title">EXAMPLE 1</p>
+  <p id="_def4421d-630d-487c-bc1e-df3074d507cf"><i>calendar year</i> (<a href="#term-calendar-year">Clause 3.1.2.21</a>), <i>calendar month</i> (<a href="#term-calendar-month">Clause 3.1.2.19</a>), <i>calendar day</i> (<a href="#term-calendar-day">Clause 3.1.2.11</a>), <i>clock hour</i> (<a href="#term-clock-hour">Clause 3.1.2.6</a>), <i>clock minute</i> (<a href="#term-clock-minute">Clause 3.1.2.4</a>), <i>clock second</i> (<a href="#term-clock-second">Clause 3.1.2.2</a>) are time scale components of a <i>complete representation</i> (<a href="#term-complete-representation">Clause 3.1.3.6</a>).</p>
+</div><div id="_b8d2ba80-8c47-4ee1-8acd-e403bff2cc0e" class="example"><p class="example-title">EXAMPLE 2</p>
+  <p id="_3ab80919-6572-48da-8a6c-199687c7addd">The calendar year time scale component is considered of a higher order than the calendar month time scale component, which is in turn of a higher order than the calendar day time scale component.</p>
+</div>
+<h4 class="TermNum" id="term-basic-format">3.1.3.4.&#xA0;<p class="Terms" style="text-align:left;">basic format</p></h4>
+  
+  <p id="_9e711f6f-1e1a-4791-bfaa-3802912c6239"><i>date and time representation</i> (<a href="#term-dt-representation">Clause 3.1.3.2</a>) that does not include separators between its <i>time scale components</i> (<a href="#term-time-scale-component">Clause 3.1.3.3</a>)</p>
+
+<h4 class="TermNum" id="term-extended-format">3.1.3.5.&#xA0;<p class="Terms" style="text-align:left;">extended format</p></h4>
+  
+  <p id="_05b27721-40e1-413c-aa05-45531ffac808">extension of the <i>basic format</i> (<a href="#term-basic-format">Clause 3.1.3.4</a>) that includes separators between its <i>time scale components</i> (<a href="#term-time-scale-component">Clause 3.1.3.3</a>)</p>
+
+<h4 class="TermNum" id="term-complete-representation">3.1.3.6.&#xA0;<p class="Terms" style="text-align:left;">complete representation</p></h4>
+  
+  <p id="_f6d930a9-ed4d-4823-8a5a-de3649dcbbb8"><i>date and time representation</i> (<a href="#term-dt-representation">Clause 3.1.3.2</a>) that includes all the <i>time scale components</i> (<a href="#term-time-scale-component">Clause 3.1.3.3</a>) associated with the <i>expression</i> (<a href="#term-dt-expression">Clause 3.1.3.1</a>)</p>
+
+<h4 class="TermNum" id="term-representation-with-reduced-precision">3.1.3.7.&#xA0;<p class="Terms" style="text-align:left;">representation with reduced precision</p></h4>
+  
+  <p id="_b923330c-6eb3-4bb3-b67a-3261c941e685">abbreviation of a <i>date and time representation</i> (<a href="#term-dt-representation">Clause 3.1.3.2</a>) by omission of lower order <i>time scale components</i> (<a href="#term-time-scale-component">Clause 3.1.3.3</a>)</p>
+
+<h4 class="TermNum" id="term-decimal-representation">3.1.3.8.&#xA0;<p class="Terms" style="text-align:left;">representation with decimal fraction</p></h4>
+  
+  <p id="_935ba108-2a9f-4b6f-b082-7c29dbb5ecb4">expansion of a <i>date and time representation</i> (<a href="#term-dt-representation">Clause 3.1.3.2</a>) by addition of a decimal fraction to the lowest order <i>time scale component</i> (<a href="#term-time-scale-component">Clause 3.1.3.3</a>)</p>
+
+<h4 class="TermNum" id="term-decimal-sign">3.1.3.9.&#xA0;<p class="Terms" style="text-align:left;">decimal sign</p></h4><p id="_29dfcafe-d31a-4249-ab8f-d07bc06719e0">character used in a <i>representation with decimal fraction</i> (<a href="#term-decimal-representation">Clause 3.1.3.8</a>) to separate the integer part from the decimal fraction of a number</p>
+<div class="Note"><p>Note 1 to entry: The representations of the decimal signs (period or comma) and their usage rules are specified in <a href="#ISO80000-1">ISO 80000-1</a>.</p></div>
+<h4 class="TermNum" id="term-expanded-representation">3.1.3.10.&#xA0;<p class="Terms" style="text-align:left;">expanded representation</p></h4>
+  
+  <p id="_ae29c7a2-bfda-4b1d-be84-da6ff5d9c61b">expansion of a <i>date and time representation</i> (<a href="#term-dt-representation">Clause 3.1.3.2</a>) to allow identification of <i>calendar dates</i> (<a href="#term-calendar-date">Clause 3.1.2.7</a>) where the ordinal number identifying the <i>calendar year</i> (<a href="#term-calendar-year">Clause 3.1.2.21</a>) exceeds four digits</p>
+</div></div><div id="abbreviations"><h2>3.2. Abbreviations</h2><p id="_06199579-6181-456e-9ca5-64659f7efa12">For the purposes of this document, the following abbreviations apply.</p>
+<dl id="_22330f2b-7ef4-4d80-8f27-b836babdb9ba"><dt><p>BIPM</p></dt><dd>
+    <p id="_36c7f606-ee53-43ca-b1d5-47daa274b2ad">Bureau International des Poids et Mesures / The International Bureau of Weights and Measures</p>
+  </dd><dt><p>CIPM</p></dt><dd>
+    <p id="_9afbf551-5bb4-40be-bf09-37dbb6294783">Comit&#xE9; International des Poids et Mesures / The International Committee of Weights and Measures</p>
+  </dd><dt><p>TAI</p></dt><dd>
+    <p id="_dde53997-4255-4f6b-bbd9-e20e0ba81f54">International Atomic Time</p>
+  </dd><dt><p>UTC</p></dt><dd>
+    <p id="_978c7c78-cf5f-421c-a48f-b885d5a5aed1">Coordinated Universal Time</p>
+  </dd><dt><p>SI</p></dt><dd>
+    <p id="_ebd8eee3-8915-4616-bf44-3179c58fb30b">International System of Units</p>
+  </dd><dt><p>ISQ</p></dt><dd>
+    <p id="_4d61befe-1a60-4a2e-99ea-b0cd405ea907">International System of Quantities</p>
+  </dd></dl></div></div>
+      <div id="concepts">
+        <h1>4.&#xA0; Concepts</h1>
+        <div id="_general"><h2>4.1. General</h2>
+
+  <p id="_0909f40e-ec0d-4922-b431-2d1c6a2a56de">This clause describes commonly used concepts for the usage of time scale systems.</p>
+</div>
+        <div id="_commonly_used_time_scale_units"><h2>4.2. Commonly used time scale units</h2><div id="_day"><h3>4.2.1. Day</h3>
+
+  <p id="_81861e22-7017-47f7-acc2-ac9babb64422">A day is a time scale unit that approximates the duration taken by the Earth for
+completing one rotation with respect to the Sun.</p>
+</div>
+<div id="_month"><h3>4.2.2. Month</h3>
+
+  <p id="_6300d529-de9e-4a59-90ce-c3066929bf13">A month is a time scale unit, that traditionally approximated the duration taken
+between two successive syzygies of the Moon.</p>
+</div>
+<div id="_year"><h3>4.2.3. Year</h3>
+
+  <p id="_a30ecf71-d249-40f4-bc4c-154be90949ce">A year is a time scale unit that approximates the orbital period of the Earth around the Sun.</p>
+</div></div>
+        <div id="_second"><h2>4.3. Second</h2><p id="_0880bc2c-3c51-47b7-98cd-00725baf25f0">A second is a time scale unit defined by the CIPM in the SI system based on radiation periods of the
+caesium-133 atom.</p>
+<p id="_8df44be5-6ee6-4c7c-ae90-05dad765353e">Traditionally, it represented a subdivision of the day being <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mfrac>
+    <mn>1</mn>
+    <mn>86400</mn>
+  </mfrac>
+</math></span> of a
+day.</p></div>
+        <div id="_minute"><h2>4.4. Minute</h2>
+
+  <p id="_2b2b1662-5351-41e2-aac1-d9c36d3ca1b2">A minute is a time scale unit often defined as <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mfrac>
+    <mn>1</mn>
+    <mn>60</mn>
+  </mfrac>
+</math></span> of an hour or 60 seconds.</p>
+</div>
+        <div id="_hour"><h2>4.5. Hour</h2>
+
+  <p id="_be272028-b49a-491e-b40e-a45c3bbb1ca8">An hour is a time scale unit often defined as <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mfrac>
+    <mn>1</mn>
+    <mn>24</mn>
+  </mfrac>
+</math></span> of a day or 3600 seconds.</p>
+</div>
+        <div id="_date_and_time_organizing_systems"><h2>4.6. Date and time organizing systems</h2><div id="_general_2"><h3>4.6.1. General</h3>
+
+  <p id="_cdc9557a-2fe2-402d-a287-b6bd3e6cd23a">Date and time organizing systems are often used for social, administrative and
+religious purposes, in order to allow an easier identification method of
+dates and times through the usage of hierarchical time scale units.</p>
+</div>
+<div id="_calendar"><h3>4.6.2. Calendar</h3><p id="_4e957003-0c48-445a-b977-d84cba5caf2b">A calendar is a system to organize days, based on time intervals marked by events
+related to the astronomical motion of planetary bodies,
+synchronized to the tropical year and orbital motion of the Earth.</p>
+<p id="_905fdd6b-b313-4a98-b823-7e3f43391c25">A calendar system often includes the time scale components year, month and day.</p></div>
+<div id="_clock"><h3>4.6.3. Clock</h3><p id="_6b00647c-3fd6-4e70-aba8-c9bb3f9d87e4">The clock is a time scale used to identify and measure smaller time intervals
+within a day.</p>
+<p id="_9adb45d6-ac00-49b1-8715-162ece6d51b2">A clock system often includes the time scale components hour, minute and second.</p></div></div>
+      </div>
+      <br />
+      <div>
+        <h1 class="Section3">Bibliography</h1>
+        <p id="ISOIEC646" class="Biblio">[1]&#xA0; ISO/IEC 646, <i> ISO 7-bit coded character set for information interchange</i></p>
+        <p id="ISO80000-1" class="Biblio">[2]&#xA0; ISO 80000-1, <i> Quantities and units</i></p>
+        <p id="ISO80000-3" class="Biblio">[3]&#xA0; ISO 80000-3, <i> Quantities and units</i></p>
+        <p id="IEC60050-113" class="Biblio">[4]&#xA0; IEC 60050-113:2011, <i> International Electrotechnical Vocabulary (IEV)</i></p>
+        <p id="IEC60050-713" class="Biblio">[5]&#xA0; IEC 60050-713:1998, <i> International Electrotechnical Vocabulary (IEV)</i></p>
+        <p id="BIPMRCCTF3" class="Biblio">[6]&#xA0; BIPM Recommendation CCTF 3 (2017), Bureau International des Poids et Mesures / The International Bureau of Weights and Measures: Consultative Committee for Time and Frequency (CCTF),
+<i>Report of the 21st meeting to the International Committee for Weights and Measures</i>, 2017</p>
+        <p id="IAUR24" class="Biblio">[7]&#xA0; International Astronomical Union Resolution B1.9 (2000), International Astronomical Union, <i>IAU Resolutions adopted at the 24th General Assembly</i>, 2000</p>
+        <p id="ISO8601-1" class="Biblio">[8]&#xA0; ISO 8601-1:&#x2014;, <i>Date and time&#x2009;&#x2014;&#x2009;Representation for information interchange&#x2009;&#x2014;&#x2009;Part 1: Basic rules</i></p>
+        <p id="ISO8601-2" class="Biblio">[9]&#xA0; ISO 8601-2:&#x2014;, <i>Date and time&#x2009;&#x2014;&#x2009;Representation for information interchange&#x2009;&#x2014;&#x2009;Part 2: Extensions</i></p>
+        <p id="ITURTF460-6" class="Biblio">[10]&#xA0; ITU-R TF.460-6,
+    <i>Standard-frequency and time-signal emissions</i>
+  </p>
+        <p id="IEV" class="Biblio">[11]&#xA0; IEC Electropedia,
+    <i>IEC Electropedia</i>
+  </p>
+      </div>
+    </main>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    asciimath2jax: {
+      delimiters: [['(#(', ')#)']]
+    }
+ });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=AM_HTMLorMML" async="async"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script><script>
+    //TOC generation
+      $('#toc').toc({
+          'selectors': toclevel(), //elements to use as headings
+          'container': 'main', //element to find all selectors in
+          'smoothScrolling': true, //enable or disable smooth scrolling on click
+          'prefix': 'toc', //prefix for anchor tags and class names
+          'onHighlight': function(el) {}, //called when a new section is highlighted 
+          'highlightOnScroll': true, //add class to heading that is currently in focus
+          'highlightOffset': 100, //offset to trigger the next headline
+          'anchorName': function(i, heading, prefix) { //custom function for anchor name
+              return prefix+i;
+          },
+          'headerText': function(i, heading, $heading) { //custom function building the header-item text
+              return $heading.text();
+          },
+      'itemClass': function(i, heading, $heading, prefix) { // custom function for item class
+        return $heading[0].tagName.toLowerCase();
+      }
+      });
+      
+  </script>
+
+<script>
+  //TOC toggle animation
+$('#toggle').on('click', function(){
+    if( $('nav').is(':visible') ) {
+        $('nav').animate({ 'left': '-353px' }, 'slow', function(){
+            $('nav').hide();
+        });
+        $('.container').animate({ 'padding-left': '31px' }, 'slow');
+    }
+    else {
+        $('nav').show();
+        $('nav').animate({ 'left': '0px' }, 'slow');
+        $('.container').animate({ 'padding-left': '360px' }, 'slow');
+    }
+});
+</script>
+
+<script>
+    // Scroll to top button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+  <script>
+/**
+ * AnchorJS - v4.1.0 - 2017-09-20
+ * https://github.com/bryanbraun/anchorjs
+ * Copyright (c) 2017 Bryan Braun; Licensed MIT
+ */
+!function(A,e){"use strict";"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():(A.AnchorJS=e(),A.anchors=new A.AnchorJS)}(this,function(){"use strict";return function(A){function e(A){A.icon=A.hasOwnProperty("icon")?A.icon:"",A.visible=A.hasOwnProperty("visible")?A.visible:"hover",A.placement=A.hasOwnProperty("placement")?A.placement:"right",A.ariaLabel=A.hasOwnProperty("ariaLabel")?A.ariaLabel:"Anchor",A.class=A.hasOwnProperty("class")?A.class:"",A.truncate=A.hasOwnProperty("truncate")?Math.floor(A.truncate):64}function t(A){var e;if("string"==typeof A||A instanceof String)e=[].slice.call(document.querySelectorAll(A));else{if(!(Array.isArray(A)||A instanceof NodeList))throw new Error("The selector provided to AnchorJS was invalid.");e=[].slice.call(A)}return e}function i(){if(null===document.head.querySelector("style.anchorjs")){var A,e=document.createElement("style");e.className="anchorjs",e.appendChild(document.createTextNode("")),void 0===(A=document.head.querySelector('[rel="stylesheet"], style'))?document.head.appendChild(e):document.head.insertBefore(e,A),e.sheet.insertRule(" .anchorjs-link {   opacity: 0;   text-decoration: none;   -webkit-font-smoothing: antialiased;   -moz-osx-font-smoothing: grayscale; }",e.sheet.cssRules.length),e.sheet.insertRule(" *:hover > .anchorjs-link, .anchorjs-link:focus  {   opacity: 1; }",e.sheet.cssRules.length),e.sheet.insertRule(" [data-anchorjs-icon]::after {   content: attr(data-anchorjs-icon); }",e.sheet.cssRules.length),e.sheet.insertRule(' @font-face {   font-family: "anchorjs-icons";   src: url(data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP) format("truetype"); }',e.sheet.cssRules.length)}}this.options=A||{},this.elements=[],e(this.options),this.isTouchDevice=function(){return!!("ontouchstart"in window||window.DocumentTouch&&document instanceof DocumentTouch)},this.add=function(A){var n,o,s,a,r,c,h,l,u,d,f,p=[];if(e(this.options),"touch"===(f=this.options.visible)&&(f=this.isTouchDevice()?"always":"hover"),A||(A="h2, h3, h4, h5, h6"),0===(n=t(A)).length)return this;for(i(),o=document.querySelectorAll("[id]"),s=[].map.call(o,function(A){return A.id}),r=0;r<n.length;r++)if(this.hasAnchorJSLink(n[r]))p.push(r);else{if(n[r].hasAttribute("id"))a=n[r].getAttribute("id");else if(n[r].hasAttribute("data-anchor-id"))a=n[r].getAttribute("data-anchor-id");else{u=l=this.urlify(n[r].textContent),h=0;do{void 0!==c&&(u=l+"-"+h),c=s.indexOf(u),h+=1}while(-1!==c);c=void 0,s.push(u),n[r].setAttribute("id",u),a=u}a.replace(/-/g," "),(d=document.createElement("a")).className="anchorjs-link "+this.options.class,d.href="#"+a,d.setAttribute("aria-label",this.options.ariaLabel),d.setAttribute("data-anchorjs-icon",this.options.icon),"always"===f&&(d.style.opacity="1"),""===this.options.icon&&(d.style.font="1em/1 anchorjs-icons","left"===this.options.placement&&(d.style.lineHeight="inherit")),"left"===this.options.placement?(d.style.position="absolute",d.style.marginLeft="-1em",d.style.paddingRight="0.5em",n[r].insertBefore(d,n[r].firstChild)):(d.style.paddingLeft="0.375em",n[r].appendChild(d))}for(r=0;r<p.length;r++)n.splice(p[r]-r,1);return this.elements=this.elements.concat(n),this},this.remove=function(A){for(var e,i,n=t(A),o=0;o<n.length;o++)(i=n[o].querySelector(".anchorjs-link"))&&(-1!==(e=this.elements.indexOf(n[o]))&&this.elements.splice(e,1),n[o].removeChild(i));return this},this.removeAll=function(){this.remove(this.elements)},this.urlify=function(A){var t=/[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\\]/g;return this.options.truncate||e(this.options),A.trim().replace(/\'/gi,"").replace(t,"-").replace(/-{2,}/g,"-").substring(0,this.options.truncate).replace(/^-+|-+$/gm,"").toLowerCase()},this.hasAnchorJSLink=function(A){var e=A.firstChild&&(" "+A.firstChild.className+" ").indexOf(" anchorjs-link ")>-1,t=A.lastChild&&(" "+A.lastChild.className+" ").indexOf(" anchorjs-link ")>-1;return e||t||!1}}});  </script>
+
+  <script>
+  $(document).ready(function() {
+          $('[id^=toc]').each(function ()
+          {
+             var currentToc = $(this);
+       var url = window.location.href;
+             currentToc.wrap("<a href='" + url + "#" + currentToc.attr("id") + "' </a>");
+          });
+});
+  anchors.options = {
+  placement: 'left'
+};
+anchors.add('h1, h2, h3, h4');
+</script></body>
+</html>
