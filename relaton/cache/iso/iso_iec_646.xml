@@ -1,6 +1,8 @@
-<bibitem type="international-standard" id="ISO/IEC646">
-  <fetched>2018-12-11</fetched>
-  <title format="text/plain" language="en" script="Latn">Information technology -- ISO 7-bit coded character set for information interchange</title>
+<bibdata type="standard">
+  <fetched>2019-07-11</fetched>
+  <title type="title-main" format="text/plain" language="en" script="Latn">ISO 7-bit coded character set for information interchange</title>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Information technology</title>
+  <title type="main" format="text/plain" language="en" script="Latn">ISO 7-bit coded character set for information interchange - Information technology</title>
   <uri type="src">https://www.iso.org/standard/4777.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:4777:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/00/47/4777.detail.rss</uri>
@@ -38,14 +40,16 @@
     </owner>
   </copyright>
   <relation type="obsoletes">
-    <bibitem>
-      <formattedref>ISO 646:1983</formattedref>
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 646:1983</formattedref>
     </bibitem>
   </relation>
   <relation type="instance">
-    <bibitem type="international-standard">
-      <fetched>2018-12-11</fetched>
-      <title format="text/plain" language="en" script="Latn">Information technology -- ISO 7-bit coded character set for information interchange</title>
+    <bibitem type="standard">
+      <fetched>2019-07-11</fetched>
+      <title type="title-main" format="text/plain" language="en" script="Latn">ISO 7-bit coded character set for information interchange</title>
+      <title type="title-intro" format="text/plain" language="en" script="Latn">Information technology</title>
+      <title type="main" format="text/plain" language="en" script="Latn">ISO 7-bit coded character set for information interchange - Information technology</title>
       <uri type="src">https://www.iso.org/standard/4777.html</uri>
       <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:4777:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/00/47/4777.detail.rss</uri>
@@ -73,7 +77,7 @@
       <language>en</language>
       <language>fr</language>
       <script>Latn</script>
-      <abstract format="plain" language="en" script="Latn">Specifies a set of 128 control and graphic characters such as letters, digits and symbols with their coded representation. Applies to alphabets of the Latin script.</abstract>
+      <abstract format="text/plain" language="en" script="Latn">Specifies a set of 128 control and graphic characters such as letters, digits and symbols with their coded representation. Applies to alphabets of the Latin script.</abstract>
       <status>
         <stage>90</stage>
         <substage>93</substage>
@@ -87,24 +91,23 @@
         </owner>
       </copyright>
       <relation type="obsoletes">
-        <bibitem>
-          <formattedref>ISO 646:1983</formattedref>
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 646:1983</formattedref>
         </bibitem>
       </relation>
-      <editorialgroup>
-        <technical_committee number="1" type="TC">ISO/IEC JTC 1/SC 2Coded character sets</technical_committee>
-      </editorialgroup>
-      <ics>
-        <code>35.040.10</code>
-        <text>Coding of character sets</text>
-      </ics>
     </bibitem>
   </relation>
-  <editorialgroup>
-    <technical_committee number="1" type="TC">ISO/IEC JTC 1/SC 2Coded character sets</technical_committee>
-  </editorialgroup>
-  <ics>
-    <code>35.040.10</code>
-    <text>Coding of character sets</text>
-  </ics>
-</bibitem>
+  <ext>
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical_committee number="1" type="TC">ISO/IEC JTC 1/SC 2Coded character sets</technical_committee>
+    </editorialgroup>
+    <ics>
+      <code>35.040.10</code>
+      <text>Coding of character sets</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>ISO/IEC 646</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

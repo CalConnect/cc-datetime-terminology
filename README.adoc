@@ -1,43 +1,99 @@
-= ISO Cantonese Romanization Document
+= CalConnect/ISO/ITU Standard: Date and time -- Concepts and terminology
+
+This work item belongs to TC DATETIME.
+
+ifdef::env-github[]
+image:https://img.shields.io/travis/com/CalConnect/csd-datetime-terminology/master.svg[
+	Build Status, link="https://travis-ci.com/CalConnect/csd-datetime-terminology/branches"]
+endif::[]
+
+This document is available in its rendered forms here:
+
+* https://calconnect.github.io/csd-datetime-terminology/[CC/ISO/ITU: Date and time -- Concepts and terminology (HTML)]
+
 
 == Fetching the document
 
 [source,sh]
 ----
-git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/iso-cantonese-romanization
+git clone https://github.com/CalConnect/csd-datetime-terminology/
 ----
 
-== Installing build tools
+== Installing Build Tools
 
-=== macOS
+=== Metanorma
 
-From anywhere on your computer (this only works on macOS!)
-[source,sh]
-----
-bash <(curl -s https://raw.githubusercontent.com/riboseinc/metanorma-macos-setup/master/metanorma-setup)
-----
+See https://www.metanorma.com/author/topics/install/
+
+=== Other dependencies
+
+yq::
+  https://github.com/mikefarah/yq
+
+NOTE: This can be confused with https://github.com/kislyuk/yq.
 
 
-=== Windows
+== Running via Docker or locally
 
-. Install https://www.ruby-lang.org/en/[Ruby]
-. Install node and Google's https://github.com/GoogleChrome/puppeteer[puppeteer]
-. Run `bundle` to install dependent Ruby gems
+If you have installed the build tools locally, and wish to run the
+locally-installed compilation tools, there is nothing further to set.
 
-== Building the document (HTML + Word)
-
-[source,sh]
-----
-make clean all
-----
-
-Your document will be created in the same directory.
-
-== Iterating the document (HTML)
-
-It's easiest to generate the HTML to iterate on the document.
+If you don't want to deal with local dependencies, use the docker
+version by:
 
 [source,sh]
 ----
-make html open
+export METANORMA_DOCKER=1
+----
+
+The `Makefile` will automatically choose the proper command to
+execute.
+
+
+== Building The Document
+
+[source,sh]
+----
+make
+----
+
+The following outputs will be built:
+
+* CSD XML (https://github.com/calconnect/metanorma-model-csd) (`[filename].xml`)
+* HTML (`[filename].html`)
+* PDF (`[filename].pdf`)
+* Word DOC (`[filename].doc`)
+
+
+== Iterating the document
+
+=== Manual approach
+
+[source,sh]
+----
+# ... edit source files...
+make
+----
+
+=== Automatically watch file (experimental)
+
+Spawn a file-watching HTTP server at port 8123:
+
+[source,sh]
+----
+make watch-serve
+----
+
+Spawn a file-watching HTTP server at a specific port:
+
+[source,sh]
+----
+make watch-serve PORT=8080
+----
+
+== Getting help
+
+[source,sh]
+----
+make help
 ----

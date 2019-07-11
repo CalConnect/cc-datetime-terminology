@@ -1,6 +1,7 @@
-<bibitem type="international-standard" id="IEC60050-113-2011">
-  <fetched>2018-11-21</fetched>
-  <title format="text/plain" language="en" script="Latn">International Electrotechnical Vocabulary -- Part 113: Physics for electrotechnology</title>
+<bibdata type="standard">
+  <title type="title-main" format="text/plain" language="en" script="Latn">International Electrotechnical Vocabulary (IEV)</title>
+  <title type="title-part" format="text/plain" language="en" script="Latn">Part 113: Physics for electrotechnology</title>
+  <title type="main" format="text/plain" language="en" script="Latn">International Electrotechnical Vocabulary (IEV) - Part 113: Physics for electrotechnology</title>
   <uri type="src">https://webstore.iec.ch/publication/164</uri>
   <uri type="obp">/preview/info_iec60050-113%7Bed1.0%7Db.pdf</uri>
   <docidentifier type="IEC">IEC 60050-113:2011</docidentifier>
@@ -18,10 +19,7 @@
   <edition>1.0</edition>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="plain" language="en" script="Latn">IEC 60050-113:2011 gives the general terminology on physical concepts used in the fields of electricity, electronics and telecommunications. Its target is to collect the most usual concepts in space and time, macroscopic physics, mechanics, thermodynamics, particle physics, and solid-state physics, and to present them as terms and descriptions given in logical order according to their interdependence. The descriptions are definitions from the terminological point of view, but they are not always complete definitions in physical sense. Their main goal is to distinguish among particular concepts. In consequence, this part of the IEV should not be regarded as a physical textbook, but rather as a set of terms with their equivalents in many languages and with descriptions in the main IEV languages. This first edition cancels and replaces Sections 111-13, 111-14 and 111-16 of International Standard IEC 60050-111:1996 and its Amendment 1:2005.&#13;
-&#13;
-It has the status of a horizontal standard in accordance with IEC Guide 108.&#13;
-The contents of the corrigendum of September 2011 have been included in this copy.</abstract>
+  <abstract format="text/plain" language="en" script="Latn">IEC 60050-113:2011 gives the general terminology on physical concepts used in the fields of electricity, electronics and telecommunications. Its target is to collect the most usual concepts in space and time, macroscopic physics, mechanics, thermodynamics, particle physics, and solid-state physics, and to present them as terms and descriptions given in logical order according to their interdependence. The descriptions are definitions from the terminological point of view, but they are not always complete definitions in physical sense. Their main goal is to distinguish among particular concepts. In consequence, this part of the IEV should not be regarded as a physical textbook, but rather as a set of terms with their equivalents in many languages and with descriptions in the main IEV languages. This first edition cancels and replaces Sections 111-13, 111-14 and 111-16 of International Standard IEC 60050-111:1996 and its Amendment 1:2005. It has the status of a horizontal standard in accordance with IEC Guide 108. The contents of the corrigendum of September 2011 have been included in this copy.</abstract>
   <status>
     <stage>60</stage>
     <substage>60</substage>
@@ -36,15 +34,21 @@ The contents of the corrigendum of September 2011 have been included in this cop
       </organization>
     </owner>
   </copyright>
-  <editorialgroup>
-    <technical_committee number="1" type="technicalCommittee">TC 1 - Terminology</technical_committee>
-  </editorialgroup>
-  <ics>
-    <code>01.040.07</code>
-    <text>Natural and applied sciences (Vocabularies)</text>
-  </ics>
-  <ics>
-    <code>01.040.29</code>
-    <text>Electrical engineering (Vocabularies)</text>
-  </ics>
-</bibitem>
+  <ext>
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical_committee number="1" type="technicalCommittee">TC 1 - Terminology</technical_committee>
+    </editorialgroup>
+    <ics>
+      <code>01.040.07</code>
+      <text>Natural and applied sciences (Vocabularies)</text>
+    </ics>
+    <ics>
+      <code>01.040.29</code>
+      <text>Electrical engineering (Vocabularies)</text>
+    </ics>
+    <structuredidentifier type="IEC">
+      <project-number>60050</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

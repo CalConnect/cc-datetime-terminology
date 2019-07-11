@@ -1,4 +1,4 @@
-= CalConnect ISO TC 154 Date and Time Terminology
+= CC/ISO TC 154 Date and Time Concepts and vocabulary
 :docnumber: 34000
 :tc-docnumber: 9999
 :edition: 1
@@ -25,13 +25,13 @@
 :stem:
 :xrefstyle: short
 :imagesdir: images
-:docfile: iso-date-time-terminology-tc154-nwip-en.adoc
+:docfile: iso-34000.adoc
 :mn-document-class: iso
-:mn-output-extensions: xml,html,doc,html_alt
+:mn-output-extensions: xml,html,doc,html_alt,rxl
 :local-cache-only:
 :data-uri-image:
 
-include::sections/00-foreword.adoc[]
+include::sections-iso/00-foreword.adoc[]
 include::sections/00-intro.adoc[]
 include::sections/01-scope.adoc[]
 include::sections/02-norm-refs.adoc[]
