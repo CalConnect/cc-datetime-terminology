@@ -1,4 +1,4 @@
-= CalConnect/ISO/ITU Standard: Date and time -- Concepts and terminology
+= CalConnect/ISO Standard: Date and time -- Concepts and terminology
 
 This work item belongs to TC DATETIME.
 
