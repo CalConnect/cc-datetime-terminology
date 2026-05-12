@@ -1,11 +1,9 @@
+---
 metanorma:
-  deploy:
-    email: travis-ci@metanorma.org
   source:
     files:
     - sources/cc-34000.adoc
     - sources/iso-34000.adoc
-relaton:
   collection:
     name: Date and time -- Concepts and vocabulary
     organization: CalConnect/ISO
