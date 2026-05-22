@@ -1,5 +1,0 @@
-# .metanorma/channels.yml — cc-datetime-terminology
-
-channels:
-  - name: public/standards
-    description: "CalConnect documents from cc-datetime-terminology"
