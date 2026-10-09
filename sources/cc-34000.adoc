@@ -30,6 +30,12 @@
 ////
 
 include::sections-cc/00-foreword.adoc[]
+
+[abstract]
+== Abstract
+
+This document provides a concept system and a standard set of terminology related to date and time, from basic concepts to those of their representation. The scope of the vocabulary corresponds to that of ISO/TC 154/WG 5: Representation of dates and times.
+
 include::sections/00-intro.adoc[]
 include::sections/01-scope.adoc[]
 include::sections/02-norm-refs.adoc[]
